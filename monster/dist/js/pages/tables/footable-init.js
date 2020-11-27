@@ -51,24 +51,25 @@ $(window).on('load', function() {
 		$editor = $('#editor'),
 		$editorTitle = $('#editor-title'),
 		ft = FooTable.init('#footable-addrow', {
-			columns: $.get('https://fooplugins.github.io/FooTable/docs/content/columns.json'),
-			rows: $.get('https://fooplugins.github.io/FooTable/docs/content/rows.json'),
+			columns: $.get('https://api.mocki.io/v1/40dba9b4'),
+			rows: $.get('https://api.mocki.io/v1/0bed7c42'),
 			editing: {
 				addRow: function(){
 					$modal.removeData('row');
 					$editor[0].reset();
-					$editorTitle.text('Add a new row');
+					$editorTitle.text('Ajouter une ligne');
 					$modal.modal('show');
 				},
 				editRow: function(row){
 					var values = row.val();
-					$editor.find('#firstName').val(values.firstName);
-					$editor.find('#lastName').val(values.lastName);
-					$editor.find('#jobTitle').val(values.jobTitle);
+					$editor.find('#numConv').val(values.numConv);
+					$editor.find('#libConv').val(values.libConv);
+					$editor.find('#objetConv').val(values.objetConv);
+					$editor.find('#dateSignature').val(values.dateSignature);
 					$editor.find('#status').val(values.status);
-					$editor.find('#dob').val(values.dob.format('YYYY-MM-DD'));
+
 					$modal.data('row', row);
-					$editorTitle.text('Edit row #' + values.id);
+					$editorTitle.text('Modifier #' + values.id);
 					$modal.modal('show');
 				},
 				deleteRow: function(row){
@@ -85,10 +86,10 @@ $(window).on('load', function() {
 		e.preventDefault();
 		var row = $modal.data('row'),
 			values = {
-				firstName: $editor.find('#firstName').val(),
-				lastName: $editor.find('#lastName').val(),
-				jobTitle: $editor.find('#jobTitle').val(),
-				dob: moment($editor.find('#dob').val(), 'YYYY-MM-DD'),
+				numConv : $editor.find('#numConv').val(),
+				libConv: $editor.find('#libConv').val(),
+				objetConv: $editor.find('#objetConv').val(),
+				dateSignature: $editor.find('#dateSignature').val(),
 				status: $editor.find('#status').val()
 			};
 
