@@ -51,8 +51,8 @@ $(window).on('load', function() {
 		$editor = $('#editor'),
 		$editorTitle = $('#editor-title'),
 		ft = FooTable.init('#footable-addrow', {
-			columns: $.get('https://api.mocki.io/v1/40dba9b4'),
-			rows: $.get('https://api.mocki.io/v1/0bed7c42'),
+			columns:"", //$.get('https://api.mocki.io/v1/40dba9b4'),
+			rows: "", //$.get('https://api.mocki.io/v1/0bed7c42'),
 			editing: {
 				addRow: function(){
 					$modal.removeData('row');
@@ -69,7 +69,7 @@ $(window).on('load', function() {
 					$editor.find('#status').val(values.status);
 
 					$modal.data('row', row);
-					$editorTitle.text('Modifier #' + values.id);
+					$editorTitle.text('Modifier #' + values.numConv);
 					$modal.modal('show');
 				},
 				deleteRow: function(row){
