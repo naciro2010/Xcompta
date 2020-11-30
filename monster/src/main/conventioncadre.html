@@ -62,7 +62,7 @@
         <div class="page-breadcrumb">
             <div class="row">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="page-title">Convention Cadre détail</h3>
+                    <h3 class="page-title">Convention Cadre détail "Al AMIRAN"</h3>
                     <div class="d-flex align-items-center">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
@@ -93,182 +93,205 @@
         <!-- ============================================================== -->
         <!-- End Bread crumb and right sidebar toggle -->
         <!-- ============================================================== -->
+
         <!-- ============================================================== -->
         <!-- Column -->
         <div class="card">
-            <div class="card-body">
-                <h4 class="card-title">La convention Al AMIRAN </h4>
-                <h6 class="card-subtitle">Description</h6>
-                <!-- Accordian -->
-                <div class="accordion" id="accordionTable">
-                    <div class="card m-b-5">
+            <ul class="nav nav-tabs nav-justified nav-bordered mb-3">
+                <li class="nav-item">
+                    <a href="#home-b2" data-toggle="tab" aria-expanded="true" class="nav-link active">
+                        <i class="mdi mdi-home-variant d-lg-none d-block mr-1"></i>
+                        <span class="d-none d-lg-block">Convention</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#profile-b2" data-toggle="tab" aria-expanded="false"
+                       class="nav-link">
+                        <i class="mdi mdi-account-circle d-lg-none d-block mr-1"></i>
 
-                        <div id="col1" class="collapse show" aria-labelledby="heading1"
-                             data-parent="#accordionTable">
-                            <div class="card-body">
-                                <div class="table-responsive">
-                                    <table id="conventionDetail"
-                                           class="table table-bordered m-b-0 toggle-arrow-tiny no-wrap"
-                                           data-filtering="true" data-paging="true" data-sorting="true"
-                                           data-paging-size="10">
-                                        <thead>
-                                        <tr class="footable-filtering">
-                                            <th data-breakpoints="xs">Num Conv</th>
-                                            <th>Libellé convn</th>
-                                            <th>Objet convention</th>
-                                            <th>Date signature</th>
-                                            <th>Cadre</th>
-                                            <th>Statut de la convention</th>
+                        <span class="d-none d-lg-block">Avenants <span
+                                class="badge py-1 badge-info"> 3 </span> </span>
+                    </a>
+                </li>
+            </ul>
 
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tr data-expanded="true">
-                                            <td>AL304</td>
-                                            <td>
-                                                <a href="conventionsSep.html"> Al AMIRAN</a>
-                                            </td>
-                                            <td>Convention test1</td>
-                                            <td>19/09/2020</td>
-                                            <td>Oui</td>
-                                            <td><span class="badge py-1 badge-danger">En retard</span></td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+            <div class="tab-content">
+                <div class="tab-pane show active" id="home-b2">
+                    <div class="card-body">
+                        <h4 class="card-title">La convention Al AMIRAN </h4>
+                        <h6 class="card-subtitle">Description</h6>
+                        <!-- Accordian -->
+                        <div class="accordion" id="accordionTable">
+                            <div class="card m-b-5">
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                                <div id="col1" class="collapse show" aria-labelledby="heading1"
+                                     data-parent="#accordionTable">
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table id="conventionDetail"
+                                                   class="table table-bordered m-b-0 toggle-arrow-tiny no-wrap"
+                                                   data-filtering="true" data-paging="true" data-sorting="true"
+                                                   data-paging-size="10">
+                                                <thead>
+                                                <tr class="footable-filtering">
+                                                    <th data-breakpoints="xs">Num Conv</th>
+                                                    <th>Libellé convn</th>
+                                                    <th>Objet convention</th>
+                                                    <th>Date signature</th>
+                                                    <th>Cadre</th>
+                                                    <th>Statut de la convention</th>
 
-            </div>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr data-expanded="true">
+                                                    <td>AL304</td>
+                                                    <td>
+                                                        <a href="conventionsSep.html"> Al AMIRAN</a>
+                                                    </td>
+                                                    <td>Convention test1</td>
+                                                    <td>19/09/2020</td>
+                                                    <td>Oui</td>
+                                                    <td><span class="badge py-1 badge-danger">En retard</span></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
 
-            <div class="card-body">
-                <h4 class="card-title">La liste des avenants de la convention Al AMIRAN </h4>
-                <h6 class="card-subtitle">Description</h6>
-                <div class="accordion" id="avenant">
-                    <div class="card m-b-5">
-
-                        <div id="avenantdiv" class="collapse show" aria-labelledby="heading1"
-                             data-parent="#accordionTable">
-                            <div class="card-body">
-                                <div class="table-responsive">
-                                    <table id="avenanttable"
-                                           class="table table-bordered m-b-0 toggle-arrow-tiny no-wrap"
-                                           data-filtering="true" data-paging="true" data-sorting="true"
-                                           data-paging-size="10">
-                                        <thead>
-                                        <tr class="footable-filtering">
-                                            <th data-breakpoints="xs">Num avenant</th>
-                                            <th>Libellé avenant</th>
-                                            <th>Objet avenant</th>
-                                            <th>Date signature</th>
-                                            <th>Statut</th>
-
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tr data-expanded="true">
-                                            <td>AL304</td>
-                                            <td>
-                                                <a href=""> Al AMIRAN avenant 1</a>
-                                            </td>
-                                            <td>avenant test1</td>
-                                            <td>19/09/2020</td>
-                                            <td><span class="badge py-1 badge-danger">En retard</span></td>
-                                        </tr>
-                                        <tr data-expanded="true">
-                                            <td>EKD233</td>
-                                            <td>
-                                                <a href=""> Al AMIRAN avenant 2</a>
-                                            </td>
-                                            <td>avenant test1</td>
-                                            <td>19/01/2020</td>
-                                            <td><span class="badge py-1 badge-orange">En cours</span></td>
-                                        </tr>
-                                        <tr data-expanded="true">
-                                            <td>34209</td>
-                                            <td>
-                                                <a href=""> Al AMIRAN avenant 3</a>
-                                            </td>
-                                            <td>avenant test1</td>
-                                            <td>19/09/2021</td>
-                                            <td><span class="badge py-1 badge-dark">annulé</span></td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
-                </div>
-            </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Le détail de la convention Al AMIRAN </h4>
+                        <h6 class="card-subtitle">Description</h6>
+                        <div class="accordion" id="detailconvention">
+                            <div class="card m-b-5">
 
-            <div class="card-body">
-                <h4 class="card-title">Le détail de la convention Al AMIRAN </h4>
-                <h6 class="card-subtitle">Description</h6>
-                <div class="accordion" id="detailconvention">
-                    <div class="card m-b-5">
+                                <div id="detailconventiondiv" class="collapse show" aria-labelledby="heading1"
+                                     data-parent="#accordionTable">
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table id="detailconventiontable"
+                                                   class="table table-bordered m-b-0 toggle-arrow-tiny no-wrap"
+                                                   data-filtering="true" data-paging="true" data-sorting="true"
+                                                   data-paging-size="10">
+                                                <thead>
+                                                <tr class="footable-filtering">
+                                                    <th data-breakpoints="xs">convention</th>
+                                                    <th>Axe</th>
+                                                    <th>Projet</th>
+                                                    <th>Volet</th>
+                                                    <th>Partenaire</th>
+                                                    <th>MO</th>
+                                                    <th>MOD</th>
+                                                    <th>Budget total</th>
+                                                    <th>Date de Vers prévu</th>
+                                                    <th>Montant Vers prévu</th>
+                                                    <th>Date de Vers réel</th>
+                                                    <th>Montant Vers réel</th>
 
-                        <div id="detailconventiondiv" class="collapse show" aria-labelledby="heading1"
-                             data-parent="#accordionTable">
-                            <div class="card-body">
-                                <div class="table-responsive">
-                                    <table id="detailconventiontable"
-                                           class="table table-bordered m-b-0 toggle-arrow-tiny no-wrap"
-                                           data-filtering="true" data-paging="true" data-sorting="true"
-                                           data-paging-size="10">
-                                        <thead>
-                                        <tr class="footable-filtering">
-                                            <th data-breakpoints="xs">convention</th>
-                                            <th>Axe</th>
-                                            <th>Projet</th>
-                                            <th>Volet</th>
-                                            <th>Partenaire</th>
-                                            <th>MO</th>
-                                            <th>MOD</th>
-                                            <th>Budget total</th>
-                                            <th>Date de Vers prévu</th>
-                                            <th>Montant Vers prévu</th>
-                                            <th>Date de Vers réel</th>
-                                            <th>Montant Vers réel</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <td><span class="badge py-1 badge-warning">Conv1</span></td>
 
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        <td><span class="badge py-1 badge-warning">Conv1</span></td>
+                                                <td>Rabat</td>
+                                                <td>
+                                                    <a href="conventionCadreAvenant.html"> Projet A</a>
+                                                </td>
+                                                <td>Volet 1</td>
+                                                <td><a href="">MI</a></td>
+                                                <td><a href="">CUA</a></td>
 
-                                        <td>Rabat</td>
-                                        <td>
-                                            <a href="conventionCadreAvenant.html"> Projet A</a>
-                                        </td>
-                                        <td>Volet 1</td>
-                                        <td><a href="">MI</a></td>
-                                        <td><a href="">CUA</a></td>
-
-                                        <td>Agadir Aménagement</td>
-                                        <td>40</td>
-                                        <td>
-                                            2020
-                                        </td>
-                                        <td>10</td>
-                                        <td>2020</td>
-                                        <td>5</td>
+                                                <td>Agadir Aménagement</td>
+                                                <td>40</td>
+                                                <td>
+                                                    2020
+                                                </td>
+                                                <td>10</td>
+                                                <td>2020</td>
+                                                <td>5</td>
 
 
-                                        </tr>
-                                        </tbody>
-                                    </table>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="tab-pane " id="profile-b2">
+                    <div class="card-body">
+                        <h4 class="card-title">La liste des avenants de la convention Al AMIRAN </h4>
+                        <h6 class="card-subtitle">Description</h6>
+                        <div class="accordion" id="avenant">
+                            <div class="card m-b-5">
+                                <div id="avenantdiv" class="collapse show" aria-labelledby="heading1"
+                                     data-parent="#accordionTable">
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table id="avenanttable"
+                                                   class="table table-bordered m-b-0 toggle-arrow-tiny no-wrap"
+                                                   data-filtering="true" data-paging="true" data-sorting="true"
+                                                   data-paging-size="10">
+                                                <thead>
+                                                <tr class="footable-filtering">
+                                                    <th data-breakpoints="xs">Num avenant</th>
+                                                    <th>Libellé avenant</th>
+                                                    <th>Objet avenant</th>
+                                                    <th>Date signature</th>
+                                                    <th>Statut</th>
+
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr data-expanded="true">
+                                                    <td>AL304</td>
+                                                    <td>
+                                                        <a href=""> Al AMIRAN avenant 1</a>
+                                                    </td>
+                                                    <td>avenant test1</td>
+                                                    <td>19/09/2020</td>
+                                                    <td><span class="badge py-1 badge-danger">En retard</span></td>
+                                                </tr>
+                                                <tr data-expanded="true">
+                                                    <td>EKD233</td>
+                                                    <td>
+                                                        <a href=""> Al AMIRAN avenant 2</a>
+                                                    </td>
+                                                    <td>avenant test1</td>
+                                                    <td>19/01/2020</td>
+                                                    <td><span class="badge py-1 badge-orange">En cours</span></td>
+                                                </tr>
+                                                <tr data-expanded="true">
+                                                    <td>34209</td>
+                                                    <td>
+                                                        <a href=""> Al AMIRAN avenant 3</a>
+                                                    </td>
+                                                    <td>avenant test1</td>
+                                                    <td>19/09/2021</td>
+                                                    <td><span class="badge py-1 badge-dark">annulé</span></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-
         </div>
+
+
         <!-- Column -->
 
         <!-- Column -->
