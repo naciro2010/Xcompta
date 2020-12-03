@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords"
+          content="wrappixel, admin dashboard, html css dashboard, web dashboard, bootstrap 4 admin, bootstrap 4, css3 dashboard, bootstrap 4 dashboard, monster admin bootstrap 4 dashboard, frontend, responsive bootstrap 4 admin template, material design, material dashboard bootstrap 4 dashboard template">
+    <meta name="description"
+          content="Monster is powerful and clean admin dashboard template, inpired from Google's Material Design">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Monster Template by WrapPixel</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
+    <!-- Custom CSS -->
+    <link href="../assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
+    <link href="../assets/extra-libs/c3/c3.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../../dist/css/style.min.css" rel="stylesheet">
+    <script src="common/includeHtml.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<!-- ============================================================== -->
+<!-- Preloader - style you can find in spinners.css -->
+<!-- ============================================================== -->
+<div class="preloader">
+    <div class="lds-ripple">
+        <div class="lds-pos"></div>
+        <div class="lds-pos"></div>
+    </div>
+</div>
+<!-- ============================================================== -->
+<!-- Main wrapper - style you can find in pages.scss -->
+<!-- ============================================================== -->
+<div id="main-wrapper">
+
+    <div w3-include-html="common/leftSideBarInside.html"></div>
+
+    <script>
+        includeHTML();
+    </script>
+    <!-- ============================================================== -->
+    <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Page wrapper  -->
+    <!-- ============================================================== -->
+    <div class="page-wrapper">
+        <!-- ============================================================== -->
+        <!-- Bread crumb and right sidebar toggle -->
+        <!-- ============================================================== -->
+        <div class="page-breadcrumb">
+            <div class="row">
+                <div class="col-md-5 align-self-center">
+                    <h3 class="page-title">Convention Spécifique détail "Al AMIRAN Spec"</h3>
+                    <div class="d-flex align-items-center">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Convention</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Convention spécifique</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-md-7 d-flex justify-content-end align-self-center d-none d-md-flex">
+                    <div class="d-flex">
+                        <div class="dropdown mr-2 hidden-sm-down">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Janvier 2020
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item"
+                                                                                               href="#">Fevrier
+                                2020</a> <a class="dropdown-item" href="#">March 2020</a> <a class="dropdown-item"
+                                                                                             href="#">Avril 2020</a>
+                            </div>
+                        </div>
+                        <button class="btn btn-success"><i class="mdi mdi-plus-circle"></i> Créer une convention
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Bread crumb and right sidebar toggle -->
+        <!-- ============================================================== -->
+
+        <!-- ============================================================== -->
+        <!-- Column -->
+        <div class="card">
+            <div class="card-body">
+                <div class="card-body">
+                    <h4 class="card-title">La convention principale Al AMIRAN </h4>
+                    <h6 class="card-subtitle">Description</h6>
+                    <!-- Accordian -->
+                    <div class="accordion" id="accordionTable">
+
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table id="conventionDetail"
+                                       class="table table-bordered m-b-0 toggle-arrow-tiny no-wrap"
+                                       data-filtering="true" data-paging="true" data-sorting="true"
+                                       data-paging-size="10">
+                                    <thead>
+                                    <tr class="footable-filtering">
+                                        <th data-breakpoints="xs">Num Conv</th>
+                                        <th data-breakpoints="xs">Num Conv Principale</th>
+                                        <th>Libellé convn</th>
+                                        <th>Objet convention</th>
+                                        <th>Budget</th>
+                                        <th>Date signature</th>
+                                        <th>Statut de la convention</th>
+
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr data-expanded="true">
+                                        <td>AXLRE</td>
+                                        <td>
+                                            <a href="conventionCadre.html"> AL304</a>
+                                        </td>
+                                        <td>Convention spec test1</td>
+                                        <td>300 M DH</td>
+                                        <td>19/09/2020</td>
+                                        <td>Oui</td>
+                                        <td><span class="badge py-1 badge-dark-success">Validé</span></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+                        </div>
+                        <h5 class="card-title ">Budget global : 300 M DH</h5>
+                        <h5 class="card-title">Reste à affecter : 240 M DH</h5>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <br>
+            <ul class="nav nav-tabs nav-justified nav-bordered mb-3">
+                <li class="nav-item">
+                    <a href="#home-b2" data-toggle="tab" aria-expanded="true" class="nav-link active">
+                        <i class="mdi mdi-home-variant d-lg-none d-block mr-1"></i>
+                        <span class="d-none d-lg-block">Détail de la convention spécifique</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#profile-b2" data-toggle="tab" aria-expanded="false"
+                       class="nav-link">
+                        <i class="mdi mdi-account-circle d-lg-none d-block mr-1"></i>
+
+                        <span class="d-none d-lg-block">Avenants <span
+                                class="badge py-1 badge-info"> 2 </span> </span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane show active" id="home-b2">
+
+                    <div class="container-fluid">
+                        <div class="card-columns widget-app-columns">
+                            <!-- Card axes -->
+                            <div class="card">
+                                <h5 class="card-title">Les partenaires : </h5>
+                                <table id="partenaire"
+                                       class="table table-bordered m-b-0 toggle-arrow-tiny text-wrap">
+
+                                    <thead>
+                                    <tr class="footable-filtering">
+                                        <th>Partenaire</th>
+                                        <th>Budget</th>
+
+
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+
+                                        <td>
+                                            <a href="conventionCadreAvenant.html">Partenaire A</a>
+                                        </td>
+                                        <td>300 M</td>
+
+                                    </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="card">
+                                <h5 class="card-title">Les Axes :</h5>
+                                <table id="axes"
+                                       class="table table-bordered m-b-0 toggle-arrow-tiny no-wrap"
+                                       data-filtering="true" data-paging="true" data-sorting="true"
+                                       data-paging-size="10">
+                                    <thead>
+                                    <tr class="footable-filtering">
+                                        <th>Axe</th>
+                                        <th>Projet</th>
+                                        <th>Volet</th>
+                                        <th>Date démarage</th>
+                                        <th>Délai</th>
+                                        <th>Date fin prévu</th>
+
+
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Rabat</td>
+                                        <td>
+                                            <a href="conventionCadreAvenant.html"> Projet A</a>
+                                        </td>
+                                        <td>Volet 1</td>
+                                        <td>12/12/2020</td>
+                                        <td>24 mois</td>
+                                        <td>12/12/2021</td>
+                                    </tr>
+                                    <tr>
+                                        <td>AGADIR</td>
+                                        <td>
+                                            <a href="conventionCadreAvenant.html"> Projet A</a>
+                                        </td>
+                                        <td>Volet 1</td>
+                                        <td>12/12/2020</td>
+                                        <td>24 mois</td>
+                                        <td>12/12/2021</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="card-columns widget-app-columns">
+                            <!-- Card axes -->
+                            <div class="card">
+                                <table id="mo" class="table table-bordered m-b-0 toggle-arrow-tiny text-wrap">
+
+                                    <thead>
+                                    <tr class="footable-filtering">
+                                        <th>Maitre d'oeuvre:</th>
+
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+
+                                        <td>
+                                            <a href="conventionCadreAvenant.html">MO A</a>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+
+                                        <td>
+                                            <a href="conventionCadreAvenant.html"> MO B</a>
+                                        </td>
+
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="card">
+                                <table id="mod" class="table table-bordered m-b-0 toggle-arrow-tiny text-wrap">
+
+                                    <thead>
+                                    <tr class="footable-filtering">
+                                        <th>Maitre d'oeuvre délégué:</th>
+
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+
+                                        <td>
+                                            <a href="conventionCadreAvenant.html">MOD A</a>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+
+                                        <td>
+                                            <a href="conventionCadreAvenant.html"> MOD C</a>
+                                        </td>
+
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Budget prévu : 300 M DH</h4>
+                        <div class="accordion" id="detailconvention">
+                            <div class="card m-b-5">
+                                <div id="detailconventiondiv" class="collapse show" aria-labelledby="heading1"
+                                     data-parent="#accordionTable">
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+
+                                            <table id="detailconventiontable"
+                                                   class="table table-bordered m-b-0 toggle-arrow-tiny no-wrap"
+                                                   data-filtering="true" data-paging="true" data-sorting="true"
+                                                   data-paging-size="10">
+                                                <thead>
+                                                <tr class="footable-filtering">
+                                                    <th>Date versement</th>
+                                                    <th>Montant</th>
+                                                    <th>Partenaire</th>
+                                                    <th>MOD</th>
+                                                    <th>Axe</th>
+                                                    <th>Projet</th>
+                                                    <th>Volet</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>
+                                                        13/12/2021
+                                                    </td>
+                                                    <td>10 M</td>
+                                                    <td><a href="">Partenaire1</a></td>
+                                                    <td><a href="">MOD V</a></td>
+                                                    <td>CASA</td>
+                                                    <td>CASA Aménagement</td>
+                                                    <td>
+                                                        Volet4
+                                                    </td>
+
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane " id="profile-b2">
+                    <div class="card-body">
+                        <h4 class="card-title">La liste des avenants de la convention Al AMIRAN </h4>
+                        <h6 class="card-subtitle">Description</h6>
+                        <div class="accordion" id="avenant">
+                            <div class="card m-b-5">
+                                <div id="avenantdiv" class="collapse show" aria-labelledby="heading1"
+                                     data-parent="#accordionTable">
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table id="avenanttable"
+                                                   class="table table-bordered m-b-0 toggle-arrow-tiny no-wrap"
+                                                   data-filtering="true" data-paging="true" data-sorting="true"
+                                                   data-paging-size="10">
+                                                <thead>
+                                                <tr class="footable-filtering">
+                                                    <th data-breakpoints="xs">Num avenant</th>
+                                                    <th>Libellé avenant</th>
+                                                    <th>Objet avenant</th>
+                                                    <th>Date signature</th>
+                                                    <th>Statut</th>
+
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr data-expanded="true">
+                                                    <td>AL304</td>
+                                                    <td>
+                                                        <a href=""> Al AMIRAN avenant 1</a>
+                                                    </td>
+                                                    <td>avenant test1</td>
+                                                    <td>19/09/2020</td>
+                                                    <td><span class="badge py-1 badge-danger">En retard</span></td>
+                                                </tr>
+                                                <tr data-expanded="true">
+                                                    <td>EKD233</td>
+                                                    <td>
+                                                        <a href=""> Al AMIRAN avenant 2</a>
+                                                    </td>
+                                                    <td>avenant test1</td>
+                                                    <td>19/01/2020</td>
+                                                    <td><span class="badge py-1 badge-orange">En cours</span></td>
+                                                </tr>
+                                                <tr data-expanded="true">
+                                                    <td>34209</td>
+                                                    <td>
+                                                        <a href=""> Al AMIRAN avenant 3</a>
+                                                    </td>
+                                                    <td>avenant test1</td>
+                                                    <td>19/09/2021</td>
+                                                    <td><span class="badge py-1 badge-dark">annulé</span></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Column -->
+
+        <!-- Column -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- footer -->
+        <!-- ============================================================== -->
+        <footer class="footer">
+            © 2020 Xcompta Admin by Mohamed Samir
+        </footer>
+        <!-- ============================================================== -->
+        <!-- End footer -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Page wrapper  -->
+    <!-- ============================================================== -->
+</div>
+<!-- ============================================================== -->
+<!-- End Wrapper -->
+<!-- ============================================================== -->
+<!-- ============================================================== -->
+<!-- customizer Panel -->
+<!-- ============================================================== -->
+<!-- All Jquery -->
+<!-- ============================================================== -->
+<script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap tether Core JavaScript -->
+<script src="../assets/libs/popper.js/dist/umd/popper.min.js"></script>
+<script src="../assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- apps -->
+<script src="../../dist/js/app.min.js"></script>
+<script src="../../dist/js/app.init.js"></script>
+<!-- Theme settings -->
+<script src="../../dist/js/app-style-switcher.js"></script>
+<!-- slimscrollbar scrollbar JavaScript -->
+<script src="../assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
+<script src="../assets/libs/jquery-sparkline/jquery.sparkline.min.js"></script>
+<!--Wave Effects -->
+<script src="../../dist/js/waves.js"></script>
+<!--Menu sidebar -->
+<script src="../../dist/js/sidebarmenu.js"></script>
+<!--Custom JavaScript -->
+<script src="../../dist/js/feather.min.js"></script>
+<script src="../../dist/js/custom.min.js"></script>
+<!--This page JavaScript -->
+<script src="../assets/libs/chartist/dist/chartist.min.js"></script>
+<script src="../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+<script src="../../dist/js/pages/dashboards/dashboard2.js"></script>
+<script src="../assets/libs/footable/js/footable.min.js"></script>
+<script src="../../dist/js/pages/tables/footable-init.js"></script>
+</body>
+
+</html>
