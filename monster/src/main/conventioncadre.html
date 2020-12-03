@@ -103,47 +103,45 @@
                     <h6 class="card-subtitle">Description</h6>
                     <!-- Accordian -->
                     <div class="accordion" id="accordionTable">
-                        <div class="card m-b-5">
 
-                            <div id="col1" class="collapse show" aria-labelledby="heading1"
-                                 data-parent="#accordionTable">
-                                <div class="card-body">
-                                    <div class="table-responsive">
-                                        <table id="conventionDetail"
-                                               class="table table-bordered m-b-0 toggle-arrow-tiny no-wrap"
-                                               data-filtering="true" data-paging="true" data-sorting="true"
-                                               data-paging-size="10">
-                                            <thead>
-                                            <tr class="footable-filtering">
-                                                <th data-breakpoints="xs">Num Conv</th>
-                                                <th>Libellé convn</th>
-                                                <th>Objet convention</th>
-                                                <th>Budget</th>
-                                                <th>Date signature</th>
-                                                <th>Cadre</th>
-                                                <th>Statut de la convention</th>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table id="conventionDetail"
+                                       class="table table-bordered m-b-0 toggle-arrow-tiny no-wrap"
+                                       data-filtering="true" data-paging="true" data-sorting="true"
+                                       data-paging-size="10">
+                                    <thead>
+                                    <tr class="footable-filtering">
+                                        <th data-breakpoints="xs">Num Conv</th>
+                                        <th>Libellé convn</th>
+                                        <th>Objet convention</th>
+                                        <th>Budget</th>
+                                        <th>Date signature</th>
+                                        <th>Cadre</th>
+                                        <th>Statut de la convention</th>
 
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr data-expanded="true">
-                                                <td>AL304</td>
-                                                <td>
-                                                    <a href="conventionsSep.html"> Al AMIRAN</a>
-                                                </td>
-                                                <td>Convention test1</td>
-                                                <td>200 M DH</td>
-                                                <td>19/09/2020</td>
-                                                <td>Oui</td>
-                                                <td><span class="badge py-1 badge-dark-success">Validé</span></td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-
-                                </div>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr data-expanded="true">
+                                        <td>AL304</td>
+                                        <td>
+                                            <a href="conventionsSep.html"> Al AMIRAN</a>
+                                        </td>
+                                        <td>Convention test1</td>
+                                        <td>200 M DH</td>
+                                        <td>19/09/2020</td>
+                                        <td>Oui</td>
+                                        <td><span class="badge py-1 badge-dark-success">Validé</span></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
                             </div>
+
+
                         </div>
+                        <h5 class="card-title ">Budget global : 653 M DH</h5>
+                        <h5 class="card-title">Reste à affecter : 300 M DH</h5>
                     </div>
 
                 </div>
@@ -187,6 +185,47 @@
                     <div class="container-fluid">
                         <div class="card-columns widget-app-columns">
                             <!-- Card axes -->
+                            <div class="card">
+                                <h5 class="card-title">Les partenaires : </h5>
+                                <table id="partenaire"
+                                       class="table table-bordered m-b-0 toggle-arrow-tiny text-wrap">
+
+                                    <thead>
+                                    <tr class="footable-filtering">
+                                        <th>Partenaire</th>
+                                        <th>Budget</th>
+
+
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+
+                                        <td>
+                                            <a href="conventionCadreAvenant.html">Partenaire A</a>
+                                        </td>
+                                        <td>202 M</td>
+
+                                    </tr>
+                                    <tr>
+
+                                        <td>
+                                            <a href="conventionCadreAvenant.html"> Partenaire B</a>
+                                        </td>
+                                        <td>100 M</td>
+
+                                    </tr>
+                                    <tr>
+
+                                        <td>
+                                            <a href="conventionCadreAvenant.html"> Partenaire C</a>
+                                        </td>
+                                        <td>50 M</td>
+
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                             <div class="card">
                                 <h5 class="card-title">Les Axes :</h5>
                                 <table id="axes"
@@ -240,6 +279,78 @@
                                 </table>
                             </div>
                         </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="card-columns widget-app-columns">
+                            <!-- Card axes -->
+                            <div class="card">
+                                <table id="mo" class="table table-bordered m-b-0 toggle-arrow-tiny text-wrap">
+
+                                    <thead>
+                                    <tr class="footable-filtering">
+                                        <th>maitre d'oeuvre:</th>
+
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+
+                                        <td>
+                                            <a href="conventionCadreAvenant.html">MO A</a>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+
+                                        <td>
+                                            <a href="conventionCadreAvenant.html"> MO B</a>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+
+                                        <td>
+                                            <a href="conventionCadreAvenant.html"> MO C</a>
+                                        </td>
+
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="card">
+                                <table id="mod" class="table table-bordered m-b-0 toggle-arrow-tiny text-wrap">
+
+                                    <thead>
+                                    <tr class="footable-filtering">
+                                        <th>maitre d'oeuvre délégué:</th>
+
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+
+                                        <td>
+                                            <a href="conventionCadreAvenant.html">MOD A</a>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+
+                                        <td>
+                                            <a href="conventionCadreAvenant.html"> MOD B</a>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+
+                                        <td>
+                                            <a href="conventionCadreAvenant.html"> MOD C</a>
+                                        </td>
+
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>                        </div>
                     </div>
                     <div class="card-body">
                         <h4 class="card-title">Le détail de la conventions :</h4>
