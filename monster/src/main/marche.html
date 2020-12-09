@@ -65,26 +65,10 @@
                     <div class="d-flex align-items-center">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item active"><a href="marche.html">Marche</a></li>
+                                <li class="breadcrumb-item active"><a href="#decompteDiv">Marche</a></li>
 
                             </ol>
                         </nav>
-                    </div>
-                </div>
-                <div class="col-md-7 d-flex justify-content-end align-self-center d-none d-md-flex">
-                    <div class="d-flex">
-                        <div class="dropdown mr-2 hidden-sm-down">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Janvier 2020
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item"
-                                                                                               href="#">Fevrier
-                                2020</a> <a class="dropdown-item" href="#">March 2020</a> <a class="dropdown-item"
-                                                                                             href="#">Avril 2020</a>
-                            </div>
-                        </div>
-                        <button class="btn btn-success"><i class="mdi mdi-plus-circle"></i> Créer une marché
-                        </button>
                     </div>
                 </div>
             </div>
@@ -109,13 +93,12 @@
                                         data-toggle="modal" data-target="#add-contact">Ajouter Marché
                                 </button>
                             </div>
-                            <!-- Add Contact Popup Model -->
                             <div id="add-contact" class="modal fade in" tabindex="-1" role="dialog"
                                  aria-labelledby="myModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header d-flex align-items-center">
-                                            <h4 class="modal-title" id="myModalLabel">Add New Contact</h4>
+                                            <h4 class="modal-title" id="myModalLabel">Ajouter marché</h4>
                                             <button type="button" class="close ml-auto" data-dismiss="modal"
                                                     aria-hidden="true">×
                                             </button>
@@ -125,30 +108,29 @@
                                                 <div class="form-group">
                                                     <div class="col-md-12 m-b-20">
                                                         <input type="text" class="form-control"
-                                                               placeholder="Type name"></div>
-                                                    <div class="col-md-12 m-b-20">
-                                                        <input type="text" class="form-control" placeholder="Email">
-                                                    </div>
-                                                    <div class="col-md-12 m-b-20">
-                                                        <input type="text" class="form-control" placeholder="Phone">
+                                                               placeholder="Numéro du marché">
                                                     </div>
                                                     <div class="col-md-12 m-b-20">
                                                         <input type="text" class="form-control"
-                                                               placeholder="Designation"></div>
-                                                    <div class="col-md-12 m-b-20">
-                                                        <input type="text" class="form-control" placeholder="Age">
+                                                               placeholder="Fournisseur">
                                                     </div>
                                                     <div class="col-md-12 m-b-20">
                                                         <input type="text" class="form-control"
-                                                               placeholder="Date of joining"></div>
+                                                               placeholder="Objet"></div>
                                                     <div class="col-md-12 m-b-20">
                                                         <input type="text" class="form-control"
-                                                               placeholder="Salary"></div>
+                                                               placeholder="Montant TTC">
+                                                    </div>
+                                                    <div class="col-md-12 m-b-20">
+                                                        <input type="text" class="form-control"
+                                                               placeholder="Date signature"></div>
+                                                    <div class="col-md-12 m-b-20">
+                                                        <input type="text" class="form-control"
+                                                               placeholder="Mode passation marché"></div>
                                                     <div class="col-md-12 m-b-20">
                                                         <div
                                                                 class="fileupload btn btn-danger btn-rounded waves-effect waves-light btn-sm">
-                                                                <span><i class="ion-upload m-r-5"></i>Upload Contact
-                                                                    Image</span>
+                                                                <span><i class="ion-upload m-r-5"></i>Télécharger le document </span>
                                                             <input type="file" class="upload"></div>
                                                     </div>
                                                 </div>
@@ -156,10 +138,10 @@
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-info waves-effect"
-                                                    data-dismiss="modal">save
+                                                    data-dismiss="modal">Sauvegarde
                                             </button>
                                             <button type="button" class="btn btn-default waves-effect"
-                                                    data-dismiss="modal">Cancel
+                                                    data-dismiss="modal">Annuler
                                             </button>
                                         </div>
                                     </div>
@@ -174,19 +156,19 @@
                                        data-paging-size="7">
                                     <thead class="bg-dark-success text-white">
                                     <tr>
-                                        <th>Num</th>
-                                        <th>Fournisseur</th>
+                                        <th style="width:5%">Num</th>
+                                        <th style="width:10%">Fournisseur</th>
                                         <th>Objet</th>
-                                        <th>Montant TTC</th>
-                                        <th>Date signature</th>
-                                        <th>Mode <br/> passation<br/> marché</th>
-                                        <th>PJ</th>
+                                        <th style="width:10%">Montant TTC</th>
+                                        <th style="width:5%">Date signature</th>
+                                        <th style="width:5%">Mode <br/> passation<br/> marché</th>
+                                        <th style="width:5%">PJ</th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     <tr data-expanded="true">
-                                        <td href=""> 1</td>
-                                        <td>Fournisseur 1</td>
+                                        <td><a href="#decompteDiv">1</a></td>
+                                        <td><a href="#decompteDiv">Fournisseur 1</a></td>
                                         <td>Objet1</td>
                                         <td> 10,000.00</td>
                                         <td>19/09/2015</td>
@@ -194,8 +176,8 @@
                                         <td><i class="fa fa-paperclip"></i></td>
                                     </tr>
                                     <tr data-expanded="true">
-                                        <td href=""> 3</td>
-                                        <td>Fournisseur 2</td>
+                                        <td><a href="#decompteDiv">3</a></td>
+                                        <td><a href="#decompteDiv">Fournisseur 2</a></td>
                                         <td>Objet1</td>
                                         <td> 14,000.00</td>
                                         <td>19/09/2015</td>
@@ -203,8 +185,8 @@
                                         <td><i class="fa fa-paperclip"></i></td>
                                     </tr>
                                     <tr data-expanded="true">
-                                        <td href=""> 2</td>
-                                        <td>Fournisseur 3</td>
+                                        <td><a href="#decompteDiv"> 2</a></td>
+                                        <td><a href="#decompteDiv">Fournisseur 3</a></td>
                                         <td>Objet1</td>
                                         <td> 10,000.00</td>
                                         <td>19/09/2015</td>
@@ -212,8 +194,8 @@
                                         <td><i class="fa fa-paperclip"></i></td>
                                     </tr>
                                     <tr data-expanded="true">
-                                        <td href=""> 4</td>
-                                        <td>Fournisseur 4</td>
+                                        <td><a href="#decompteDiv">4</a></td>
+                                        <td><a href="#decompteDiv">Fournisseur 4</a></td>
                                         <td>Objet1</td>
                                         <td> 10,000.00</td>
                                         <td>19/09/2015</td>
@@ -221,8 +203,8 @@
                                         <td><i class="fa fa-paperclip"></i></td>
                                     </tr>
                                     <tr data-expanded="true">
-                                        <td href=""> 5</td>
-                                        <td>Fournisseur 5</td>
+                                        <td><a href="#decompteDiv">5</a></td>
+                                        <td><a href="#decompteDiv">Fournisseur 5</a></td>
                                         <td>Objet1</td>
                                         <td> 10,000.00</td>
                                         <td>19/09/2015</td>
@@ -235,7 +217,7 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card" id="decompteDiv"  aria-hidden="true">
                         <div class="card-body">
                             <div class="col-md-12 col-sm-14">
                                 <div class="card  card-hover">
