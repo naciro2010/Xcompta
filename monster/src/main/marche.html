@@ -21,6 +21,9 @@
     <link href="../../dist/css/style.min.css" rel="stylesheet">
     <script src="common/includeHtml.js"></script>
 
+    <!-- This Page CSS -->
+    <link rel="stylesheet" type="text/css" href="../assets/libs/dropzone/dist/min/dropzone.min.css">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -84,9 +87,147 @@
             <!-- ============================================================== -->
             <div class="row">
                 <div class="col-12">
+
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title">Liste des Marchés</h4>
+                            <button type="button" class="btn btn-outline-success align" data-toggle="modal"
+                                    data-target="#full-width-modal">Ajout marché
+                            </button>
+                            <div id="full-width-modal" class="modal fade" tabindex="-1" role="dialog"
+                                 aria-labelledby="fullWidthModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-full-width">
+                                    <div class="modal-content">
+                                        <div class="modal-header d-flex align-items-center">
+                                            <h4 class="modal-title" id="fullWidthModalLabel">Création du Marché</h4>
+                                            <button type="button" class="close ml-auto" data-dismiss="modal"
+                                                    aria-hidden="true">×
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+
+                                                    <div id="accordion" class="custom-accordion mb-4">
+
+                                                        <div class="card mb-0">
+                                                            <div class="card-header" id="headingOne">
+                                                                <h5 class="m-0">
+                                                                    <a class="custom-accordion-title d-flex align-items-center pt-2 pb-2"
+                                                                       data-toggle="collapse"
+                                                                       href="#collapseOne" aria-expanded="true"
+                                                                       aria-controls="collapseOne">
+                                                                        Détail du marché<span class="ml-auto"><i
+                                                                            class="mdi mdi-chevron-down accordion-arrow"></i></span>
+                                                                    </a>
+                                                                </h5>
+                                                            </div>
+                                                            <div id="collapseOne" class="collapse show"
+                                                                 aria-labelledby="headingOne"
+                                                                 data-parent="#accordion">
+                                                                <div class="card-body">
+                                                                    Anim pariatur cliche reprehenderit, enim eiusmod
+                                                                    high life accusamus terry
+                                                                    richardson ad squid. 3 wolf moon officia aute,
+                                                                    non cupidatat skateboard dolor brunch. Food truck
+                                                                    quinoa nesciunt laborum
+                                                                    eiusmod. Brunch 3 wolf moon
+                                                                    tempor, sunt aliqua put a bird on it squid
+                                                                    single-origin coffee nulla assumenda
+                                                                    shoreditch et. Nihil
+                                                                    anim keffiyeh helvetica, craft beer labore wes
+                                                                    anderson cred nesciunt sapiente
+                                                                    ea proident. Ad vegan
+                                                                    excepteur butcher vice lomo. Leggings occaecat craft
+                                                                    beer farm-to-table, raw
+                                                                    denim aesthetic synth nesciunt
+                                                                    you probably haven't heard of them accusamus labore
+                                                                    sustainable VHS.
+                                                                </div>
+                                                            </div>
+                                                        </div> <!-- end card-->
+
+                                                        <div class="card mb-0">
+                                                            <div class="card-header" id="headingTwo">
+                                                                <h5 class="m-0">
+                                                                    <a class="custom-accordion-title collapsed d-flex align-items-center pt-2 pb-2"
+                                                                       data-toggle="collapse" href="#collapseTwo"
+                                                                       aria-expanded="false"
+                                                                       aria-controls="collapseTwo">
+                                                                        Imputations <span class="ml-auto"><i
+                                                                            class="mdi mdi-chevron-down accordion-arrow"></i></span>
+                                                                    </a>
+                                                                </h5>
+                                                            </div>
+                                                            <div id="collapseTwo" class="collapse"
+                                                                 aria-labelledby="headingTwo"
+                                                                 data-parent="#accordion">
+                                                                <div class="card-body">
+                                                                    Anim pariatur cliche reprehenderit, enim eiusmod
+                                                                    high life accusamus terry
+                                                                    richardson ad squid. 3 wolf moon officia aute,
+                                                                    non cupidatat skateboard dolor brunch. Food truck
+                                                                    quinoa nesciunt laborum
+                                                                    eiusmod. Brunch 3 wolf moon
+                                                                    tempor, sunt aliqua put a bird on it squid
+                                                                    single-origin coffee nulla assumenda
+                                                                    shoreditch et. Nihil
+                                                                    anim keffiyeh helvetica, craft beer labore wes
+                                                                    anderson cred nesciunt sapiente
+                                                                    ea proident. Ad vegan
+                                                                    excepteur butcher vice lomo. Leggings occaecat craft
+                                                                    beer farm-to-table, raw
+                                                                    denim aesthetic synth nesciunt
+                                                                    you probably haven't heard of them accusamus labore
+                                                                    sustainable VHS.
+                                                                </div>
+                                                            </div>
+                                                        </div> <!-- end card-->
+
+                                                        <div class="card mb-0">
+                                                            <div class="card-header" id="headingThree">
+                                                                <h5 class="m-0">
+                                                                    <a class="custom-accordion-title collapsed d-flex align-items-center pt-2 pb-2"
+                                                                       data-toggle="collapse" href="#collapseThree"
+                                                                       aria-expanded="false"
+                                                                       aria-controls="collapseThree">
+                                                                        Pièces jointes <span class="ml-auto"><i
+                                                                            class="mdi mdi-chevron-down accordion-arrow"></i></span>
+                                                                    </a>
+                                                                </h5>
+                                                            </div>
+                                                            <div id="collapseThree" class="collapse"
+                                                                 aria-labelledby="headingThree"
+                                                                 data-parent="#accordion">
+                                                                <div class="card-body">
+                                                                    <div class="card">
+                                                                        <div class="card-body">
+                                                                            <h4 class="card-title">Ajouter vos documents</h4>
+                                                                            <h6 class="card-subtitle">For multiple file upload put class <code>.dropzone</code> to form.</h6>
+                                                                            <form action="#" class="dropzone">
+                                                                                <div class="fallback">
+                                                                                    <input name="file" type="file" multiple />
+                                                                                </div>
+                                                                            </form>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div> <!-- end card-->
+                                                    </div> <!-- end custom accordions-->
+                                                </div> <!-- end col -->
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-light"
+                                                    data-dismiss="modal">Close
+                                            </button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div><!-- /.modal-content -->
+                                </div><!-- /.modal-dialog -->
+                            </div>
+
                             <div class="table-responsive">
                                 <table id="demo-foo-addrow"
                                        class="table table-bordered m-t-30 table-hover contact-list no-wrap"
@@ -284,6 +425,7 @@
 <script src="../../dist/js/pages/dashboards/dashboard2.js"></script>
 <script src="../assets/libs/footable/js/footable.min.js"></script>
 <script src="../../dist/js/pages/tables/footable-init.js"></script>
+<script src="../assets/libs/dropzone/dist/min/dropzone.min.js"></script>
 
 </body>
 
