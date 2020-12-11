@@ -87,68 +87,6 @@
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title">Liste des Marchés</h4>
-                            <div class="d-flex align-items-center justify-content-end">
-
-                                <button type="button" class="btn btn-info btn-rounded m-t-10 mb-2 "
-                                        data-toggle="modal" data-target="#add-contact">Ajouter Marché
-                                </button>
-                            </div>
-                            <div id="add-contact" class="modal fade in" tabindex="-1" role="dialog"
-                                 aria-labelledby="myModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header d-flex align-items-center">
-                                            <h4 class="modal-title" id="myModalLabel">Ajouter marché</h4>
-                                            <button type="button" class="close ml-auto" data-dismiss="modal"
-                                                    aria-hidden="true">×
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <from class="form-horizontal form-material">
-                                                <div class="form-group">
-                                                    <div class="col-md-12 m-b-20">
-                                                        <input type="text" class="form-control"
-                                                               placeholder="Numéro du marché">
-                                                    </div>
-                                                    <div class="col-md-12 m-b-20">
-                                                        <input type="text" class="form-control"
-                                                               placeholder="Fournisseur">
-                                                    </div>
-                                                    <div class="col-md-12 m-b-20">
-                                                        <input type="text" class="form-control"
-                                                               placeholder="Objet"></div>
-                                                    <div class="col-md-12 m-b-20">
-                                                        <input type="text" class="form-control"
-                                                               placeholder="Montant TTC">
-                                                    </div>
-                                                    <div class="col-md-12 m-b-20">
-                                                        <input type="text" class="form-control"
-                                                               placeholder="Date signature"></div>
-                                                    <div class="col-md-12 m-b-20">
-                                                        <input type="text" class="form-control"
-                                                               placeholder="Mode passation marché"></div>
-                                                    <div class="col-md-12 m-b-20">
-                                                        <div
-                                                                class="fileupload btn btn-danger btn-rounded waves-effect waves-light btn-sm">
-                                                            <span><i class="ion-upload m-r-5"></i>Télécharger le document </span>
-                                                            <input type="file" class="upload"></div>
-                                                    </div>
-                                                </div>
-                                            </from>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-info waves-effect"
-                                                    data-dismiss="modal">Sauvegarde
-                                            </button>
-                                            <button type="button" class="btn btn-default waves-effect"
-                                                    data-dismiss="modal">Annuler
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <!-- /.modal-content -->
-                                </div>
-                                <!-- /.modal-dialog -->
-                            </div>
                             <div class="table-responsive">
                                 <table id="demo-foo-addrow"
                                        class="table table-bordered m-t-30 table-hover contact-list no-wrap"
@@ -160,8 +98,9 @@
                                         <th style="width:10%">Fournisseur</th>
                                         <th>Objet</th>
                                         <th style="width:10%">Montant TTC</th>
+                                        <th style="width:10%">Montant TTC <br/>actualisé</th>
+                                        <th style="width:10%">Cumul des <br/> décomptes</th>
                                         <th style="width:5%">Date signature</th>
-                                        <th style="width:5%">Mode <br/> passation<br/> marché</th>
                                         <th style="width:5%">PJ</th>
                                     </tr>
                                     </thead>
@@ -171,8 +110,9 @@
                                         <td><a href="#decompteDiv">Fournisseur 1</a></td>
                                         <td>Objet1</td>
                                         <td> 10,000.00</td>
+                                        <td> 14,000.00</td>
+                                        <td> 15,000.00</td>
                                         <td>19/09/2015</td>
-                                        <td>AOO</td>
                                         <td><i class="fa fa-paperclip"></i></td>
                                     </tr>
                                     <tr data-expanded="true">
@@ -180,8 +120,9 @@
                                         <td><a href="#decompteDiv">Fournisseur 2</a></td>
                                         <td>Objet1</td>
                                         <td> 14,000.00</td>
+                                        <td> 14,000.00</td>
+                                        <td> 15,000.00</td>
                                         <td>19/09/2015</td>
-                                        <td>AOO</td>
                                         <td><i class="fa fa-paperclip"></i></td>
                                     </tr>
                                     <tr data-expanded="true">
@@ -189,8 +130,9 @@
                                         <td><a href="#decompteDiv">Fournisseur 3</a></td>
                                         <td>Objet1</td>
                                         <td> 10,000.00</td>
+                                        <td> 14,000.00</td>
+                                        <td> 15,000.00</td>
                                         <td>19/09/2015</td>
-                                        <td>AOO</td>
                                         <td><i class="fa fa-paperclip"></i></td>
                                     </tr>
                                     <tr data-expanded="true">
@@ -198,8 +140,9 @@
                                         <td><a href="#decompteDiv">Fournisseur 4</a></td>
                                         <td>Objet1</td>
                                         <td> 10,000.00</td>
+                                        <td> 14,000.00</td>
+                                        <td> 15,000.00</td>
                                         <td>19/09/2015</td>
-                                        <td>AOO</td>
                                         <td><i class="fa fa-paperclip"></i></td>
                                     </tr>
                                     <tr data-expanded="true">
@@ -207,8 +150,9 @@
                                         <td><a href="#decompteDiv">Fournisseur 5</a></td>
                                         <td>Objet1</td>
                                         <td> 10,000.00</td>
+                                        <td> 14,000.00</td>
+                                        <td> 15,000.00</td>
                                         <td>19/09/2015</td>
-                                        <td>AOO</td>
                                         <td><i class="fa fa-paperclip"></i></td>
                                     </tr>
                                     </tbody>
