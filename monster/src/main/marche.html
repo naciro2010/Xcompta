@@ -74,6 +74,14 @@
                         </nav>
                     </div>
                 </div>
+
+                <div class="col-md-7 d-flex justify-content-end align-self-center d-none d-md-flex">
+                    <div class="d-flex">
+                        <button class="btn btn-success" data-toggle="modal"  data-target="#full-width-modal"><i
+                                class="mdi mdi-plus-circle"></i> Ajout Marché
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- ============================================================== -->
@@ -91,9 +99,6 @@
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title">Liste des Marchés</h4>
-                            <button type="button" class="btn btn-outline-success align" data-toggle="modal"
-                                    data-target="#full-width-modal">Ajout marché
-                            </button>
                             <div id="full-width-modal" class="modal fade" tabindex="-1" role="dialog"
                                  aria-labelledby="fullWidthModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-full-width">
@@ -204,7 +209,8 @@
                                                                         <div class="card-body">
                                                                             <form action="#" class="dropzone">
                                                                                 <div class="fallback">
-                                                                                    <input name="file" type="file" multiple />
+                                                                                    <input name="file" type="file"
+                                                                                           multiple/>
                                                                                 </div>
                                                                             </form>
                                                                         </div>
