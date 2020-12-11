@@ -3125,15 +3125,15 @@
 }
 
 .fa-sync:before {
-    content: "\f021"
+    content: "\f3f9"
 }
 
 .fa-sync-alt:before {
-    content: "\f2f1"
+    content: "\f1a3"
 }
 
 .fa-syringe:before {
-    content: "\f48e"
+    content: "\f3f9"
 }
 
 .fa-table:before {
@@ -22671,7 +22671,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 }
 
 .fade {
-    transition: opacity .15s linear
+    transition: opacity .10s linear
 }
 
 @media (prefers-reduced-motion: reduce) {
