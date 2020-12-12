@@ -68,8 +68,8 @@
                     <div class="d-flex align-items-center">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item active"><a href="#decompteDiv">Marche</a></li>
-
+                                <li class="breadcrumb-item active"><a href="">Achat</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Marché</li>
                             </ol>
                         </nav>
                     </div>
@@ -135,8 +135,9 @@
                                                                         <div class="card-body">
                                                                             <div class="form-group row">
                                                                                 <label for="fname"
-                                                                                       class="col-sm-3 text-right control-label col-form-label">Numéro du marché :</label>
-                                                                                <div class="col-sm-9">
+                                                                                       class="col-sm-4 text-sm-left label control-label col-form-label">Numéro
+                                                                                    du marché :</label>
+                                                                                <div class="col-sm-4">
                                                                                     <input type="text"
                                                                                            class="form-control"
                                                                                            id="fname"
@@ -144,8 +145,8 @@
                                                                                 </div>
                                                                             </div>
                                                                             <div class="form-group row">
-                                                                                <label class="col-sm-3 text-right control-label col-form-label">Fournisseur </label>
-                                                                                <div class="col-sm-9">
+                                                                                <label class="col-sm-4 text-left control-label col-form-label">Fournisseur :</label>
+                                                                                <div class="col-sm-4">
                                                                                     <select class="form-control">
                                                                                         <option>Fournisseur 1
                                                                                         </option>
@@ -155,12 +156,12 @@
                                                                                     </select>
                                                                                 </div>
                                                                             </div>
-
                                                                             <div class="form-group row">
                                                                                 <label for="cono1"
-                                                                                       class="col-sm-3 text-right control-label col-form-label">Objet :
-                                                                                    </label>
-                                                                                <div class="col-sm-9">
+                                                                                       class="col-sm-4 text-left control-label col-form-label">Objet
+                                                                                    :
+                                                                                </label>
+                                                                                <div class="col-sm-8">
                                                                                     <input type="text"
                                                                                            class="form-control"
                                                                                            id="cono1"
@@ -169,8 +170,9 @@
                                                                             </div>
                                                                             <div class="form-group row">
                                                                                 <label for="cono1"
-                                                                                       class="col-sm-3 text-right control-label col-form-label">Montant TTC :</label>
-                                                                                <div class="col-sm-9">
+                                                                                       class="col-sm-4 text-left control-label col-form-label">Montant
+                                                                                    TTC :</label>
+                                                                                <div class="col-sm-4">
                                                                                     <input type="number"
                                                                                            class="form-control"
                                                                                            placeholder="Montant TTC">
@@ -178,17 +180,20 @@
                                                                             </div>
                                                                             <div class="form-group row">
                                                                                 <label for="cono1"
-                                                                                       class="col-sm-3 text-right control-label col-form-label" >Montant TTC actualisé :</label>
-                                                                                <div class="col-sm-9">
+                                                                                       class="col-sm-4 text-left control-label col-form-label">Montant
+                                                                                    TTC actualisé :</label>
+                                                                                <div class="col-sm-4">
                                                                                     <input type="number"
                                                                                            class="form-control"
                                                                                            placeholder="Montant TTC actualisé">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="form-group row">
-                                                                                <label class="control-label text-right col-md-3">Date de signature</label>
-                                                                                <div class="col-md-9">
-                                                                                    <input type="date" class="form-control">
+                                                                                <label class="control-label text-left col-md-4">Date
+                                                                                    de signature :</label>
+                                                                                <div class="col-md-4">
+                                                                                    <input type="date"
+                                                                                           class="form-control">
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -217,25 +222,11 @@
                                                                     <div class="col-md-12">
                                                                         <div class="card">
                                                                             <div class="card-body">
-                                                                                <div id="education_fields"
-                                                                                     class=" m-t-20"></div>
                                                                                 <form class="row">
                                                                                     <div class="col-sm-3">
                                                                                         <div class="form-group">
                                                                                             <select class="form-control">
                                                                                                 <option>Convention
-                                                                                                </option>
-                                                                                                <option value="Volet1">
-                                                                                                    Convention1
-                                                                                                </option>
-                                                                                                <option value="Volet2">
-                                                                                                    Convention2
-                                                                                                </option>
-                                                                                                <option value="volet3">
-                                                                                                    Convention3
-                                                                                                </option>
-                                                                                                <option value="Volet4">
-                                                                                                    Convention4
                                                                                                 </option>
                                                                                             </select></div>
                                                                                     </div>
@@ -243,60 +234,25 @@
                                                                                         <div class="form-group">
                                                                                             <select class="form-control">
                                                                                                 <option>Axe</option>
-                                                                                                <option value="Volet1">
-                                                                                                    Axe1
-                                                                                                </option>
-                                                                                                <option value="Volet2">
-                                                                                                    Axe2
-                                                                                                </option>
-                                                                                                <option value="volet3">
-                                                                                                    Axe3
-                                                                                                </option>
-                                                                                                <option value="Volet4">
-                                                                                                    Axe4
-                                                                                                </option>
-                                                                                            </select>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="col-sm-2">
-                                                                                        <div class="form-group">
-                                                                                            <select class="form-control">
-                                                                                                <option>Projet</option>
-                                                                                                <option value="Volet1">
-                                                                                                    Projet1
-                                                                                                </option>
-                                                                                                <option value="Volet2">
-                                                                                                    Projet2
-                                                                                                </option>
-                                                                                                <option value="volet3">
-                                                                                                    Projet3
-                                                                                                </option>
-                                                                                                <option value="Volet4">
-                                                                                                    Projet4
-                                                                                                </option>
                                                                                             </select>
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-sm-3">
                                                                                         <div class="form-group">
                                                                                             <select class="form-control">
-                                                                                                <option>Volet</option>
-                                                                                                <option value="Volet1">
-                                                                                                    Volet1
-                                                                                                </option>
-                                                                                                <option value="Volet2">
-                                                                                                    Volet2
-                                                                                                </option>
-                                                                                                <option value="volet3">
-                                                                                                    Volet3
-                                                                                                </option>
-                                                                                                <option value="Volet4">
-                                                                                                    Volet4
-                                                                                                </option>
+                                                                                                <option>Projet</option>
+
                                                                                             </select>
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="col-sm-2">
+                                                                                        <div class="form-group">
+                                                                                            <select class="form-control">
+                                                                                                <option>Volet</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-sm-1">
                                                                                         <div class="form-group">
                                                                                             <button class="btn btn-success"
                                                                                                     type="button"
@@ -306,6 +262,8 @@
                                                                                         </div>
                                                                                     </div>
                                                                                 </form>
+                                                                                <div id="education_fields"
+                                                                                     class=" m-t-20"></div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -337,6 +295,7 @@
                                                                                            multiple/>
                                                                                 </div>
                                                                             </form>
+
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -358,9 +317,9 @@
 
                             <div class="table-responsive-lg">
                                 <table
-                                       class="table table-bordered m-t-30 contact-list no-wrap"
-                                       data-paging="true"
-                                       data-paging-size="7">
+                                        class="table table-bordered m-t-30 contact-list no-wrap  table-hover"
+                                        data-paging="true"
+                                        data-paging-size="7">
                                     <thead class="bg-dark-success text-white">
                                     <tr>
                                         <th style="width:5%">Num</th>
@@ -370,7 +329,6 @@
                                         <th style="width:10%">Montant TTC <br/>actualisé</th>
                                         <th style="width:10%">Cumul des <br/> décomptes</th>
                                         <th style="width:5%">Date signature</th>
-                                        <th style="width:5%">PJ</th>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -382,7 +340,6 @@
                                         <td> 14,000.00</td>
                                         <td> 15,000.00</td>
                                         <td>19/09/2015</td>
-                                        <td><i class="fa fa-paperclip"></i></td>
                                     </tr>
                                     <tr data-expanded="true">
                                         <td><a href="#decompteDiv">3</a></td>
@@ -392,7 +349,6 @@
                                         <td> 14,000.00</td>
                                         <td> 15,000.00</td>
                                         <td>19/09/2015</td>
-                                        <td><i class="fa fa-paperclip"></i></td>
                                     </tr>
                                     <tr data-expanded="true">
                                         <td><a href="#decompteDiv"> 2</a></td>
@@ -402,7 +358,6 @@
                                         <td> 14,000.00</td>
                                         <td> 15,000.00</td>
                                         <td>19/09/2015</td>
-                                        <td><i class="fa fa-paperclip"></i></td>
                                     </tr>
                                     <tr data-expanded="true">
                                         <td><a href="#decompteDiv">4</a></td>
@@ -412,7 +367,6 @@
                                         <td> 14,000.00</td>
                                         <td> 15,000.00</td>
                                         <td>19/09/2015</td>
-                                        <td><i class="fa fa-paperclip"></i></td>
                                     </tr>
                                     <tr data-expanded="true">
                                         <td><a href="#decompteDiv">5</a></td>
@@ -422,7 +376,6 @@
                                         <td> 14,000.00</td>
                                         <td> 15,000.00</td>
                                         <td>19/09/2015</td>
-                                        <td><i class="fa fa-paperclip"></i></td>
                                     </tr>
                                     </tbody>
                                 </table>
