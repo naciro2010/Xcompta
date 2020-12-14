@@ -69,7 +69,8 @@
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item active"><a href="">Achat</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Marché</li>
+                                <li class="breadcrumb-item active"><a href="marche.html">Marché</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Décompte</li>
                             </ol>
                         </nav>
                     </div>
@@ -98,13 +99,13 @@
 
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="card-title">Liste des Marchés</h4>
+                            <h4 class="card-title">Liste des décomptes</h4>
                             <div id="full-width-modal" class="modal fade" tabindex="-1" role="dialog"
                                  aria-labelledby="fullWidthModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-full-width">
                                     <div class="modal-content">
                                         <div class="modal-header d-flex align-items-center">
-                                            <h4 class="modal-title" id="fullWidthModalLabel">Création du Marché</h4>
+                                            <h4 class="modal-title" id="fullWidthModalLabel"></h4>
                                             <button type="button" class="close ml-auto" data-dismiss="modal"
                                                     aria-hidden="true">×
                                             </button>
@@ -321,105 +322,69 @@
                                         data-paging="true"
                                         data-paging-size="7">
                                     <thead class="bg-dark-success text-white">
-                                    <tr>
-                                        <th style="width:5%">Num</th>
-                                        <th style="width:10%">Fournisseur</th>
-                                        <th>Objet</th>
-                                        <th style="width:10%">Montant TTC</th>
-                                        <th style="width:10%">Montant TTC <br/>actualisé</th>
-                                        <th style="width:10%">Cumul des <br/> décomptes</th>
-                                        <th style="width:5%">Date signature</th>
+                                    <tr class="footable-filtering">
+                                        <th data-breakpoints="xs">Num</th>
+                                        <th>Date</th>
+                                        <th>Montant TTC</th>
+                                        <th>Montant TTC <br/> cumulé</th>
+                                        <th>RG TT cumulé</th>
+                                        <th style="width:5%"> %</th>
+                                        <th style="width:5%">PJ</th>
+
                                     </tr>
                                     </thead>
                                     <tbody>
                                     <tr data-expanded="true">
-                                        <td><a href="decomptes.html">1</a></td>
-                                        <td><a href="decomptes.html">Fournisseur 1</a></td>
-                                        <td>Objet1</td>
-                                        <td> 10,000.00</td>
-                                        <td> 14,000.00</td>
-                                        <td> 15,000.00</td>
-                                        <td>19/09/2015</td>
+                                        <td href=""> 1</td>
+                                        <td>12/02/2019</td>
+                                        <td>10,000.00</td>
+                                        <td>12,000.00</td>
+                                        <td>12,500.00</td>
+                                        <td>15</td>
+                                        <td><i class="fa fa-paperclip"></i></td>
                                     </tr>
                                     <tr data-expanded="true">
-                                        <td><a href="decomptes.html">3</a></td>
-                                        <td><a href="decomptes.html">Fournisseur 2</a></td>
-                                        <td>Objet1</td>
-                                        <td> 14,000.00</td>
-                                        <td> 14,000.00</td>
-                                        <td> 15,000.00</td>
-                                        <td>19/09/2015</td>
+                                        <td href=""> 2</td>
+                                        <td>12/12/2019</td>
+                                        <td>12,000.00</td>
+                                        <td>12,000.00</td>
+                                        <td>12,500.00</td>
+                                        <td>15</td>
+                                        <td><i class="fa fa-paperclip"></i></td>
                                     </tr>
                                     <tr data-expanded="true">
-                                        <td><a href="decomptes.html"> 2</a></td>
-                                        <td><a href="decomptes.html">Fournisseur 3</a></td>
-                                        <td>Objet1</td>
-                                        <td> 10,000.00</td>
-                                        <td> 14,000.00</td>
-                                        <td> 15,000.00</td>
-                                        <td>19/09/2015</td>
+                                        <td href=""> 3</td>
+                                        <td>12/02/2021</td>
+                                        <td>15,000.00</td>
+                                        <td>112,000.00</td>
+                                        <td>112,500.00</td>
+                                        <td>15</td>
+                                        <td><i class="fa fa-paperclip"></i></td>
                                     </tr>
                                     <tr data-expanded="true">
-                                        <td><a href="decomptes.html">4</a></td>
-                                        <td><a href="decomptes.html">Fournisseur 4</a></td>
-                                        <td>Objet1</td>
-                                        <td> 10,000.00</td>
-                                        <td> 14,000.00</td>
-                                        <td> 15,000.00</td>
-                                        <td>19/09/2015</td>
-                                    </tr>
-                                    <tr data-expanded="true">
-                                        <td><a href="decomptes.html">5</a></td>
-                                        <td><a href="decomptes.html">Fournisseur 5</a></td>
-                                        <td>Objet1</td>
-                                        <td> 10,000.00</td>
-                                        <td> 14,000.00</td>
-                                        <td> 15,000.00</td>
-                                        <td>19/09/2015</td>
-                                    </tr>
-                                    <tr data-expanded="true">
-                                        <td><a href="decomptes.html">5</a></td>
-                                        <td><a href="decomptes.html">Fournisseur 5</a></td>
-                                        <td>Objet1</td>
-                                        <td> 10,000.00</td>
-                                        <td> 14,000.00</td>
-                                        <td> 15,000.00</td>
-                                        <td>19/09/2015</td>
-                                    </tr>  <tr data-expanded="true">
-                                        <td><a href="decomptes.html">6</a></td>
-                                        <td><a href="decomptes.html">Fournisseur 5</a></td>
-                                        <td>Objet1</td>
-                                        <td> 10,000.00</td>
-                                        <td> 14,000.00</td>
-                                        <td> 15,000.00</td>
-                                        <td>19/09/2015</td>
-                                    </tr>  <tr data-expanded="true">
-                                        <td><a href="decomptes.html">7</a></td>
-                                        <td><a href="decomptes.html">Fournisseur 5</a></td>
-                                        <td>Objet1</td>
-                                        <td> 10,000.00</td>
-                                        <td> 14,000.00</td>
-                                        <td> 15,000.00</td>
-                                        <td>19/09/2015</td>
-                                    </tr>  <tr data-expanded="true">
-                                        <td><a href="decomptes.html">8</a></td>
-                                        <td><a href="decomptes.html">Fournisseur 5</a></td>
-                                        <td>Objet1</td>
-                                        <td> 10,000.00</td>
-                                        <td> 14,000.00</td>
-                                        <td> 15,000.00</td>
-                                        <td>19/09/2015</td>
-                                    </tr>  <tr data-expanded="true">
-                                        <td><a href="decomptes.html">9</a></td>
-                                        <td><a href="decomptes.html">Fournisseur 5</a></td>
-                                        <td>Objet1</td>
-                                        <td> 10,000.00</td>
-                                        <td> 14,000.00</td>
-                                        <td> 15,000.00</td>
-                                        <td>19/09/2015</td>
+                                        <td href=""> 4</td>
+                                        <td>02/12/2022</td>
+                                        <td>210,000.00</td>
+                                        <td>312,000.00</td>
+                                        <td>312,500.00</td>
+                                        <td>15</td>
+                                        <td><i class="fa fa-paperclip"></i></td>
                                     </tr>
                                     </tbody>
                                 </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" id="decompteDiv" aria-hidden="true">
+                        <div class="card-body">
+                            <div class="col-md-12 col-sm-14">
+                                <div class="card  card-hover">
+                                    <div class="card-header bg-light-megna">
+                                        <h4 class="mb-0 text-dark"> Détail Décomptes</h4></div>
+                                    <div class="card-body">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
