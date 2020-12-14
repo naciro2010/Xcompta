@@ -19927,6 +19927,19 @@ pre code {
     border-top: 1px solid #e8eef3
 }
 
+.table2 {
+    width: 100%;
+    margin-bottom: 2rem;
+    color: #212529
+}
+
+.table2 td, .table th {
+    padding: .50rem;
+    vertical-align: top;
+    font-size: medium;
+    border-top: 2px solid #e8eef3
+}
+
 .table thead th {
     vertical-align: bottom;
     border-bottom: 2px solid #e8eef3
