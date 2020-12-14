@@ -96,293 +96,95 @@
             <!-- ============================================================== -->
             <div class="row">
                 <div class="col-12">
-
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="card-title">Liste des décomptes</h4>
-                            <div id="full-width-modal" class="modal fade" tabindex="-1" role="dialog"
-                                 aria-labelledby="fullWidthModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-full-width">
-                                    <div class="modal-content">
-                                        <div class="modal-header d-flex align-items-center">
-                                            <h4 class="modal-title" id="fullWidthModalLabel"></h4>
-                                            <button type="button" class="close ml-auto" data-dismiss="modal"
-                                                    aria-hidden="true">×
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="row">
-                                                <div class="col-lg-12">
-
-                                                    <div id="accordion" class="custom-accordion mb-4">
-
-                                                        <div class="card mb-0">
-                                                            <div class="card-header" id="headingOne">
-                                                                <h5 class="m-0">
-                                                                    <a class="custom-accordion-title d-flex align-items-center pt-2 pb-2"
-                                                                       data-toggle="collapse"
-                                                                       href="#collapseOne" aria-expanded="true"
-                                                                       aria-controls="collapseOne">
-                                                                        Détail du marché<span class="ml-auto"><i
-                                                                            class="mdi mdi-chevron-down accordion-arrow"></i></span>
-                                                                    </a>
-                                                                </h5>
-                                                            </div>
-                                                            <div id="collapseOne" class="collapse show"
-                                                                 aria-labelledby="headingOne"
-                                                                 data-parent="#accordion">
-                                                                <div class="card-body">
-                                                                    <form class="form-horizontal ">
-                                                                        <div class="card-body">
-                                                                            <div class="form-group row">
-                                                                                <label for="fname"
-                                                                                       class="col-sm-4 text-sm-left label control-label col-form-label">Numéro
-                                                                                    du marché :</label>
-                                                                                <div class="col-sm-4">
-                                                                                    <input type="text"
-                                                                                           class="form-control"
-                                                                                           id="fname"
-                                                                                           placeholder="Numéro du marché">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="form-group row">
-                                                                                <label class="col-sm-4 text-left control-label col-form-label">Fournisseur :</label>
-                                                                                <div class="col-sm-4">
-                                                                                    <select class="form-control">
-                                                                                        <option>Fournisseur 1
-                                                                                        </option>
-                                                                                        <option>Fournisseur 1</option>
-                                                                                        <option>Fournisseur 1</option>
-                                                                                        <option>Fournisseur 1</option>
-                                                                                    </select>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="form-group row">
-                                                                                <label for="cono1"
-                                                                                       class="col-sm-4 text-left control-label col-form-label">Objet
-                                                                                    :
-                                                                                </label>
-                                                                                <div class="col-sm-8">
-                                                                                    <input type="text"
-                                                                                           class="form-control"
-                                                                                           id="cono1"
-                                                                                           placeholder="Objet">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="form-group row">
-                                                                                <label for="cono1"
-                                                                                       class="col-sm-4 text-left control-label col-form-label">Montant
-                                                                                    TTC :</label>
-                                                                                <div class="col-sm-4">
-                                                                                    <input type="number"
-                                                                                           class="form-control"
-                                                                                           placeholder="Montant TTC">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="form-group row">
-                                                                                <label for="cono1"
-                                                                                       class="col-sm-4 text-left control-label col-form-label">Montant
-                                                                                    TTC actualisé :</label>
-                                                                                <div class="col-sm-4">
-                                                                                    <input type="number"
-                                                                                           class="form-control"
-                                                                                           placeholder="Montant TTC actualisé">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="form-group row">
-                                                                                <label class="control-label text-left col-md-4">Date
-                                                                                    de signature :</label>
-                                                                                <div class="col-md-4">
-                                                                                    <input type="date"
-                                                                                           class="form-control">
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-
-                                                                    </form>
-                                                                </div>
-                                                            </div>
-                                                        </div> <!-- end card-->
-
-                                                        <div class="card mb-0">
-                                                            <div class="card-header" id="headingTwo">
-                                                                <h5 class="m-0">
-                                                                    <a class="custom-accordion-title collapsed d-flex align-items-center pt-2 pb-2"
-                                                                       data-toggle="collapse" href="#collapseTwo"
-                                                                       aria-expanded="false"
-                                                                       aria-controls="collapseTwo">
-                                                                        Imputations <span class="ml-auto"><i
-                                                                            class="mdi mdi-chevron-down accordion-arrow"></i></span>
-                                                                    </a>
-                                                                </h5>
-                                                            </div>
-                                                            <div id="collapseTwo" class="collapse"
-                                                                 aria-labelledby="headingTwo"
-                                                                 data-parent="#accordion">
-                                                                <div class="card-body">
-                                                                    <div class="col-md-12">
-                                                                        <div class="card">
-                                                                            <div class="card-body">
-                                                                                <form class="row">
-                                                                                    <div class="col-sm-3">
-                                                                                        <div class="form-group">
-                                                                                            <select class="form-control">
-                                                                                                <option>Convention
-                                                                                                </option>
-                                                                                            </select></div>
-                                                                                    </div>
-                                                                                    <div class="col-sm-2">
-                                                                                        <div class="form-group">
-                                                                                            <select class="form-control">
-                                                                                                <option>Axe</option>
-                                                                                            </select>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="col-sm-3">
-                                                                                        <div class="form-group">
-                                                                                            <select class="form-control">
-                                                                                                <option>Projet</option>
-
-                                                                                            </select>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="col-sm-2">
-                                                                                        <div class="form-group">
-                                                                                            <select class="form-control">
-                                                                                                <option>Volet</option>
-                                                                                            </select>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="col-sm-1">
-                                                                                        <div class="form-group">
-                                                                                            <button class="btn btn-success"
-                                                                                                    type="button"
-                                                                                                    onclick="education_fields();">
-                                                                                                <i class="fa fa-plus"></i>
-                                                                                            </button>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </form>
-                                                                                <div id="education_fields"
-                                                                                     class=" m-t-20"></div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div> <!-- end card-->
-
-                                                        <div class="card mb-0">
-                                                            <div class="card-header" id="headingThree">
-                                                                <h5 class="m-0">
-                                                                    <a class="custom-accordion-title collapsed d-flex align-items-center pt-2 pb-2"
-                                                                       data-toggle="collapse" href="#collapseThree"
-                                                                       aria-expanded="false"
-                                                                       aria-controls="collapseThree">
-                                                                        Pièces jointes <span class="ml-auto"><i
-                                                                            class="mdi mdi-chevron-down accordion-arrow"></i></span>
-                                                                    </a>
-                                                                </h5>
-                                                            </div>
-                                                            <div id="collapseThree" class="collapse"
-                                                                 aria-labelledby="headingThree"
-                                                                 data-parent="#accordion">
-                                                                <div class="card-body">
-                                                                    <div class="card">
-                                                                        <div class="card-body">
-                                                                            <form action="#" class="dropzone">
-                                                                                <div class="fallback">
-                                                                                    <input name="file" type="file"
-                                                                                           multiple/>
-                                                                                </div>
-                                                                            </form>
-
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div> <!-- end card-->
-                                                    </div> <!-- end custom accordions-->
-                                                </div> <!-- end col -->
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card border-bottom shadow border-info">
+                                        <div class="card-body">
+                                            <div class="d-flex no-block align-items-center">
+                                                <div>
+                                                    <table>
+                                                        <tr>
+                                                            <th><h6 class="text-info">Numéro du Marché</h6></th>
+                                                            <th style="width:3%"><h5 class="text-info">:</h5></th>
+                                                            <th><h6 class="text-wrap"> 13949JD</h6></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th><h6 class="text-info">Fournisseur</h6></th>
+                                                            <th style="width:3%"><h5 class="text-info">:</h5></th>
+                                                            <th><h6 class="text-wrap">Fournisseur 1 </h6></th>
+                                                        </tr>
+                                                    </table>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-light"
-                                                    data-dismiss="modal">Close
-                                            </button>
-                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card border-bottom shadow border-cyan">
+                                        <div class="card-body">
+                                            <div class="d-flex no-block align-items-center">
+                                                <div class="table-responsive">
+                                                    <table
+                                                            class="table table-bordered m-t-30 contact-list no-wrap table-striped table-hover"
+                                                            data-paging="true"
+                                                            data-paging-size="7">
+                                                        <thead class="bg-dark-success text-white">
+                                                        <tr>
+                                                            <th colspan="3" class="bg-white border-0"></th>
+                                                            <th colspan="3" class="text-center">Cumulé</th>
+
+                                                        </tr>
+                                                        <tr class="footable-filtering">
+                                                            <th style="width:10%">Num</th>
+                                                            <th style="width:5%">Date</th>
+                                                            <th style="width:5%">Montant TTC</th>
+                                                            <th style="width:5%">Montant TTC</th>
+                                                            <th style="width:10%">RG TT</th>
+                                                            <th style="width:5%"> %</th>
+
+                                                        </tr>
+
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr data-expanded="true">
+                                                            <td href=""> 1</td>
+                                                            <td>12/02/2019</td>
+                                                            <td>10,000.00</td>
+                                                            <td>12,000.00</td>
+                                                            <td>12,500.00</td>
+                                                            <td>15</td>
+                                                        </tr>
+                                                        <tr data-expanded="true">
+                                                            <td href=""> 2</td>
+                                                            <td>12/12/2019</td>
+                                                            <td>12,000.00</td>
+                                                            <td>12,000.00</td>
+                                                            <td>12,500.00</td>
+                                                            <td>15</td>
+                                                        </tr>
+                                                        <tr data-expanded="true">
+                                                            <td href=""> 3</td>
+                                                            <td>12/02/2021</td>
+                                                            <td>15,000.00</td>
+                                                            <td>112,000.00</td>
+                                                            <td>112,500.00</td>
+                                                            <td>15</td>
+                                                        </tr>
+                                                        <tr data-expanded="true">
+                                                            <td href=""> 4</td>
+                                                            <td>02/12/2022</td>
+                                                            <td>210,000.00</td>
+                                                            <td>312,000.00</td>
+                                                            <td>312,500.00</td>
+                                                            <td>15</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div><!-- /.modal-content -->
-                                </div><!-- /.modal-dialog -->
-                            </div>
-
-                            <div class="table-responsive-lg">
-                                <table
-                                        class="table table-bordered m-t-30 contact-list no-wrap  table-hover"
-                                        data-paging="true"
-                                        data-paging-size="7">
-                                    <thead class="bg-dark-success text-white">
-                                    <tr class="footable-filtering">
-                                        <th data-breakpoints="xs">Num</th>
-                                        <th>Date</th>
-                                        <th>Montant TTC</th>
-                                        <th>Montant TTC <br/> cumulé</th>
-                                        <th>RG TT cumulé</th>
-                                        <th style="width:5%"> %</th>
-                                        <th style="width:5%">PJ</th>
-
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr data-expanded="true">
-                                        <td href=""> 1</td>
-                                        <td>12/02/2019</td>
-                                        <td>10,000.00</td>
-                                        <td>12,000.00</td>
-                                        <td>12,500.00</td>
-                                        <td>15</td>
-                                        <td><i class="fa fa-paperclip"></i></td>
-                                    </tr>
-                                    <tr data-expanded="true">
-                                        <td href=""> 2</td>
-                                        <td>12/12/2019</td>
-                                        <td>12,000.00</td>
-                                        <td>12,000.00</td>
-                                        <td>12,500.00</td>
-                                        <td>15</td>
-                                        <td><i class="fa fa-paperclip"></i></td>
-                                    </tr>
-                                    <tr data-expanded="true">
-                                        <td href=""> 3</td>
-                                        <td>12/02/2021</td>
-                                        <td>15,000.00</td>
-                                        <td>112,000.00</td>
-                                        <td>112,500.00</td>
-                                        <td>15</td>
-                                        <td><i class="fa fa-paperclip"></i></td>
-                                    </tr>
-                                    <tr data-expanded="true">
-                                        <td href=""> 4</td>
-                                        <td>02/12/2022</td>
-                                        <td>210,000.00</td>
-                                        <td>312,000.00</td>
-                                        <td>312,500.00</td>
-                                        <td>15</td>
-                                        <td><i class="fa fa-paperclip"></i></td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card" id="decompteDiv" aria-hidden="true">
-                        <div class="card-body">
-                            <div class="col-md-12 col-sm-14">
-                                <div class="card  card-hover">
-                                    <div class="card-header bg-light-megna">
-                                        <h4 class="mb-0 text-dark"> Détail Décomptes</h4></div>
-                                    <div class="card-body">
                                     </div>
                                 </div>
                             </div>
@@ -390,23 +192,120 @@
                     </div>
                 </div>
             </div>
-        </div>
 
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card border-bottom shadow border-info">
+                                        <div class="card-body">
+                                            <div class="d-flex no-block align-items-center">
+                                                <div>
+                                                    <table>
+                                                        <tr>
+                                                            <th><h6 class="text-info">Numéro du Marché</h6></th>
+                                                            <th style="width:3%"><h5 class="text-info">:</h5></th>
+                                                            <th><h6 class="text-wrap"> 13949JD</h6></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th><h6 class="text-info">Fournisseur</h6></th>
+                                                            <th style="width:3%"><h5 class="text-info">:</h5></th>
+                                                            <th><h6 class="text-wrap">Fournisseur 1 </h6></th>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card border-bottom shadow border-cyan">
+                                        <div class="card-body">
+                                            <div class="d-flex no-block align-items-center">
+                                                <div class="table-responsive">
+                                                    <table
+                                                            class="table table-bordered m-t-30 contact-list no-wrap table-striped table-hover"
+                                                            data-paging="true"
+                                                            data-paging-size="7">
+                                                        <thead class="bg-dark-success text-white">
+                                                        <tr>
+                                                            <th colspan="3" class="bg-white border-0"></th>
+                                                            <th colspan="3" class="text-center">Cumulé</th>
+
+                                                        </tr>
+                                                        <tr class="footable-filtering">
+                                                            <th style="width:10%">Num</th>
+                                                            <th style="width:5%">Date</th>
+                                                            <th style="width:5%">Montant TTC</th>
+                                                            <th style="width:5%">Montant TTC</th>
+                                                            <th style="width:10%">RG TT</th>
+                                                            <th style="width:5%"> %</th>
+
+                                                        </tr>
+
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr data-expanded="true">
+                                                            <td href=""> 1</td>
+                                                            <td>12/02/2019</td>
+                                                            <td>10,000.00</td>
+                                                            <td>12,000.00</td>
+                                                            <td>12,500.00</td>
+                                                            <td>15</td>
+                                                        </tr>
+                                                        <tr data-expanded="true">
+                                                            <td href=""> 2</td>
+                                                            <td>12/12/2019</td>
+                                                            <td>12,000.00</td>
+                                                            <td>12,000.00</td>
+                                                            <td>12,500.00</td>
+                                                            <td>15</td>
+                                                        </tr>
+                                                        <tr data-expanded="true">
+                                                            <td href=""> 3</td>
+                                                            <td>12/02/2021</td>
+                                                            <td>15,000.00</td>
+                                                            <td>112,000.00</td>
+                                                            <td>112,500.00</td>
+                                                            <td>15</td>
+                                                        </tr>
+                                                        <tr data-expanded="true">
+                                                            <td href=""> 4</td>
+                                                            <td>02/12/2022</td>
+                                                            <td>210,000.00</td>
+                                                            <td>312,000.00</td>
+                                                            <td>312,500.00</td>
+                                                            <td>15</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer">
+                © 2020 Xcompta Admin by Mohamed Samir
+            </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
         <!-- ============================================================== -->
-        <!-- ============================================================== -->
-        <!-- footer -->
-        <!-- ============================================================== -->
-        <footer class="footer">
-            © 2020 Xcompta Admin by Mohamed Samir
-        </footer>
-        <!-- ============================================================== -->
-        <!-- End footer -->
+        <!-- End Page wrapper  -->
         <!-- ============================================================== -->
     </div>
-    <!-- ============================================================== -->
-    <!-- End Page wrapper  -->
-    <!-- ============================================================== -->
-</div>
 </div>
 
 <!-- ============================================================== -->
