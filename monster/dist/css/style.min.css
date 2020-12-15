@@ -3125,7 +3125,6 @@
 }
 
 
-
 .fa-syringe:before {
     content: "\f3f9"
 }
@@ -20537,6 +20536,9 @@ pre code {
     background-color: #e9ecef;
     opacity: 1
 }
+.form-control2:disabled, .form-control[readonly] {
+    opacity: 1
+}
 
 input[type=date].form-control, input[type=datetime-local].form-control, input[type=month].form-control, input[type=time].form-control {
     appearance: none
@@ -30229,6 +30231,11 @@ a.bg-dark-info:focus, a.bg-dark-info:hover, button.bg-dark-info:focus, button.bg
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap
+}
+
+.encadrer-un-contenu {
+    border: 1px solid black;
+    padding: 4px;
 }
 
 .text-left {

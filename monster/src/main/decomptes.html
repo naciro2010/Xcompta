@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en">
+<html dir="ltr" lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
     <meta charset="utf-8">
@@ -203,28 +203,63 @@
                                         <div class="card-body">
                                             <div class="d-flex align-items-center">
                                                 <div class="table-responsive">
-                                                    <table class="table table-bordered m-t-30 contact-list no-wrap table-hover">
+                                                    <table class="table table-borderless">
                                                         <tr>
-                                                            <th style="width:10%" ><h6>Numéro </h6></th>
-                                                            <th style="width:30%"><h6> 314DLF</h6></th>
+                                                            <th style="width:10%">Numéro</th>
+                                                            <th style="width:30%">
+                                                                <input type="text" class="form-control2"
+                                                                       placeholder="314DLFp" disabled>
+                                                            </th>
                                                             <th style="width:35%" colspan="3"></th>
                                                             <th style="width:10%"><h6>Pièce Jointe </h6></th>
-                                                            <th style="width:15%"><h6></h6></th>
+                                                            <th style="width:15%" rowspan="4"><a href="pieceJoint.pdf">
+                                                                <h6>piecejoint1.pdf</h6></a>
+                                                                <a href="pieceJoint.pdf"><h6>piecejoint2.pdf</h6></a>
+                                                                <a href="pieceJoint.pdf"><h6>piecejoint3.pdf</h6></a>
+                                                            </th>
                                                         </tr>
                                                         <tr>
-                                                            <th style="width:10%"><h6>Date </h6></th>
-                                                            <th style="width:30%"><h6> 12/12/2021</h6></th>
+                                                            <th style="width:10%">Date</th>
+                                                            <th style="width:30%"><input type="text"
+                                                                                         class="form-control2"
+                                                                                         placeholder="12/12/2021"
+                                                                                         disabled>
+                                                            </th>
                                                             <th style="width:45%" colspan="4"></th>
-                                                            <th style="width:15%"><h6></h6></th>
                                                         </tr>
                                                         <tr>
-                                                            <th style="width:10%"><h6>Objet </h6></th>
-                                                            <th style="width:30%"><h6></h6></th>
+                                                            <th style="width:10%">Objet</th>
+                                                            <th style="width:30%" rowspan="4"><textarea
+                                                                    class="form-control" rows="4"
+                                                                    placeholder="Objet here" disabled></textarea></th>
                                                             <th style="width:10%"><h6>Remarques</h6></th>
-                                                            <th style="width:20%"></th>
+                                                            <th style="width:20%" rowspan="4"><textarea
+                                                                    class="form-control" rows="4"
+                                                                    placeholder="Remarque here" disabled></textarea>
+                                                            </th>
+                                                            </th>
                                                             <th style="width:10%" colspan="2"><h6></h6></th>
-                                                            <th style="width:15%"><h6></h6></th>
                                                         </tr>
+                                                        <tr>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th colspan="2"></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th colspan="2"></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th colspan="2"></th>
+                                                        </tr>
+
+
                                                     </table>
                                                 </div>
                                             </div>
@@ -240,51 +275,89 @@
                                                             class="table table-bordered m-t-30 contact-list no-wrap table-striped table-hover"
                                                             data-paging="true"
                                                             data-paging-size="7">
-                                                        <thead class="bg-dark-success text-white">
-                                                        <tr class="footable-filtering text-sm-left">
-                                                            <th style="width:10%">Convention</th>
-                                                            <th style="width:5%">Axe</th>
-                                                            <th style="width:5%">Projet</th>
-                                                            <th style="width:5%">Volet</th>
-                                                            <th style="width:10%">Montant TT</th>
+                                                        <thead>
+                                                        <tr class="footable-filtering bg-dark- ">
+                                                            <th style="width:20%"><h6> Convention</h6></th>
+                                                            <th style="width:20%"><h6>Axe</h6></th>
+                                                            <th style="width:20%"><h6>Projet</h6></th>
+                                                            <th style="width:20%"><h6>Volet</h6></th>
+                                                            <th style="width:15%"><h6>Montant TTC</h6></th>
+                                                            <th style="width:5%"><h6>Tx TVA</h6></th>
+
                                                         </tr>
 
                                                         </thead>
                                                         <tbody>
+
                                                         <tr data-expanded="true">
                                                             <td href=""> Convention 1</td>
                                                             <td>Axe 1</td>
                                                             <td>Projet 1</td>
                                                             <td>Volet</td>
-                                                            <td>12,500.00</td>
+                                                            <td align="right">12,500.00</td>
+                                                            <td align="right">10%</td>
                                                         </tr>
                                                         <tr data-expanded="true">
                                                             <td href=""> Convention 2</td>
                                                             <td>Axe 2</td>
                                                             <td>Projet 2</td>
                                                             <td>Volet 2</td>
-                                                            <td>12,500.00</td>
+                                                            <td align="right">12,500.00</td>
+                                                            <td align="right">5%</td>
+
                                                         </tr>
                                                         <tr data-expanded="true">
                                                             <td href=""> Convention 3</td>
                                                             <td>Axe 3</td>
                                                             <td>Projet 3</td>
                                                             <td>Volet 3</td>
-                                                            <td>42,500.00</td>
+                                                            <td align="right">42,500.00</td>
+                                                            <td align="right">14%</td>
+
                                                         </tr>
                                                         <tr data-expanded="true">
                                                             <td href=""> Convention 4</td>
                                                             <td>Axe 4</td>
                                                             <td>Projet 4</td>
                                                             <td>Volet</td>
-                                                            <td>52,500.00</td>
+                                                            <td align="right">52,500.00</td>
+                                                            <td align="right">10%</td>
                                                         </tr>
                                                         <tr data-expanded="true">
                                                             <td href=""> Convention 5</td>
                                                             <td>Axe 5</td>
                                                             <td>Projet 5</td>
                                                             <td>Volet</td>
-                                                            <td>15,500.00</td>
+                                                            <td align="right">15,500.00</td>
+                                                            <td align="right">20%</td>
+                                                        </tr>
+                                                        </tbody>
+                                                        <tbody class="table-borderless">
+                                                        <tr></tr>
+
+                                                        <tr data-expanded="true">
+                                                            <td colspan="3"></td>
+                                                            <td align="left"><h6>Montant TTC </h6></td>
+                                                            <td align="right"><h6>123.123.000,12</h6></td>
+                                                            <td></td>
+
+                                                        </tr>
+                                                        <tr></tr>
+
+                                                        <tr data-expanded="true">
+                                                            <td colspan="3"></td>
+                                                            <td align="left"><h6>TVA </h6></td>
+                                                            <td align="right"><h6>134.000,12</h6></td>
+                                                            <td></td>
+
+                                                        </tr>
+                                                        <tr></tr>
+                                                        <tr data-expanded="true">
+                                                            <td colspan="3"></td>
+                                                            <td align="left"><h6>Total HT </h6></td>
+                                                            <td align="right"><h6>199.123.000,12</h6></td>
+                                                            <td></td>
+
                                                         </tr>
                                                         </tbody>
                                                     </table>
