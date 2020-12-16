@@ -34868,6 +34868,11 @@ body[data-theme=dark] .css-bar-purple.css-bar-10 {
     max-width: none
 }
 
+.modals-full-width {
+    width: 80%;
+    max-width: none
+}
+
 .modal-top {
     margin: 0 auto
 }
