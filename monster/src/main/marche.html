@@ -103,207 +103,193 @@
                                  aria-labelledby="fullWidthModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-full-width">
                                     <div class="modal-content">
-                                        <div class="modal-header d-flex align-items-center">
-                                            <h4 class="modal-title" id="fullWidthModalLabel">Création du Marché</h4>
-                                            <button type="button" class="close ml-auto" data-dismiss="modal"
+                                        <div class="modal-header bg-success d-flex align-items-center">
+                                            <h4 class="modal-title text-white" id="fullWidthModalLabel">Création du
+                                                Marché</h4>
+                                            <button type="button" class="close ml-auto text-white" data-dismiss="modal"
                                                     aria-hidden="true">×
                                             </button>
                                         </div>
                                         <div class="modal-body">
                                             <div class="row">
                                                 <div class="col-lg-12">
+                                                    <hr/>
+                                                    <div class="card-body">
+                                                        <form class="form-horizontal ">
+                                                            <div class="card-body">
+                                                                <div class="form-group row">
+                                                                    <label for="fname"
+                                                                           class="col-sm-4 text-sm-left label control-label col-form-label font-13">Numéro
+                                                                        du marché :</label>
+                                                                    <div class="col-sm-4">
+                                                                        <input type="text "
+                                                                               class="form-control font-12"
+                                                                               id="fname"
+                                                                               placeholder="Numéro du marché">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group row">
+                                                                    <label for="fname"
+                                                                           class="col-sm-4 text-sm-left label control-label col-form-label font-13">Numéro
+                                                                        de consultation :</label>
+                                                                    <div class="col-sm-4">
+                                                                        <input type="text "
+                                                                               class="form-control font-12"
+                                                                               placeholder="Numéro de consultation">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group row">
+                                                                    <label for="fname"
+                                                                           class="col-sm-4 text-sm-left label control-label col-form-label font-13">Type
+                                                                        de préstation :</label>
+                                                                    <div class="col-sm-4">
+                                                                        <input type="text "
+                                                                               class="form-control font-12"
+                                                                               id=""
+                                                                               placeholder="Type de préstation">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group row">
+                                                                    <label class="control-label text-left col-md-4 font-13">Date
+                                                                        de signature :</label>
+                                                                    <div class="col-md-4">
+                                                                        <input type="date"
+                                                                               class="form-control font-12">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group row">
+                                                                    <label class="col-sm-4 text-left control-label col-form-label font-13">Fournisseur
+                                                                        :</label>
+                                                                    <div class="col-sm-4">
+                                                                        <select class="form-control font-12">
+                                                                            <option>Fournisseur 1
+                                                                            </option>
+                                                                            <option>Fournisseur 1</option>
+                                                                            <option>Fournisseur 1</option>
+                                                                            <option>Fournisseur 1</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group row">
+                                                                    <div class="col-sm-4">
+                                                                        <h6>Objet :</h6>
+                                                                    </div>
+                                                                    <div class="col-sm-8">
+                                                                        <textarea
+                                                                                class="form-control" rows="4"
+                                                                                placeholder=""></textarea>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group row">
+                                                                    <label
+                                                                            class="col-sm-4 text-left control-label col-form-label font-13">Montant
+                                                                        TTC :</label>
+                                                                    <div class="col-sm-4">
+                                                                        <input type="number"
+                                                                               class="form-control font-12"
+                                                                               placeholder="Montant TTC">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group row">
+                                                                    <label
+                                                                            class="col-sm-4 text-left control-label col-form-label font-13">Montant
+                                                                        TTC actualisé :</label>
+                                                                    <div class="col-sm-4">
+                                                                        <input type="number"
+                                                                               class="form-control font-12"
+                                                                               placeholder="Montant TTC actualisé">
+                                                                    </div>
+                                                                </div>
 
-                                                    <div id="accordion" class="custom-accordion mb-4">
-
-                                                        <div class="card mb-0">
-                                                            <div class="card-header" id="headingOne">
-                                                                <h5 class="m-0">
-                                                                    <a class="custom-accordion-title d-flex align-items-center pt-2 pb-2"
-                                                                       data-toggle="collapse"
-                                                                       href="#collapseOne" aria-expanded="true"
-                                                                       aria-controls="collapseOne">
-                                                                        Détail du marché<span class="ml-auto"><i
-                                                                            class="mdi mdi-chevron-down accordion-arrow"></i></span>
-                                                                    </a>
-                                                                </h5>
                                                             </div>
-                                                            <div id="collapseOne" class="collapse show"
-                                                                 aria-labelledby="headingOne"
-                                                                 data-parent="#accordion">
+                                                        </form>
+                                                    </div>
+                                                    <hr/>
+                                                    <div class="card-body">
+                                                        <div class="col-md-12">
+                                                            <div class="card">
                                                                 <div class="card-body">
-                                                                    <form class="form-horizontal ">
-                                                                        <div class="card-body">
-                                                                            <div class="form-group row">
-                                                                                <label for="fname"
-                                                                                       class="col-sm-4 text-sm-left label control-label col-form-label">Numéro
-                                                                                    du marché :</label>
-                                                                                <div class="col-sm-4">
-                                                                                    <input type="text"
-                                                                                           class="form-control"
-                                                                                           id="fname"
-                                                                                           placeholder="Numéro du marché">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="form-group row">
-                                                                                <label class="col-sm-4 text-left control-label col-form-label">Fournisseur :</label>
-                                                                                <div class="col-sm-4">
-                                                                                    <select class="form-control">
+                                                                    <form class="row">
+                                                                        <div class="col-sm-10">
+                                                                            <table id="empTable"
+                                                                                   class=" table editable-table table-bordered table-striped m-b-0 no-wrap">
+                                                                                <thead>
+                                                                                <tr class="footable-filtering bg-dark-success ">
+                                                                                    <th style="width:25%"><h6>
+                                                                                        Convention</h6></th>
+                                                                                    <th style="width:25%"><h6>Axe</h6>
+                                                                                    </th>
+                                                                                    <th style="width:25%"><h6>
+                                                                                        Projet</h6></th>
+                                                                                    <th style="width:25%"><h6>Volet</h6>
+                                                                                    </th>
+                                                                                </tr>
+                                                                                </thead>
+                                                                                <tbody id="education_fields">
+
+                                                                                <tr data-expanded="true">
+                                                                                    <td><select
+                                                                                            class="form-control font-12">
                                                                                         <option>Fournisseur 1
                                                                                         </option>
-                                                                                        <option>Fournisseur 1</option>
-                                                                                        <option>Fournisseur 1</option>
-                                                                                        <option>Fournisseur 1</option>
+                                                                                        <option>Fournisseur 2</option>
+                                                                                        <option>Fournisseur 3</option>
+                                                                                        <option>Fournisseur 4</option>
+                                                                                    </select></td>
+                                                                                    <td><select
+                                                                                            class="form-control font-12">
+                                                                                        <option>Axe 1
+                                                                                        </option>
+                                                                                        <option>Axe 2</option>
+                                                                                        <option>Axe 3</option>
+                                                                                    </select></td>
+                                                                                    <td><select
+                                                                                            class="form-control font-12">
+                                                                                        <option>Projet 1
+                                                                                        </option>
+                                                                                        <option>Projet 2</option>
+                                                                                        <option>Projet 3</option>
                                                                                     </select>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="form-group row">
-                                                                                <label for="cono1"
-                                                                                       class="col-sm-4 text-left control-label col-form-label">Objet
-                                                                                    :
-                                                                                </label>
-                                                                                <div class="col-sm-8">
-                                                                                    <input type="text"
-                                                                                           class="form-control"
-                                                                                           id="cono1"
-                                                                                           placeholder="Objet">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="form-group row">
-                                                                                <label for="cono1"
-                                                                                       class="col-sm-4 text-left control-label col-form-label">Montant
-                                                                                    TTC :</label>
-                                                                                <div class="col-sm-4">
-                                                                                    <input type="number"
-                                                                                           class="form-control"
-                                                                                           placeholder="Montant TTC">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="form-group row">
-                                                                                <label for="cono1"
-                                                                                       class="col-sm-4 text-left control-label col-form-label">Montant
-                                                                                    TTC actualisé :</label>
-                                                                                <div class="col-sm-4">
-                                                                                    <input type="number"
-                                                                                           class="form-control"
-                                                                                           placeholder="Montant TTC actualisé">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="form-group row">
-                                                                                <label class="control-label text-left col-md-4">Date
-                                                                                    de signature :</label>
-                                                                                <div class="col-md-4">
-                                                                                    <input type="date"
-                                                                                           class="form-control">
-                                                                                </div>
+                                                                                    <td><select
+                                                                                            class="form-control font-12">
+                                                                                        <option>Volet 1
+                                                                                        </option>
+                                                                                        <option>Volet 2</option>
+                                                                                    </select></td>
+                                                                                </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                        <div class="col-sm-1">
+                                                                            <div class="form-group">
+                                                                                <button class="btn btn-success font-12"
+                                                                                        type="button"
+                                                                                        onclick="education_fields();">
+                                                                                    <i class="fa fa-plus"></i>
+                                                                                </button>
                                                                             </div>
                                                                         </div>
-
                                                                     </form>
                                                                 </div>
                                                             </div>
-                                                        </div> <!-- end card-->
-
-                                                        <div class="card mb-0">
-                                                            <div class="card-header" id="headingTwo">
-                                                                <h5 class="m-0">
-                                                                    <a class="custom-accordion-title collapsed d-flex align-items-center pt-2 pb-2"
-                                                                       data-toggle="collapse" href="#collapseTwo"
-                                                                       aria-expanded="false"
-                                                                       aria-controls="collapseTwo">
-                                                                        Imputations <span class="ml-auto"><i
-                                                                            class="mdi mdi-chevron-down accordion-arrow"></i></span>
-                                                                    </a>
-                                                                </h5>
-                                                            </div>
-                                                            <div id="collapseTwo" class="collapse"
-                                                                 aria-labelledby="headingTwo"
-                                                                 data-parent="#accordion">
-                                                                <div class="card-body">
-                                                                    <div class="col-md-12">
-                                                                        <div class="card">
-                                                                            <div class="card-body">
-                                                                                <form class="row">
-                                                                                    <div class="col-sm-3">
-                                                                                        <div class="form-group">
-                                                                                            <select class="form-control">
-                                                                                                <option>Convention
-                                                                                                </option>
-                                                                                            </select></div>
-                                                                                    </div>
-                                                                                    <div class="col-sm-2">
-                                                                                        <div class="form-group">
-                                                                                            <select class="form-control">
-                                                                                                <option>Axe</option>
-                                                                                            </select>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="col-sm-3">
-                                                                                        <div class="form-group">
-                                                                                            <select class="form-control">
-                                                                                                <option>Projet</option>
-
-                                                                                            </select>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="col-sm-2">
-                                                                                        <div class="form-group">
-                                                                                            <select class="form-control">
-                                                                                                <option>Volet</option>
-                                                                                            </select>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="col-sm-1">
-                                                                                        <div class="form-group">
-                                                                                            <button class="btn btn-success"
-                                                                                                    type="button"
-                                                                                                    onclick="education_fields();">
-                                                                                                <i class="fa fa-plus"></i>
-                                                                                            </button>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </form>
-                                                                                <div id="education_fields"
-                                                                                     class=" m-t-20"></div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
+                                                        </div>
+                                                    </div>
+                                                    <hr/>
+                                                    <div class="card-body">
+                                                        <div class="card">
+                                                            <form action="#" class="dropzone">
+                                                                <div class="fallback">
+                                                                    <input name="file" type="file"
+                                                                           multiple/>
                                                                 </div>
-                                                            </div>
-                                                        </div> <!-- end card-->
+                                                            </form>
 
-                                                        <div class="card mb-0">
-                                                            <div class="card-header" id="headingThree">
-                                                                <h5 class="m-0">
-                                                                    <a class="custom-accordion-title collapsed d-flex align-items-center pt-2 pb-2"
-                                                                       data-toggle="collapse" href="#collapseThree"
-                                                                       aria-expanded="false"
-                                                                       aria-controls="collapseThree">
-                                                                        Pièces jointes <span class="ml-auto"><i
-                                                                            class="mdi mdi-chevron-down accordion-arrow"></i></span>
-                                                                    </a>
-                                                                </h5>
-                                                            </div>
-                                                            <div id="collapseThree" class="collapse"
-                                                                 aria-labelledby="headingThree"
-                                                                 data-parent="#accordion">
-                                                                <div class="card-body">
-                                                                    <div class="card">
-                                                                        <div class="card-body">
-                                                                            <form action="#" class="dropzone">
-                                                                                <div class="fallback">
-                                                                                    <input name="file" type="file"
-                                                                                           multiple/>
-                                                                                </div>
-                                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
 
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div> <!-- end card-->
-                                                    </div> <!-- end custom accordions-->
-                                                </div> <!-- end col -->
-                                            </div>
+
+                                            </div> <!-- end col -->
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-light"
@@ -311,148 +297,154 @@
                                             </button>
                                             <button type="button" class="btn btn-primary">Save changes</button>
                                         </div>
-                                    </div><!-- /.modal-content -->
-                                </div><!-- /.modal-dialog -->
-                            </div>
+                                    </div>
 
-                            <div class="table-responsive-lg">
-                                <table
-                                        class="table table-bordered m-t-30 contact-list no-wrap  table-hover"
-                                        data-paging="true"
-                                        data-paging-size="7">
-                                    <thead class="bg-dark-success text-white">
-                                    <tr>
-                                        <th style="width:5%">Num</th>
-                                        <th style="width:10%">Fournisseur</th>
-                                        <th>Objet</th>
-                                        <th style="width:10%">Montant TTC</th>
-                                        <th style="width:10%">Montant TTC <br/>actualisé</th>
-                                        <th style="width:10%">Cumul des <br/> décomptes</th>
-                                        <th style="width:5%">CI</th>
-                                        <th style="width:5%">Date <br/> d'approbation</th>
+                                </div><!-- /.modal-content -->
+                            </div><!-- /.modal-dialog -->
+                        </div>
 
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr data-expanded="true">
-                                        <td><a href="decomptes.html">1</a></td>
-                                        <td><a href="decomptes.html">Fournisseur 1</a></td>
-                                        <td>Objet1 <br/> suite <br/>  suite <br/></td>
-                                        <td> 10,000.00</td>
-                                        <td> 14,000.00</td>
-                                        <td> 15,000.00</td>
-                                        <td> 5,000.00</td>
-                                        <td>19/09/2015</td>
-                                    </tr>
-                                    <tr data-expanded="true">
-                                        <td><a href="decomptes.html">3</a></td>
-                                        <td><a href="decomptes.html">Fournisseur 2</a></td>
-                                        <td>Objet1</td>
-                                        <td> 14,000.00</td>
-                                        <td> 14,000.00</td>
-                                        <td> 15,000.00</td>
-                                        <td> 5,000.00</td>
-                                        <td>19/09/2015</td>
-                                    </tr>
-                                    <tr data-expanded="true">
-                                        <td><a href="decomptes.html"> 2</a></td>
-                                        <td><a href="decomptes.html">Fournisseur 3</a></td>
-                                        <td>Objet1</td>
-                                        <td> 10,000.00</td>
-                                        <td> 14,000.00</td>
-                                        <td> 15,000.00</td>
-                                        <td> 5,000.00</td>
-                                        <td>19/09/2015</td>
-                                    </tr>
-                                    <tr data-expanded="true">
-                                        <td><a href="decomptes.html">4</a></td>
-                                        <td><a href="decomptes.html">Fournisseur 4</a></td>
-                                        <td>Objet1</td>
-                                        <td> 10,000.00</td>
-                                        <td> 14,000.00</td>
-                                        <td> 15,000.00</td>
-                                        <td> 5,000.00</td>
-                                        <td>19/09/2015</td>
-                                    </tr>
-                                    <tr data-expanded="true">
-                                        <td><a href="decomptes.html">5</a></td>
-                                        <td><a href="decomptes.html">Fournisseur 5</a></td>
-                                        <td>Objet1</td>
-                                        <td> 10,000.00</td>
-                                        <td> 14,000.00</td>
-                                        <td> 15,000.00</td>
-                                        <td> 5,000.00</td>
-                                        <td>19/09/2015</td>
-                                    </tr>
-                                    <tr data-expanded="true">
-                                        <td><a href="decomptes.html">5</a></td>
-                                        <td><a href="decomptes.html">Fournisseur 5</a></td>
-                                        <td>Objet1</td>
-                                        <td> 10,000.00</td>
-                                        <td> 14,000.00</td>
-                                        <td> 15,000.00</td>
-                                        <td> 5,000.00</td>
-                                        <td>19/09/2015</td>
-                                    </tr>  <tr data-expanded="true">
-                                        <td><a href="decomptes.html">6</a></td>
-                                        <td><a href="decomptes.html">Fournisseur 5</a></td>
-                                        <td>Objet1</td>
-                                        <td> 10,000.00</td>
-                                        <td> 14,000.00</td>
-                                        <td> 15,000.00</td>
-                                        <td> 5,000.00</td>
-                                        <td>19/09/2015</td>
-                                    </tr>  <tr data-expanded="true">
-                                        <td><a href="decomptes.html">7</a></td>
-                                        <td><a href="decomptes.html">Fournisseur 5</a></td>
-                                        <td>Objet1</td>
-                                        <td> 10,000.00</td>
-                                        <td> 14,000.00</td>
-                                        <td> 15,000.00</td>
-                                        <td> 5,000.00</td>
-                                        <td>19/09/2015</td>
-                                    </tr>  <tr data-expanded="true">
-                                        <td><a href="decomptes.html">8</a></td>
-                                        <td><a href="decomptes.html">Fournisseur 5</a></td>
-                                        <td>Objet1</td>
-                                        <td> 10,000.00</td>
-                                        <td> 14,000.00</td>
-                                        <td> 15,000.00</td>
-                                        <td> 5,000.00</td>
-                                        <td>19/09/2015</td>
-                                    </tr>  <tr data-expanded="true">
-                                        <td><a href="decomptes.html">9</a></td>
-                                        <td><a href="decomptes.html">Fournisseur 5</a></td>
-                                        <td>Objet1</td>
-                                        <td> 10,000.00</td>
-                                        <td> 14,000.00</td>
-                                        <td> 15,000.00</td>
-                                        <td> 5,000.00</td>
-                                        <td>19/09/2015</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                        <div class="table-responsive-lg">
+                            <table
+                                    class="table table-bordered m-t-30 contact-list no-wrap  table-hover"
+                                    data-paging="true"
+                                    data-paging-size="7">
+                                <thead class="bg-dark-success text-white">
+                                <tr>
+                                    <th style="width:5%">Num</th>
+                                    <th style="width:10%">Fournisseur</th>
+                                    <th>Objet</th>
+                                    <th style="width:10%">Montant TTC</th>
+                                    <th style="width:10%">Montant TTC <br/>actualisé</th>
+                                    <th style="width:10%">Cumul des <br/> décomptes</th>
+                                    <th style="width:5%">CI</th>
+                                    <th style="width:5%">Date <br/> d'approbation</th>
+
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr data-expanded="true">
+                                    <td><a href="decomptes.html">1</a></td>
+                                    <td><a href="decomptes.html">Fournisseur 1</a></td>
+                                    <td>Objet1 <br/> suite <br/> suite <br/></td>
+                                    <td> 10,000.00</td>
+                                    <td> 14,000.00</td>
+                                    <td> 15,000.00</td>
+                                    <td> 5,000.00</td>
+                                    <td>19/09/2015</td>
+                                </tr>
+                                <tr data-expanded="true">
+                                    <td><a href="decomptes.html">3</a></td>
+                                    <td><a href="decomptes.html">Fournisseur 2</a></td>
+                                    <td>Objet1</td>
+                                    <td> 14,000.00</td>
+                                    <td> 14,000.00</td>
+                                    <td> 15,000.00</td>
+                                    <td> 5,000.00</td>
+                                    <td>19/09/2015</td>
+                                </tr>
+                                <tr data-expanded="true">
+                                    <td><a href="decomptes.html"> 2</a></td>
+                                    <td><a href="decomptes.html">Fournisseur 3</a></td>
+                                    <td>Objet1</td>
+                                    <td> 10,000.00</td>
+                                    <td> 14,000.00</td>
+                                    <td> 15,000.00</td>
+                                    <td> 5,000.00</td>
+                                    <td>19/09/2015</td>
+                                </tr>
+                                <tr data-expanded="true">
+                                    <td><a href="decomptes.html">4</a></td>
+                                    <td><a href="decomptes.html">Fournisseur 4</a></td>
+                                    <td>Objet1</td>
+                                    <td> 10,000.00</td>
+                                    <td> 14,000.00</td>
+                                    <td> 15,000.00</td>
+                                    <td> 5,000.00</td>
+                                    <td>19/09/2015</td>
+                                </tr>
+                                <tr data-expanded="true">
+                                    <td><a href="decomptes.html">5</a></td>
+                                    <td><a href="decomptes.html">Fournisseur 5</a></td>
+                                    <td>Objet1</td>
+                                    <td> 10,000.00</td>
+                                    <td> 14,000.00</td>
+                                    <td> 15,000.00</td>
+                                    <td> 5,000.00</td>
+                                    <td>19/09/2015</td>
+                                </tr>
+                                <tr data-expanded="true">
+                                    <td><a href="decomptes.html">5</a></td>
+                                    <td><a href="decomptes.html">Fournisseur 5</a></td>
+                                    <td>Objet1</td>
+                                    <td> 10,000.00</td>
+                                    <td> 14,000.00</td>
+                                    <td> 15,000.00</td>
+                                    <td> 5,000.00</td>
+                                    <td>19/09/2015</td>
+                                </tr>
+                                <tr data-expanded="true">
+                                    <td><a href="decomptes.html">6</a></td>
+                                    <td><a href="decomptes.html">Fournisseur 5</a></td>
+                                    <td>Objet1</td>
+                                    <td> 10,000.00</td>
+                                    <td> 14,000.00</td>
+                                    <td> 15,000.00</td>
+                                    <td> 5,000.00</td>
+                                    <td>19/09/2015</td>
+                                </tr>
+                                <tr data-expanded="true">
+                                    <td><a href="decomptes.html">7</a></td>
+                                    <td><a href="decomptes.html">Fournisseur 5</a></td>
+                                    <td>Objet1</td>
+                                    <td> 10,000.00</td>
+                                    <td> 14,000.00</td>
+                                    <td> 15,000.00</td>
+                                    <td> 5,000.00</td>
+                                    <td>19/09/2015</td>
+                                </tr>
+                                <tr data-expanded="true">
+                                    <td><a href="decomptes.html">8</a></td>
+                                    <td><a href="decomptes.html">Fournisseur 5</a></td>
+                                    <td>Objet1</td>
+                                    <td> 10,000.00</td>
+                                    <td> 14,000.00</td>
+                                    <td> 15,000.00</td>
+                                    <td> 5,000.00</td>
+                                    <td>19/09/2015</td>
+                                </tr>
+                                <tr data-expanded="true">
+                                    <td><a href="decomptes.html">9</a></td>
+                                    <td><a href="decomptes.html">Fournisseur 5</a></td>
+                                    <td>Objet1</td>
+                                    <td> 10,000.00</td>
+                                    <td> 14,000.00</td>
+                                    <td> 15,000.00</td>
+                                    <td> 5,000.00</td>
+                                    <td>19/09/2015</td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- ============================================================== -->
-        <!-- ============================================================== -->
-        <!-- footer -->
-        <!-- ============================================================== -->
-        <footer class="footer">
-            © 2020 Xcompta Admin by Mohamed Samir
-        </footer>
-        <!-- ============================================================== -->
-        <!-- End footer -->
-        <!-- ============================================================== -->
     </div>
+
     <!-- ============================================================== -->
-    <!-- End Page wrapper  -->
     <!-- ============================================================== -->
+    <!-- footer -->
+    <!-- ============================================================== -->
+    <footer class="footer">
+        © 2020 Xcompta Admin by Mohamed Samir
+    </footer>
+    <!-- ============================================================== -->
+    <!-- End footer -->
+    <!-- ============================================================== -->
+</div>
+<!-- ============================================================== -->
+<!-- End Page wrapper  -->
+<!-- ============================================================== -->
 </div>
 </div>
 
