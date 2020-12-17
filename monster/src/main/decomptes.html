@@ -480,62 +480,74 @@
                                                 <h6>Décompte</h6>
                                                 <section>
                                                     <div class="table-responsive">
-                                                        <table class="table table-borderless">
+                                                        <table
+                                                                class="table table-bordered m-t-30 contact-list no-wrap table-striped"
+                                                                data-paging="true"
+                                                                data-paging-size="7">
+                                                            <thead>
+                                                            <tbody class="table-borderless">
                                                             <tr></tr>
-
                                                             <tr>
-                                                                <th style="width:20%"><h6>Numéro </h6></th>
-                                                                <th style="width:20%"><h6>314DLF</h6>
-                                                                </th>
-                                                                <th style="width:25%"><h6>Date </h6></th>
-                                                                <th style="width:20%" colspan=><input type="date"
+                                                                <td style="width:20%">Numéro</td>
+                                                                <td style="width:20%" colspan="1" >
+
+                                                                    <input type="number"
+                                                                           class="form-control font-12 col-xs-1"
+                                                                           placeholder="314DLF" disabled>
+                                                                </td>
+                                                                <td colspan="2" ></td>
+                                                                <td style="width:25%">Date</td>
+                                                                <td style="width:20%" colspan="1"><input type="date"
                                                                                                       class="form-control font-12">
-                                                                <th colspan="4" style="width:55%"></th>
+                                                                <td colspan="2" style="width:55%"></td>
                                                                 </th>
                                                             </tr>
                                                             <tr></tr>
 
                                                             <tr>
-                                                                <th style="width:10%"><h6>Objet </h6></th>
-                                                                <th style="width:40%" colspan="6"><textarea
+                                                                <td style="width:10%">Objet</td>
+                                                                <td style="width:40%" colspan="6"><textarea
                                                                         class="form-control font-12" rows="4"
-                                                                        placeholder=""></textarea></th>
+                                                                        placeholder=""></textarea></td>
                                                             </tr>
                                                             <tr></tr>
 
                                                             <tr>
-                                                                <th style="width:10%"><h6 class="fon">Remarque </h6>
-                                                                </th>
-                                                                <th style="width:40%" colspan="6"><textarea
+                                                                <td style="width:10%">Remarque
+                                                                </td>
+                                                                <td style="width:40%" colspan="6"><textarea
                                                                         class="form-control font-12" rows="4"
-                                                                        placeholder=""></textarea></th>
+                                                                        placeholder=""></textarea></td>
                                                             </tr>
                                                             <tr>
                                                             </tr>
                                                             <tr>
-                                                                <th style="width:20%"><h6>Piece jointe </h6></th>
-                                                                <th style="width:80%" rowspan="7">
-                                                                </th>
+                                                                <td style="width:20%">Piece jointe</td>
+                                                                <td style="width:80%" rowspan="7">
+                                                                </td>
                                                             </tr>
+                                                            </tbody>
                                                         </table>
-
                                                     </div>
 
                                                 </section>
                                                 <!-- Step 2 -->
                                                 <h6>Liste décompte</h6>
                                                 <section>
-                                                    <div id="cont" class="table-responsive">
+
+                                                    <div class="table-responsive">
                                                         <table id="empTable"
-                                                               class=" table editable-table table-bordered table-striped m-b-0 no-wrap">
-                                                            <thead>
-                                                            <tr class="footable-filtering bg-dark- ">
-                                                                <th style="width:20%"><h6> Convention</h6></th>
-                                                                <th style="width:20%"><h6>Axe</h6></th>
-                                                                <th style="width:20%"><h6>Projet</h6></th>
-                                                                <th style="width:20%"><h6>Volet</h6></th>
-                                                                <th style="width:15%"><h6>Montant TTC</h6></th>
-                                                                <th style="width:5%"><h6>Tx TVA (%)</h6></th>
+                                                               class="table table-bordered m-t-30 contact-list no-wrap table-striped table-hover"
+                                                               data-paging="true"
+                                                               data-paging-size="7">
+                                                            <thead class="bg-dark-success text-white">
+                                                            <tr>
+                                                                <th style="width:20%">Convention</th>
+                                                                <th style="width:15%">Axe</th>
+                                                                <th style="width:20%">Projet</th>
+                                                                <th style="width:20%">Volet</th>
+                                                                <th style="width:20%">Montant TTC</th>
+                                                                <th style="width:5%">Tx TVA (%)</th>
 
                                                             </tr>
 
@@ -543,34 +555,28 @@
                                                             <tbody>
 
                                                             <tr data-expanded="true">
-                                                                <td><select class="form-control font-12">
-                                                                    <option>Fournisseur 1
-                                                                    </option>
-                                                                    <option>Fournisseur 2</option>
-                                                                    <option>Fournisseur 3</option>
-                                                                    <option>Fournisseur 4</option>
-                                                                </select></td>
-                                                                <td><select class="form-control font-12">
-                                                                    <option>Axe 1
-                                                                    </option>
-                                                                    <option>Axe 2</option>
-                                                                    <option>Axe 3</option>
-                                                                </select></td>
-                                                                <td><select class="form-control font-12">
-                                                                    <option>Projet 1
-                                                                    </option>
-                                                                    <option>Projet 2</option>
-                                                                    <option>Projet 3</option>
-                                                                </select>
-                                                                <td><select class="form-control font-12">
-                                                                    <option>Volet 1
-                                                                    </option>
-                                                                    <option>Volet 2</option>
-                                                                </select></td>
+                                                                <td>Fournisseur1</td>
+                                                                <td>Axe2</td>
+                                                                <td>Projet1</td>
+                                                                <td>Volet1</td>
                                                                 <td align="right"><input type="number"
-                                                                                         class="form-control"></td>
+                                                                                         class="form-control font-12">
+                                                                </td>
                                                                 <td align="right"><input type="number"
-                                                                                         class="form-control"></td>
+                                                                                         class="form-control font-12">
+                                                                </td>
+                                                            </tr>
+                                                            <tr data-expanded="true">
+                                                                <td>Fournisseur2</td>
+                                                                <td>Axe1</td>
+                                                                <td>Projet1</td>
+                                                                <td>Volet1</td>
+                                                                <td align="right"><input type="number"
+                                                                                         class="form-control font-12">
+                                                                </td>
+                                                                <td align="right"><input type="number"
+                                                                                         class="form-control font-12">
+                                                                </td>
                                                             </tr>
                                                             </tbody>
                                                         </table>
@@ -609,23 +615,25 @@
                                                             <tbody class="table-borderless">
                                                             <tr></tr>
                                                             <tr>
-                                                                <td align="left"><h6>Numéro : </h6></td>
+                                                                <td align="left">Numéro :</td>
                                                                 <td align="right "><input type="number"
-                                                                                          class="form-control"></td>
-                                                                <td align="left"><h6>Date : </h6></td>
+                                                                                          class="form-control font-12">
+                                                                </td>
+                                                                <td align="left">Date :</td>
                                                                 <td align="left"><input type="date"
-                                                                                        class="form-control"></td>
+                                                                                        class="form-control font-12">
+                                                                </td>
 
                                                                 <td></td>
 
                                                             </tr>
                                                             <tr></tr>
                                                             <tr>
-                                                                <td align="left"><h6>Montant TTC : </h6></td>
+                                                                <td align="left">Montant TTC :</td>
                                                                 <td align="left"><input type="number"
                                                                                         class="form-control font-12">
                                                                 </td>
-                                                                <td align="left"><h6>Date de la récéption : </h6></td>
+                                                                <td align="left">Date de la récéption :</td>
                                                                 <td align="left"><input type="date"
                                                                                         class="form-control font-12">
                                                                 </td>
@@ -634,7 +642,7 @@
                                                             </tr>
                                                             <tr></tr>
                                                             <tr>
-                                                                <td align="left"><h6>Pièce jointe : </h6></td>
+                                                                <td align="left">Pièce jointe :</td>
                                                                 <td align="right" rowspan="5" style="width:30%"></td>
                                                             </tr>
 
@@ -677,18 +685,20 @@
                                                             <tbody class="table-borderless">
                                                             <tr></tr>
                                                             <tr data-expanded="true">
-                                                                <td align="left" style="width:5%"><h6>Date : </h6></td>
+                                                                <td align="left" style="width:5%">Date :</td>
                                                                 <td align="left"><input type="date"
-                                                                                        class="form-control"></td>
-                                                                <td align="left" style="width:5%"><h6>Montant : </h6>
+                                                                                        class="form-control font-12">
+                                                                </td>
+                                                                <td align="left" style="width:5%">Montant :
                                                                 </td>
                                                                 <td align="left"><input type="number"
-                                                                                        class="form-control"></td>
+                                                                                        class="form-control font-12">
+                                                                </td>
 
                                                             </tr>
                                                             <tr></tr>
                                                             <tr data-expanded="true">
-                                                                <td align="right"><h6>Pièce jointe : </h6></td>
+                                                                <td align="right">Pièce jointe :</td>
                                                                 <td align="right" rowspan="3" style="width:30%">
                                                                 </td>
 
@@ -726,203 +736,203 @@
             <!-- ============================================================== -->
         </div>
     </div>
+</div>
+<!-- ============================================================== -->
+<!-- End Wrapper -->
+<!-- ============================================================== -->
+<!-- ============================================================== -->
+<!-- customizer Panel -->
+<!-- ============================================================== -->
+<!-- All Jquery -->
+<!-- ============================================================== -->
 
-    <!-- ============================================================== -->
-    <!-- End Wrapper -->
-    <!-- ============================================================== -->
-    <!-- ============================================================== -->
-    <!-- customizer Panel -->
-    <!-- ============================================================== -->
-    <!-- All Jquery -->
-    <!-- ============================================================== -->
+<script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap tether Core JavaScript -->
+<script src="../assets/libs/popper.js/dist/umd/popper.min.js"></script>
+<script src="../assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- apps -->
+<script src="../../dist/js/app.min.js"></script>
+<script src="../../dist/js/app.init.js"></script>
+<script src="../../dist/js/app.init.horizontal.js"></script>
+<script src="../../dist/js/app-style-switcher.horizontal.js"></script>
+<!-- Theme settings -->
+<script src="../../dist/js/app-style-switcher.js"></script>
+<!-- slimscrollbar scrollbar JavaScript -->
+<script src="../assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
+<script src="../assets/libs/jquery-sparkline/jquery.sparkline.min.js"></script>
+<!--Wave Effects -->
+<script src="../../dist/js/waves.js"></script>
+<!--Menu sidebar -->
+<script src="../../dist/js/sidebarmenu.js"></script>
+<!--Custom JavaScript -->
+<script src="../../dist/js/feather.min.js"></script>
+<script src="../../dist/js/custom.min.js"></script>
+<script src="../assets/libs/jquery-steps/build/jquery.steps.min.js"></script>
+<script src="../assets/libs/jquery-validation/dist/jquery.validate.min.js"></script>
+<script>
+    //Basic Example
+    $("#example-basic").steps({
+        headerTag: "h3",
+        bodyTag: "section",
+        transitionEffect: "slideLeft",
+        autoFocus: true
+    });
 
-    <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
-    <!-- Bootstrap tether Core JavaScript -->
-    <script src="../assets/libs/popper.js/dist/umd/popper.min.js"></script>
-    <script src="../assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- apps -->
-    <script src="../../dist/js/app.min.js"></script>
-    <script src="../../dist/js/app.init.js"></script>
-    <script src="../../dist/js/app.init.horizontal.js"></script>
-    <script src="../../dist/js/app-style-switcher.horizontal.js"></script>
-    <!-- Theme settings -->
-    <script src="../../dist/js/app-style-switcher.js"></script>
-    <!-- slimscrollbar scrollbar JavaScript -->
-    <script src="../assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
-    <script src="../assets/libs/jquery-sparkline/jquery.sparkline.min.js"></script>
-    <!--Wave Effects -->
-    <script src="../../dist/js/waves.js"></script>
-    <!--Menu sidebar -->
-    <script src="../../dist/js/sidebarmenu.js"></script>
-    <!--Custom JavaScript -->
-    <script src="../../dist/js/feather.min.js"></script>
-    <script src="../../dist/js/custom.min.js"></script>
-    <script src="../assets/libs/jquery-steps/build/jquery.steps.min.js"></script>
-    <script src="../assets/libs/jquery-validation/dist/jquery.validate.min.js"></script>
-    <script>
-        //Basic Example
-        $("#example-basic").steps({
-            headerTag: "h3",
-            bodyTag: "section",
-            transitionEffect: "slideLeft",
-            autoFocus: true
-        });
-
-        // Basic Example with form
-        var form = $("#example-form");
-        form.validate({
-            errorPlacement: function errorPlacement(error, element) {
-                element.before(error);
-            },
-            rules: {
-                confirm: {
-                    equalTo: "#password"
-                }
+    // Basic Example with form
+    var form = $("#example-form");
+    form.validate({
+        errorPlacement: function errorPlacement(error, element) {
+            element.before(error);
+        },
+        rules: {
+            confirm: {
+                equalTo: "#password"
             }
-        });
-        form.children("div").steps({
-            headerTag: "h3",
-            bodyTag: "section",
-            transitionEffect: "slideLeft",
-            onStepChanging: function (event, currentIndex, newIndex) {
-                form.validate().settings.ignore = ":disabled,:hidden";
-                return form.valid();
-            },
-            onFinishing: function (event, currentIndex) {
-                form.validate().settings.ignore = ":disabled";
-                return form.valid();
-            },
-            onFinished: function (event, currentIndex) {
-                alert("Submitted!");
+        }
+    });
+    form.children("div").steps({
+        headerTag: "h3",
+        bodyTag: "section",
+        transitionEffect: "slideLeft",
+        onStepChanging: function (event, currentIndex, newIndex) {
+            form.validate().settings.ignore = ":disabled,:hidden";
+            return form.valid();
+        },
+        onFinishing: function (event, currentIndex) {
+            form.validate().settings.ignore = ":disabled";
+            return form.valid();
+        },
+        onFinished: function (event, currentIndex) {
+            alert("Submitted!");
+        }
+    });
+
+    // Advance Example
+
+    var form = $("#example-advanced-form").show();
+
+    form.steps({
+        headerTag: "h3",
+        bodyTag: "fieldset",
+        transitionEffect: "slideLeft",
+        onStepChanging: function (event, currentIndex, newIndex) {
+            // Allways allow previous action even if the current form is not valid!
+            if (currentIndex > newIndex) {
+                return true;
             }
-        });
-
-        // Advance Example
-
-        var form = $("#example-advanced-form").show();
-
-        form.steps({
-            headerTag: "h3",
-            bodyTag: "fieldset",
-            transitionEffect: "slideLeft",
-            onStepChanging: function (event, currentIndex, newIndex) {
-                // Allways allow previous action even if the current form is not valid!
-                if (currentIndex > newIndex) {
-                    return true;
-                }
-                // Forbid next action on "Warning" step if the user is to young
-                if (newIndex === 3 && Number($("#age-2").val()) < 18) {
-                    return false;
-                }
-                // Needed in some cases if the user went back (clean up)
-                if (currentIndex < newIndex) {
-                    // To remove error styles
-                    form.find(".body:eq(" + newIndex + ") label.error").remove();
-                    form.find(".body:eq(" + newIndex + ") .error").removeClass("error");
-                }
-                form.validate().settings.ignore = ":disabled,:hidden";
-                return form.valid();
-            },
-            onStepChanged: function (event, currentIndex, priorIndex) {
-                // Used to skip the "Warning" step if the user is old enough.
-                if (currentIndex === 2 && Number($("#age-2").val()) >= 18) {
-                    form.steps("Suivant");
-                }
-                // Used to skip the "Warning" step if the user is old enough and wants to the previous step.
-                if (currentIndex === 2 && priorIndex === 3) {
-                    form.steps("Précédent");
-                }
-            },
-            onFinishing: function (event, currentIndex) {
-                form.validate().settings.ignore = ":disabled";
-                return form.valid();
-            },
-            onFinished: function (event, currentIndex) {
-                alert("Submitted!");
+            // Forbid next action on "Warning" step if the user is to young
+            if (newIndex === 3 && Number($("#age-2").val()) < 18) {
+                return false;
             }
-        }).validate({
-            errorPlacement: function errorPlacement(error, element) {
-                element.before(error);
-            },
-            rules: {
-                confirm: {
-                    equalTo: "#password-2"
-                }
+            // Needed in some cases if the user went back (clean up)
+            if (currentIndex < newIndex) {
+                // To remove error styles
+                form.find(".body:eq(" + newIndex + ") label.error").remove();
+                form.find(".body:eq(" + newIndex + ") .error").removeClass("error");
             }
-        });
-
-        // Dynamic Manipulation
-        $("#example-manipulation").steps({
-            headerTag: "h3",
-            bodyTag: "section",
-            enableAllSteps: true,
-            enablePagination: false
-        });
-
-        //Vertical Steps
-
-        $("#example-vertical").steps({
-            headerTag: "h3",
-            bodyTag: "section",
-            transitionEffect: "slideLeft",
-            stepsOrientation: "vertical"
-        });
-
-        //Custom design form example
-        $(".tab-wizard").steps({
-            headerTag: "h6",
-            bodyTag: "section",
-            transitionEffect: "fade",
-            titleTemplate: '<span class="step">#index#</span> #title#',
-            labels: {
-                finish: "Submit"
-            },
-            onFinished: function (event, currentIndex) {
-                swal("Form Submitted!", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem erat eleifend ex semper, lobortis purus sed.");
-
+            form.validate().settings.ignore = ":disabled,:hidden";
+            return form.valid();
+        },
+        onStepChanged: function (event, currentIndex, priorIndex) {
+            // Used to skip the "Warning" step if the user is old enough.
+            if (currentIndex === 2 && Number($("#age-2").val()) >= 18) {
+                form.steps("Suivant");
             }
-        });
-
-
-        var form = $(".validation-wizard").show();
-
-        $(".validation-wizard").steps({
-            headerTag: "h6",
-            bodyTag: "section",
-            transitionEffect: "fade",
-            titleTemplate: '<span class="step">#index#</span> #title#',
-            labels: {
-                finish: "Submit"
-            },
-            onStepChanging: function (event, currentIndex, newIndex) {
-                return currentIndex > newIndex || !(3 === newIndex && Number($("#age-2").val()) < 18) && (currentIndex < newIndex && (form.find(".body:eq(" + newIndex + ") label.error").remove(), form.find(".body:eq(" + newIndex + ") .error").removeClass("error")), form.validate().settings.ignore = ":disabled,:hidden", form.valid())
-            },
-            onFinishing: function (event, currentIndex) {
-                return form.validate().settings.ignore = ":disabled", form.valid()
-            },
-            onFinished: function (event, currentIndex) {
-                swal("Form Submitted!", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem erat eleifend ex semper, lobortis purus sed.");
+            // Used to skip the "Warning" step if the user is old enough and wants to the previous step.
+            if (currentIndex === 2 && priorIndex === 3) {
+                form.steps("Précédent");
             }
-        }), $(".validation-wizard").validate({
-            ignore: "input[type=hidden]",
-            errorClass: "text-danger",
-            successClass: "text-success",
-            highlight: function (element, errorClass) {
-                $(element).removeClass(errorClass)
-            },
-            unhighlight: function (element, errorClass) {
-                $(element).removeClass(errorClass)
-            },
-            errorPlacement: function (error, element) {
-                error.insertAfter(element)
-            },
-            rules: {
-                email: {
-                    email: !0
-                }
+        },
+        onFinishing: function (event, currentIndex) {
+            form.validate().settings.ignore = ":disabled";
+            return form.valid();
+        },
+        onFinished: function (event, currentIndex) {
+            alert("Submitted!");
+        }
+    }).validate({
+        errorPlacement: function errorPlacement(error, element) {
+            element.before(error);
+        },
+        rules: {
+            confirm: {
+                equalTo: "#password-2"
             }
-        })
-    </script>
+        }
+    });
+
+    // Dynamic Manipulation
+    $("#example-manipulation").steps({
+        headerTag: "h3",
+        bodyTag: "section",
+        enableAllSteps: true,
+        enablePagination: false
+    });
+
+    //Vertical Steps
+
+    $("#example-vertical").steps({
+        headerTag: "h3",
+        bodyTag: "section",
+        transitionEffect: "slideLeft",
+        stepsOrientation: "vertical"
+    });
+
+    //Custom design form example
+    $(".tab-wizard").steps({
+        headerTag: "h6",
+        bodyTag: "section",
+        transitionEffect: "fade",
+        titleTemplate: '<span class="step">#index#</span> #title#',
+        labels: {
+            finish: "Submit"
+        },
+        onFinished: function (event, currentIndex) {
+            swal("Form Submitted!", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem erat eleifend ex semper, lobortis purus sed.");
+
+        }
+    });
+
+
+    var form = $(".validation-wizard").show();
+
+    $(".validation-wizard").steps({
+        headerTag: "h6",
+        bodyTag: "section",
+        transitionEffect: "fade",
+        titleTemplate: '<span class="step">#index#</span> #title#',
+        labels: {
+            finish: "Submit"
+        },
+        onStepChanging: function (event, currentIndex, newIndex) {
+            return currentIndex > newIndex || !(3 === newIndex && Number($("#age-2").val()) < 18) && (currentIndex < newIndex && (form.find(".body:eq(" + newIndex + ") label.error").remove(), form.find(".body:eq(" + newIndex + ") .error").removeClass("error")), form.validate().settings.ignore = ":disabled,:hidden", form.valid())
+        },
+        onFinishing: function (event, currentIndex) {
+            return form.validate().settings.ignore = ":disabled", form.valid()
+        },
+        onFinished: function (event, currentIndex) {
+            swal("Form Submitted!", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem erat eleifend ex semper, lobortis purus sed.");
+        }
+    }), $(".validation-wizard").validate({
+        ignore: "input[type=hidden]",
+        errorClass: "text-danger",
+        successClass: "text-success",
+        highlight: function (element, errorClass) {
+            $(element).removeClass(errorClass)
+        },
+        unhighlight: function (element, errorClass) {
+            $(element).removeClass(errorClass)
+        },
+        errorPlacement: function (error, element) {
+            error.insertAfter(element)
+        },
+        rules: {
+            email: {
+                email: !0
+            }
+        }
+    })
+</script>
 </body>
 
 </html>
