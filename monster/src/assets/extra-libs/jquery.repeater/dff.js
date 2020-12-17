@@ -30,7 +30,7 @@ function education_fields() {
         '                                                                                        </option>\n' +
         '                                                                                        <option>Volet 2</option>\n' +
         '                                                                                    </select></td>\n' +
-        '</tr>';
+        '<td>  <button class="btn btn-danger font-10" type="button" onclick="remove_education_fields(' + room + ');"> <i class="fa fa-minus"></i> </button> </td></tr>';
     objTo.appendChild(divtest)
 }
 
