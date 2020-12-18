@@ -153,7 +153,7 @@
                                                         </thead>
                                                         <tbody>
                                                         <tr data-expanded="true">
-                                                            <td ><a href="#decompte-details">12/D34/D41</a> </td>
+                                                            <td><a href="#decompte-details">12/D34/D41</a></td>
                                                             <td>12/02/2019</td>
                                                             <td align="right">10,000.00</td>
                                                             <td align="right">12,000.00</td>
@@ -161,7 +161,7 @@
                                                             <td>15</td>
                                                         </tr>
                                                         <tr data-expanded="true">
-                                                            <td> <a href="#decompte-details">22/D34/D41</a></td>
+                                                            <td><a href="#decompte-details">22/D34/D41</a></td>
                                                             <td>12/12/2019</td>
                                                             <td align="right">12,000.00</td>
                                                             <td align="right">12,000.00</td>
@@ -177,7 +177,7 @@
                                                             <td>15</td>
                                                         </tr>
                                                         <tr data-expanded="true">
-                                                            <td > <a href="#decompte-details">41/D32/D41</a></td>
+                                                            <td><a href="#decompte-details">41/D32/D41</a></td>
                                                             <td>02/12/2022</td>
                                                             <td align="right">210,000.00</td>
                                                             <td align="right">312,000.00</td>
@@ -211,7 +211,10 @@
                                                     <table class="table table-borderless">
                                                         <tr>
                                                             <th style="width:10%"><h6>Numéro :</h6></th>
-                                                            <th style="width:30%"><h6>02/S2A/2020</h6>
+                                                            <th style="width:30%">
+                                                                <input type="number"
+                                                                       class=" font-13 col-xs-1 "
+                                                                       placeholder="02/S2A/2020" disabled></h6>
                                                             </th>
                                                             <th style="width:35%" colspan="3"></th>
                                                             <th style="width:10%"><h6>Pièce Jointe : </h6></th>
@@ -225,18 +228,20 @@
                                                         </tr>
                                                         <tr>
                                                             <th style="width:10%"><h6>Date :</h6></th>
-                                                            <th style="width:30%"><h6>12/12/2021</h6>
-                                                            </th>
+                                                            <th style="width:30%">
+                                                                <input type="number"
+                                                                       class=" font-13 col-xs-1 "
+                                                                       placeholder="12/12/2021" disabled></th>
                                                             <th style="width:45%" colspan="4"></th>
                                                         </tr>
                                                         <tr>
                                                             <th style="width:10%"><h6>Objet :</h6></th>
                                                             <th style="width:30%" rowspan="4"><textarea
-                                                                    class="form-control" rows="4"
+                                                                    class="" rows="4"
                                                                     placeholder="" disabled></textarea></th>
                                                             <th style="width:10%"><h6>Remarques :</h6></th>
                                                             <th style="width:20%" rowspan="4"><textarea
-                                                                    class="form-control" rows="4"
+                                                                    class="" rows="4"
                                                                     placeholder="" disabled></textarea>
                                                             </th>
                                                             </th>
@@ -385,13 +390,23 @@
                                                         <tr></tr>
                                                         <tr data-expanded="true">
                                                             <td align="left"><h6>Numéro : </h6></td>
-                                                            <td align="right "><h6>123.123.000,12</h6></td>
+                                                            <td align="right "><input type="number"
+                                                                                      class=" font-13 col-xs-1 "
+                                                                                      placeholder="213/EAD/31D3"
+                                                                                      disabled></h6></td>
                                                             <td align="left"><h6>Date : </h6></td>
-                                                            <td align="left"><h6>12/01/2020</h6></td>
+                                                            <td align="left"><input type="number"
+                                                                                    class=" font-13 col-xs-1 "
+                                                                                    placeholder="16/02/2021" disabled>
+                                                            </td>
                                                             <td align="left"><h6>Date récéption : </h6></td>
-                                                            <td align="left"><h6>15/01/2020</h6></td>
+                                                            <td align="left"><input type="number"
+                                                                                    class=" font-13 col-xs-1 "
+                                                                                    placeholder="12/02/2021" disabled>
+                                                            </td>
                                                             <td align="right"><h6>Pièce jointe : </h6></td>
-                                                            <td align="left" rowspan="2" style="width:30%"><a href="pieceJoint.pdf">
+                                                            <td align="left" rowspan="2" style="width:30%"><a
+                                                                    href="pieceJoint.pdf">
                                                                 <h6 class="text-info">Facture3132134.pdf</h6></a>
                                                             </td>
                                                             <td></td>
@@ -402,7 +417,10 @@
                                                         <tr data-expanded="true" style="padding-bottom: 5px">
                                                             <td colspan="2"></td>
                                                             <td align="right"><h6>Montant TTC : </h6></td>
-                                                            <td align="left"><h6>134.000,12</h6></td>
+                                                            <td align="left"><input type="number"
+                                                                                    class=" font-13 col-xs-1 "
+                                                                                    placeholder="223.321.000" disabled>
+                                                            </td>
                                                             <td colspan="2"></td>
 
                                                         </tr>
@@ -431,11 +449,15 @@
                                                         <tr data-expanded="true">
 
                                                             <td align="left" style="width:5%"><h6>Date : </h6></td>
-                                                            <td align="left"><h6>12/01/2020</h6></td>
+                                                            <td align="left"><input type="number"
+                                                                                    class=" font-13 col-xs-1 "
+                                                                                    placeholder="12/01/2021" disabled>
+                                                            </td>
                                                             <td align="left" colspan="2"><h6></h6></td>
 
                                                             <td align="right"><h6>Pièce jointe : </h6></td>
-                                                            <td align="left" rowspan="2" style="width:30%"><a href="pieceJoint.pdf">
+                                                            <td align="left" rowspan="2" style="width:30%"><a
+                                                                    href="pieceJoint.pdf">
                                                                 <h6 class="text-info">Decompte13DD.pdf</h6></a>
                                                             </td>
                                                             <td></td>
@@ -443,13 +465,66 @@
                                                         </tr>
                                                         <tr></tr>
                                                         <tr data-expanded="true" style="padding-bottom: 5px">
-                                                            <td align="left" style="width:5%"><h6>Montant : </h6></td>
-                                                            <td align="left"><h6>123.321.000</h6></td>
+                                                            <td align="left" style="width:5%"><h6>Montant :</h6></td>
+                                                            <td align="left"><input type="number"
+                                                                                    class=" font-13 col-xs-1 "
+                                                                                    placeholder="123.321.000" disabled>
+                                                            </td>
                                                             <td colspan="3"></td>
                                                         </tr>
 
 
                                                         </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-sm-12">
+                                    <div class="card border-bottom shadow border-cyan">
+                                        <div class="card-body">
+                                            <div class="d-flex no-block align-items-center">
+                                                <div class="table-responsive">
+                                                    <h4 class="text-sm-left text-info">Paiements :</h4>
+                                                    <table
+                                                            class="table table-bordered m-t-30 contact-list no-wrap table-striped table-hover"
+                                                            data-paging="true"
+                                                            data-paging-size="7">
+                                                        <thead>
+                                                        <tr class="footable-filtering bg-dark- ">
+                                                            <th style="width:5%"><h6>Banque</h6></th>
+                                                            <th style="width:15%"><h6>Type Paiement</h6></th>
+                                                            <th style="width:20%"><h6>Ref Paiement</h6></th>
+                                                            <th style="width:5%"><h6>Date Opération</h6></th>
+                                                            <th style="width:5%"><h6>Date Valeur</h6></th>
+                                                            <th style="width:5%"><h6>Montant</h6></th>
+                                                            <th style="width:5%"><h6>PJ</h6></th>
+
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+
+                                                        <tr data-expanded="true">
+                                                            <td>SG</td>
+                                                            <td>Chéque</td>
+                                                            <td>12/3D31/DF</td>
+                                                            <td align="right">12/12/2021</td>
+                                                            <td align="right">15/12/2021</td>
+                                                            <td align="right">13.431.00</td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr data-expanded="true">
+                                                            <td>GAP</td>
+                                                            <td>Virement</td>
+                                                            <td>13/3D31/DF</td>
+                                                            <td align="right">12/01/2021</td>
+                                                            <td align="right">15/12/2021</td>
+                                                            <td align="right">14.532.00</td>
+                                                            <td></td>
+                                                        </tr>
+                                                        </tbody>
+
                                                     </table>
                                                 </div>
                                             </div>
@@ -491,16 +566,16 @@
                                                             <tr></tr>
                                                             <tr>
                                                                 <td style="width:20%">Numéro</td>
-                                                                <td style="width:20%" colspan="1" >
+                                                                <td style="width:20%" colspan="1">
 
                                                                     <input type="number"
                                                                            class="form-control font-12 col-xs-1"
                                                                            placeholder="314DLF" disabled>
                                                                 </td>
-                                                                <td colspan="2" ></td>
+                                                                <td colspan="2"></td>
                                                                 <td style="width:25%">Date</td>
                                                                 <td style="width:20%" colspan="1"><input type="date"
-                                                                                                      class="form-control font-12">
+                                                                                                         class="form-control font-12">
                                                                 <td colspan="2" style="width:55%"></td>
                                                                 </th>
                                                             </tr>
