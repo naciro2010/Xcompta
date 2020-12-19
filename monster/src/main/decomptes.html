@@ -252,70 +252,117 @@
                         <div class="card-body" id="decompte-details">
                             <div class="row">
                                 <div class="col-md-12 col-sm-12">
-                                    <div class="card border-2 shadow border-info">
+                                    <div class="card border-bottom shadow border-cyan">
                                         <div class="card-body">
-                                            <div class="d-flex align-items-center">
+                                            <div class="d-flex no-block align-items-center">
                                                 <div class="table-responsive">
                                                     <h4 class="text-sm-left text-info">Décompte :</h4>
-                                                    <table class="table table-borderless">
-                                                        <tr>
-                                                            <th style="width:10%"><h6>Numéro :</h6></th>
-                                                            <th style="width:30%">
-                                                                <input type="number"
-                                                                       class=" font-13 col-xs-1 "
-                                                                       placeholder="02/S2A/2020" disabled></h6>
-                                                            </th>
-                                                            <th style="width:35%" colspan="3"></th>
-                                                            <th style="width:10%"><h6>Pièce Jointe : </h6></th>
-                                                            <th style="width:15%" rowspan="4"><a href="pieceJoint.pdf">
-                                                                <h6 class="text-info">piecejoint1.pdf</h6></a>
-                                                                <a href="pieceJoint.pdf"><h6 class="text-info">
-                                                                    piecejoint2.pdf</h6></a>
-                                                                <a href="pieceJoint.pdf"><h6 class="text-info">
-                                                                    piecejoint3.pdf</h6></a>
-                                                            </th>
+
+                                                    <table
+                                                            class="table table-bordered m-t-30 contact-list no-wrap table-striped "
+                                                            data-paging="true"
+                                                            data-paging-size="7">
+                                                        <thead>
+                                                        <tbody class="table-borderless">
+
+                                                        <tr></tr>
+                                                        <tr data-expanded="true">
+                                                            <td align="left"><h6>Numéro : </h6></td>
+                                                            <td align="right "><input type="number"
+                                                                                      class=" font-13 col-xs-1 "
+                                                                                      placeholder="233/E13/31D3"
+                                                                                      disabled></h6></td>
+                                                            <td align="left"><h6>Date : </h6></td>
+                                                            <td align="left"><input type="number"
+                                                                                    class=" font-13 col-xs-1 "
+                                                                                    placeholder="16/02/2021" disabled>
+                                                            </td>
+                                                            <td align="left"></td>
+                                                            <td align="left">
+                                                            </td>
+                                                            <td align="right"><h6>Pièce jointe : </h6></td>
+                                                            <td align="left" rowspan="2" style="width:30%"><a
+                                                                    href="pieceJoint.pdf">
+                                                                <h6 class="text-info">Facture3132134.pdf</h6></a>
+                                                            </td>
+                                                            <td></td>
+
                                                         </tr>
-                                                        <tr>
-                                                            <th style="width:10%"><h6>Date :</h6></th>
-                                                            <th style="width:30%">
-                                                                <input type="number"
-                                                                       class=" font-13 col-xs-1 "
-                                                                       placeholder="12/12/2021" disabled></th>
-                                                            <th style="width:45%" colspan="4"></th>
+                                                        <tr></tr>
+
+
+
+                                                        </tbody>
+                                                    </table>
+                                                    <table
+                                                            class="table table-bordered m-t-30 contact-list no-wrap table-striped table-hover"
+                                                            data-paging="true"
+                                                            data-paging-size="7">
+                                                        <thead>
+                                                        <tr class="footable-filtering bg-dark- ">
+                                                            <th style="width:5%"><h6>N°Prix</h6></th>
+                                                            <th><h6>Objet</h6></th>
+                                                            <th style="width:5%"><h6>Unité</h6></th>
+                                                            <th style="width:5%"><h6>Quantité</h6></th>
+                                                            <th style="width:15%"><h6>Prix Unité TTC</h6></th>
+                                                            <th style="width:5%"><h6>Total</h6></th>
+
                                                         </tr>
-                                                        <tr>
-                                                            <th style="width:10%"><h6>Objet :</h6></th>
-                                                            <th style="width:30%" rowspan="4"><textarea
-                                                                    class="" rows="4"
-                                                                    placeholder="" disabled></textarea></th>
-                                                            <th style="width:10%"><h6>Remarques :</h6></th>
-                                                            <th style="width:20%" rowspan="4"><textarea
-                                                                    class="" rows="4"
-                                                                    placeholder="" disabled></textarea>
-                                                            </th>
-                                                            </th>
-                                                            <th style="width:10%" colspan="2"><h6></h6></th>
+
+                                                        </thead>
+                                                        <tbody>
+
+                                                        <tr data-expanded="true">
+                                                            <td align="right">12.500,00</td>
+                                                            <td>Désignation 1</td>
+                                                            <td>125</td>
+                                                            <td>100</td>
+                                                            <td align="right">4.341,30</td>
+                                                            <td align="right">134.341.300,00</td>
                                                         </tr>
-                                                        <tr>
-                                                            <th></th>
-                                                            <th></th>
-                                                            <th></th>
-                                                            <th colspan="2"></th>
+                                                        <tr data-expanded="true">
+                                                            <td align="right">4.500,00</td>
+                                                            <td>Désignation 2</td>
+                                                            <td>3</td>
+                                                            <td>134</td>
+                                                            <td align="right">41.341,00</td>
+                                                            <td align="right">541.341.300,00</td>
                                                         </tr>
-                                                        <tr>
-                                                            <th></th>
-                                                            <th></th>
-                                                            <th></th>
-                                                            <th colspan="2"></th>
-                                                        </tr>
-                                                        <tr>
-                                                            <th></th>
-                                                            <th></th>
-                                                            <th></th>
-                                                            <th colspan="2"></th>
+                                                        <tr data-expanded="true">
+                                                            <td align="right">1.500,00</td>
+                                                            <td>Désignation 3</td>
+                                                            <td>314</td>
+                                                            <td>34</td>
+                                                            <td align="right">123.230.00,000</td>
+                                                            <td align="right">134.341.300,00</td>
                                                         </tr>
 
 
+                                                        </tbody>
+                                                        <tbody class="table-borderless">
+                                                        <tr></tr>
+
+                                                        <tr data-expanded="true">
+                                                            <td colspan="4"></td>
+                                                            <td align="left"><h6>Montant Hors TVA </h6></td>
+                                                            <td align="right"><h6>123.123.000,12</h6></td>
+
+                                                        </tr>
+                                                        <tr></tr>
+
+                                                        <tr data-expanded="true">
+                                                            <td colspan="4"></td>
+                                                            <td align="left"><h6>TVA </h6></td>
+                                                            <td align="right"><h6>134.000,12</h6></td>
+
+                                                        </tr>
+                                                        <tr></tr>
+                                                        <tr data-expanded="true">
+                                                            <td colspan="4"></td>
+                                                            <td align="left"><h6>Total TTC </h6></td>
+                                                            <td align="right"><h6>199.123.000,12</h6></td>
+                                                        </tr>
+                                                        </tbody>
                                                     </table>
                                                 </div>
                                             </div>
@@ -327,6 +374,7 @@
                                         <div class="card-body">
                                             <div class="d-flex no-block align-items-center">
                                                 <div class="table-responsive">
+                                                    <h4 class="text-sm-left text-info">Imputations :</h4>
                                                     <table
                                                             class="table table-bordered m-t-30 contact-list no-wrap table-striped table-hover"
                                                             data-paging="true"
