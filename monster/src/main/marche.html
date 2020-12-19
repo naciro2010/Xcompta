@@ -160,6 +160,51 @@
 
                                                     </div>
                                                     <hr/>
+                                                    <h5 class="text-info">Détail des prix :</h5>
+                                                    <div class="card-body">
+                                                        <form class="row">
+                                                            <div class="col-sm-12">
+                                                                <table id="pricedetails"
+                                                                       class=" table editable-table table-bordered table-striped m-b-0 no-wrap">
+                                                                    <thead>
+                                                                    <tr class="footable-filtering  bg-success ">
+                                                                        <th style="width:25%"><h6
+                                                                                class="align-content-center text-white">
+                                                                            N°Prix</h6></th>
+                                                                        <th style="width:25%"
+                                                                            class="align-content-center "><h6
+                                                                                class="align-content-center text-white">
+                                                                            Quantité</h6>
+                                                                        </th>
+                                                                        <th style="width:25%"
+                                                                            class="align-content-center"><h6
+                                                                                class="align-content-center text-white">
+                                                                            PU HT</h6></th>
+                                                                        <th style="width:20%"
+                                                                            class="align-content-center"><h6
+                                                                                class="align-content-center text-white">
+                                                                            Total</h6>
+                                                                        </th>
+                                                                        <th style="width:5%"
+                                                                            class="align-content-center">
+                                                                            <button class="btn btn-dark-info font-10"
+                                                                                    type="button"
+                                                                                    onclick="price_fields();">
+                                                                                <i class="fa fa-plus"></i>
+                                                                            </button>
+                                                                        </th>
+
+                                                                    </tr>
+                                                                    </thead>
+                                                                    <tbody id="price_fields">
+
+
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <hr/>
                                                     <h5 class="text-info">Imputation :</h5>
                                                     <div class="card-body">
                                                         <form class="row">
@@ -242,7 +287,7 @@
                                 <thead class="bg-dark-success text-white font-12">
                                 <tr>
                                     <th style="width:5%">Num <br/>Marché</th>
-                                    <th style="width:5%">Num  AO</th>
+                                    <th style="width:5%">Num AO</th>
                                     <th style="width:10%">Fournisseur</th>
                                     <th>Objet</th>
                                     <th style="width:10%">Montant TTC</th>

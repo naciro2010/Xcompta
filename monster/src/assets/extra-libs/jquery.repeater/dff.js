@@ -34,6 +34,26 @@ function education_fields() {
     objTo.appendChild(divtest)
 }
 
+function price_fields() {
+
+    room++;
+    var objTo = document.getElementById('price_fields')
+    var divtest = document.createElement("tr");
+    divtest.setAttribute("class", "form-group removeclass" + room);
+    var rdiv = 'removeclass' + room;
+    divtest.innerHTML = '  <td><select class="form-control font-12"> <option>N° Price 1\n' +
+        '                                                                                        </option>\n' +
+        '                                                                                        <option>N° Price 2</option>\n' +
+        '                                                                                        <option>N° Price 3</option>\n' +
+        '                                                                                        <option>N° Price 4</option>\n' +
+        '                                                                                    </select></td>\n' +
+        '                                                                                    <td><input type="number"></td>\n' +
+        '                                                                                    <td><input type="number"></td>' +
+        '                                                                                    <td>123.398.312,00</td>\n' +
+        '<td>  <button class="btn btn-danger font-10" type="button" onclick="remove_education_fields(' + room + ');"> <i class="fa fa-minus"></i> </button> </td></tr>';
+    objTo.appendChild(divtest)
+}
+
 function remove_education_fields(rid) {
     $('.removeclass' + rid).remove();
 }
