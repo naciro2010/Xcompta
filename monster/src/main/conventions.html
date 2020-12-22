@@ -530,7 +530,8 @@
                                                         </th>
                                                         <th style="width:15%"><h6 class="text-white">Projet</h6></th>
                                                         <th style="width:15%"><h6 class="text-white">Volet</h6></th>
-                                                        <th style="width:10%"><h6 class="text-white">Date Démarage</h6></th>
+                                                        <th style="width:10%"><h6 class="text-white">Date Démarage</h6>
+                                                        </th>
                                                         <th style="width:15%"><h6 class="text-white">Délai</h6></th>
                                                         <th style="width:23%"><h6 class="text-white">Date fin</h6></th>
                                                         <th style="width:5%"
@@ -554,39 +555,108 @@
                                         <section>
                                             <div class="table-responsive">
                                                 <table
-                                                        class="table table-bordered m-t-30 contact-list no-wrap table-striped "
+                                                        class="table table-bordered m-t-30 contact-list no-wrap table-striped"
                                                         data-paging="true"
                                                         data-paging-size="7">
                                                     <thead>
                                                     <tbody class="table-borderless">
                                                     <tr></tr>
-                                                    <tr data-expanded="true">
-                                                        <td align="left" style="width:5%">Date :</td>
-                                                        <td align="left"><input type="date"
-                                                                                class="form-control font-12">
+                                                    <tr>
+                                                        <td style="width:5%">Axe</td>
+                                                        <td style="width:20%" colspan="1">
+                                                            <select class="form-control font-12">\n' +
+                                                                <option>A001
+                                                                </option>
+                                                                <option>A002</option>
+                                                                <option>A003</option>
+                                                            </select>
                                                         </td>
-                                                        <td align="left" style="width:5%">Montant :
+                                                        <td style="width:5%">Projet</td>
+                                                        <td style="width:20%" colspan="1">
+                                                            <select class="form-control font-12">\n' +
+                                                                <option>P001
+                                                                </option>
+                                                                <option>P002</option>
+                                                                <option>P003</option>
+                                                            </select>
                                                         </td>
-                                                        <td align="left"><input type="number"
-                                                                                class="form-control font-12">
+                                                        <td style="width:5%">Volet</td>
+                                                        <td style="width:20%" colspan="1">
+                                                            <select class="form-control font-12">\n' +
+                                                                <option>V001
+                                                                </option>
+                                                                <option>V002</option>
+                                                                <option>V003</option>
+                                                            </select>
                                                         </td>
+                                                    </tr>
+                                                    <tr>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="1" style="width:5%">Date</td>
+                                                        <td style="width:20%" colspan="1"><input type="date"
+                                                                                                 class="form-control font-12 col-xs-1"
+                                                                                                 placeholder="">
+                                                        </td>
+                                                        <td colspan="1" style="width:5%">Montant</td>
+                                                        <td style="width:20%" colspan="1"><input type="number"
+                                                                                                 class="form-control font-12 col-xs-1"
+                                                                                                 placeholder=""></td>
+                                                        <td colspan="1" style="width:5%">Partenaire</td>
+                                                        <td style="width:20%" colspan="1"><select
+                                                                class="form-control font-12">\n' +
+                                                            <option>Partenaire 1
+                                                            </option>
+                                                            <option>Partenaire 2</option>
+                                                            <option>Partenaire 3</option>
+                                                        </select></td>
+                                                    </tr>
+                                                    <tr>
 
                                                     </tr>
-                                                    <tr></tr>
-                                                    <tr data-expanded="true">
-                                                        <td align="right">Pièce jointe :</td>
-                                                        <td align="right" rowspan="3" style="width:30%">
+                                                    <tr>
+                                                        <td style="width:5%">MOD</td>
+                                                        <td style="width:20%" colspan="3">
+                                                            <textarea
+                                                                    class="form-control font-12 col-xs-1" rows="1"
+                                                                    cols="5"
+                                                            > </textarea>
                                                         </td>
-
+                                                        <td colspan="2"></td>
                                                     </tr>
-                                                    <tr></tr>
+                                                    </tbody>
+                                                </table>
+                                                <table id="versementperv"
+                                                       class="table table-bordered m-t-30 contact-list no-wrap table-striped table-hover"
+                                                       data-paging="true"
+                                                       data-paging-size="7">
+                                                    <thead class="bg-dark-success text-white">
+                                                    <tr>
+                                                        <th style="width:17%"><h6 class="text-white">Axe</h6>
+                                                        </th>
+                                                        <th style="width:15%"><h6 class="text-white">Projet</h6></th>
+                                                        <th style="width:15%"><h6 class="text-white">Volet</h6></th>
+                                                        <th style="width:5%"><h6 class="text-white">Date</h6></th>
+                                                        <th style="width:15%"><h6 class="text-white">Montant</h6></th>
+                                                        <th style="width:25%"><h6 class="text-white">Partenaire</h6>
+                                                        </th>
+                                                        <th style="width:25%"><h6 class="text-white">MOD</h6></th>
+                                                        <th style="width:5%"
+                                                            class="align-content-center">
+                                                            <button class="btn btn-dark-info font-10"
+                                                                    type="button"
+                                                                    onclick="versementperv_fields();">
+                                                                <i class="fa fa-plus"></i>
+                                                            </button>
+                                                        </th>
+                                                    </tr>
 
-
+                                                    </thead>
+                                                    <tbody id="versementperv_fields">
                                                     </tbody>
                                                 </table>
                                             </div>
                                         </section>
-
                                     </form>
 
                                 </div>
