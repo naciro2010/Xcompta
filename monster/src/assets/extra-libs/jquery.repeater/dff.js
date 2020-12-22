@@ -34,6 +34,107 @@ function education_fields() {
     objTo.appendChild(divtest)
 }
 
+function partenaire_fields() {
+
+    room++;
+    var objTo = document.getElementById('partenaire_fields')
+    var divtest = document.createElement("tr");
+    divtest.setAttribute("class", "form-group removeclass" + room);
+    var rdiv = 'removeclass' + room;
+    divtest.innerHTML = '     <tr data-expanded="true">\n' +
+        '                                                        <td style="width:20%" colspan="1"><select\n' +
+        '                                                                class="form-control font-12">\n' +
+        '                                                            <option> Partenaire\n' +
+        '                                                            </option>\n' +
+        '                                                            <option selected>Partenaire 1</option>\n' +
+        '                                                            <option>Partenaire 2</option>\n' +
+        '                                                            <option>Partenaire 3</option>\n' +
+        '                                                            <option>Partenaire 4</option>\n' +
+        '                                                        </select></td>\n' +
+        '                                                        <td align="right"><input type="number"\n' +
+        '                                                                                 class="form-control font-12">\n' +
+        '                                                        </td>\n' +
+        '                                                        <td align="right"><input type="number"\n' +
+        '                                                                                 class="form-control font-12" disabled>\n' +
+        '                                                        </td>\n' +
+        '                                                        <td align="right"><input type="number"\n' +
+        '                                                                                 class="form-control font-12" disabled>\n' +
+        '                                                        </td>\n' +
+        '<td>  <button class="btn btn-danger font-10" type="button" onclick="remove_education_fields(' + room + ');"> <i class="fa fa-minus"></i> </button> </td></tr>';
+    objTo.appendChild(divtest)
+}
+function mo_fields() {
+
+    room++;
+    var objTo = document.getElementById('mo_fields')
+    var divtest = document.createElement("tr");
+    divtest.setAttribute("class", "form-group removeclass" + room);
+    var rdiv = 'removeclass' + room;
+    divtest.innerHTML = '     <tr data-expanded="true">\n' +
+        '                                                        <td colspan="1"><select\n' +
+        '                                                                class="form-control font-12">\n' +
+        '                                                            <option>' +
+        '                                                            </option>\n' +
+        '                                                            <option selected>MO 1</option>\n' +
+        '                                                            <option>MO 2</option>\n' +
+        '                                                            <option>MO 3</option>\n' +
+        '                                                            <option>MO 4</option>\n' +
+        '                                                        </select></td>\n' +
+
+        '<td>  <button class="btn btn-danger font-10" type="button" onclick="remove_education_fields(' + room + ');"> <i class="fa fa-minus"></i> </button> </td></tr>';
+    objTo.appendChild(divtest)
+}
+function mod_fields() {
+
+    room++;
+    var objTo = document.getElementById('mod_fields')
+    var divtest = document.createElement("tr");
+    divtest.setAttribute("class", "form-group removeclass" + room);
+    var rdiv = 'removeclass' + room;
+    divtest.innerHTML = '     <tr data-expanded="true">\n' +
+        '                                                        <td  colspan="1"><select\n' +
+        '                                                                class="form-control font-12">\n' +
+        '                                                            <option>' +
+        '                                                            </option>\n' +
+        '                                                            <option selected>MOD 1</option>\n' +
+        '                                                            <option>MOD 2</option>\n' +
+        '                                                            <option>MOD 3</option>\n' +
+        '                                                            <option>MOD 4</option>\n' +
+        '                                                        </select></td>\n' +
+
+        '<td>  <button class="btn btn-danger font-10" type="button" onclick="remove_education_fields(' + room + ');"> <i class="fa fa-minus"></i> </button> </td></tr>';
+    objTo.appendChild(divtest)
+}
+function partenaire_fields() {
+
+    room++;
+    var objTo = document.getElementById('partenaire_fields')
+    var divtest = document.createElement("tr");
+    divtest.setAttribute("class", "form-group removeclass" + room);
+    var rdiv = 'removeclass' + room;
+    divtest.innerHTML = '     <tr data-expanded="true">\n' +
+        '                                                        <td style="width:20%" colspan="1"><select\n' +
+        '                                                                class="form-control font-12">\n' +
+        '                                                            <option> Partenaire\n' +
+        '                                                            </option>\n' +
+        '                                                            <option selected>Partenaire 1</option>\n' +
+        '                                                            <option>Partenaire 2</option>\n' +
+        '                                                            <option>Partenaire 3</option>\n' +
+        '                                                            <option>Partenaire 4</option>\n' +
+        '                                                        </select></td>\n' +
+        '                                                        <td align="right"><input type="number"\n' +
+        '                                                                                 class="form-control font-12">\n' +
+        '                                                        </td>\n' +
+        '                                                        <td align="right"><input type="number"\n' +
+        '                                                                                 class="form-control font-12" disabled>\n' +
+        '                                                        </td>\n' +
+        '                                                        <td align="right"><input type="number"\n' +
+        '                                                                                 class="form-control font-12" disabled>\n' +
+        '                                                        </td>\n' +
+        '<td>  <button class="btn btn-danger font-10" type="button" onclick="remove_education_fields(' + room + ');"> <i class="fa fa-minus"></i> </button> </td></tr>';
+    objTo.appendChild(divtest)
+}
+
 function price_fields() {
 
     room++;
