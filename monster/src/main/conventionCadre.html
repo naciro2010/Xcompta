@@ -500,7 +500,7 @@
                 <div class="modal-dialog modal-full-width">
                     <div class="modal-content">
                         <div class="modal-header d-flex align-items-center bg-success">
-                            <h4 class="modal-title text-white" id="fullWidthModalLabel">Création décompte :</h4>
+                            <h4 class="modal-title text-white" id="fullWidthModalLabel">Création Avenant / Convention Spécifique :</h4>
                             <button type="button" class="close ml-auto" data-dismiss="modal"
                                     aria-hidden="true">×
                             </button>
@@ -511,7 +511,7 @@
                                     <h6 class="card-subtitle"></h6>
                                     <form action="#" class="tab-wizard wizard-circle">
                                         <!-- Step 1 -->
-                                        <h6>Décompte</h6>
+                                        <h6>Convention</h6>
                                         <section>
                                             <div class="table-responsive">
                                                 <table
@@ -522,80 +522,90 @@
                                                     <tbody class="table-borderless">
                                                     <tr></tr>
                                                     <tr>
-                                                        <td style="width:20%">Numéro</td>
+                                                        <td style="width:5%">Numéro</td>
                                                         <td style="width:20%" colspan="1">
 
                                                             <input type="number"
                                                                    class="form-control font-12 col-xs-1"
-                                                                   placeholder="314DLF" disabled>
+                                                                   placeholder="">
                                                         </td>
-                                                        <td colspan="2"></td>
-                                                        <td style="width:25%">Date</td>
-                                                        <td style="width:20%" colspan="1"><input type="date"
-                                                                                                 class="form-control font-12">
-                                                        <td colspan="2" style="width:55%"></td>
-                                                        </th>
+                                                        <td style="width:5%">Date</td>
+                                                        <td style="width:5%" colspan="1"><input type="date"
+                                                                                                class="form-control font-12">
+                                                        <td colspan="1" style="width:10%">Type</td>
+                                                        <td style="width:20%" colspan="1"><select
+                                                                class="form-control font-12">
+                                                            <option>Type
+                                                            </option>
+                                                            <option selected>Avenant</option>
+                                                            <option>Spécifique</option>
+                                                        </select></td>
                                                     </tr>
                                                     <tr>
                                                     </tr>
                                                     <tr>
-                                                        <td style="width:20%">Piece jointe</td>
-                                                        <td style="width:80%" rowspan="7">
+                                                        <td colspan="1" style="width:6%">Statut</td>
+                                                        <td style="width:20%" colspan="1"><select
+                                                                class="form-control font-12">
+                                                            <option>Statut
+                                                            </option>
+                                                            <option selected>Validée</option>
+                                                            <option>En cours</option>
+                                                            <option>Achevé</option>
+                                                            <option>En retard</option>
+                                                            <option>Annulé</option>
+                                                        </select>
+                                                        </td>
+                                                        <td colspan="1" style="width:5%">Taux</td>
+                                                        <td style="width:5%" colspan="1"><input type="number"
+                                                                                                class="form-control font-12 col-xs-1"
+                                                                                                placeholder=""></td>
+                                                        <td colspan="1" style="width:5%">Budget</td>
+                                                        <td style="width:5%" colspan="1"><input type="number"
+                                                                                                class="form-control font-12 col-xs-1"
+                                                                                                placeholder=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                    </tr>
+                                                    <td colspan="1" style="width:10%">Base de calcul</td>
+                                                    <td style="width:20%" colspan="2"><select
+                                                            class="form-control font-12">
+                                                        <option>
+                                                        </option>
+                                                        <option selected>Décaissements TTC</option>
+                                                        <option>Décaissements HT</option>
+                                                    </select>
+                                                    </td>
+                                                    <td style="width:20%" colspan="3">
+                                                    </td>
+
+                                                    </tr>
+                                                    <tr>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width:10%">Libellé</td>
+                                                        <td style="width:20%" colspan="5">
+
+                                                            <textarea
+                                                                    class="form-control font-12 col-xs-1" rows="1"
+                                                                    cols="5"
+                                                            > </textarea>
                                                         </td>
                                                     </tr>
-                                                    </tbody>
-                                                </table>
 
-                                                <table
-                                                        class="table table-bordered m-t-30 contact-list no-wrap table-striped table-hover"
-                                                        data-paging="true"
-                                                        data-paging-size="7">
-                                                    <thead class="bg-dark-success text-white">
-                                                    <tr class="footable-filtering bg-dark- ">
-                                                        <th style="width:5%"><h6 class="text-white">N°Prix</h6></th>
-                                                        <th><h6 class="text-white">Désignation</h6></th>
-                                                        <th style="width:5%"><h6 class="text-white">Unité</h6></th>
-                                                        <th style="width:5%"><h6 class="text-white">QTE <br/> Restante</h6></th>
-                                                        <th style="width:5%"><h6 class="text-white">Quantité</h6></th>
-                                                        <th style="width:5%"><h6 class="text-white">PU HT</h6></th>
-                                                        <th style="width:5%"><h6 class="text-white">Total</h6></th>
+                                                    <tr>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width:10%">Objet</td>
+                                                        <td style="width:20%" colspan="5">
+
+                                                            <textarea
+                                                                    class="form-control font-12 col-xs-1" rows="3"
+                                                                    cols="5"
+                                                            > </textarea>
+                                                        </td>
 
                                                     </tr>
-
-                                                    </thead>
-                                                    <tbody>
-
-                                                    <tr data-expanded="true">
-                                                        <td align="right">1243/43</td>
-                                                        <td>Désignation 1</td>
-                                                        <td>Article</td>
-                                                        <td>100</td>
-                                                        <td> <input type="text"
-                                                                    class="form-control font-12 col-xs-1"></td>
-                                                        <td align="right">4.341,30</td>
-                                                        <td align="right">134.341.300,00</td>
-                                                    </tr>
-                                                    <tr data-expanded="true">
-                                                        <td align="right">1243/41</td>
-                                                        <td>Désignation 2</td>
-                                                        <td>Article</td>
-                                                        <td>134</td>
-                                                        <td> <input type="text"
-                                                                    class="form-control font-12 col-xs-1"></td>
-                                                        <td align="right">41.341,00</td>
-                                                        <td align="right">541.341.300,00</td>
-                                                    </tr>
-                                                    <tr data-expanded="true">
-                                                        <td align="right">1243/44</td>
-                                                        <td>Désignation 3</td>
-                                                        <td>Article</td>
-                                                        <td>34</td>
-                                                        <td> <input type="text"
-                                                                    class="form-control font-12 col-xs-1"></td>
-                                                        <td align="right">123.230.00,000</td>
-                                                        <td align="right">134.341.300,00</td>
-                                                    </tr>
-
 
                                                     </tbody>
                                                 </table>
@@ -603,58 +613,130 @@
 
                                         </section>
                                         <!-- Step 2 -->
-                                        <h6>Imputation</h6>
+                                        <h6>Partenaire</h6>
                                         <section>
-
                                             <div class="table-responsive">
-                                                <table id="empTable"
+                                                <table id="idPartenaire"
                                                        class="table table-bordered m-t-30 contact-list no-wrap table-striped table-hover"
                                                        data-paging="true"
                                                        data-paging-size="7">
                                                     <thead class="bg-dark-success text-white">
                                                     <tr>
-                                                        <th style="width:20%"><h6 class="text-white">Convention</h6></th>
-                                                        <th style="width:15%"><h6 class="text-white">Axe</h6></th>
-                                                        <th style="width:20%"><h6 class="text-white">Projet</h6></th>
-                                                        <th style="width:20%"><h6 class="text-white">Volet</h6></th>
-                                                        <th style="width:20%"><h6 class="text-white">Montant TTC</h6></th>
-                                                        <th style="width:5%"><h6 class="text-white">Tx TVA (%)</h6></th>
-
+                                                        <th style="width:20%"><h6 class="text-white">Partenaire</h6>
+                                                        </th>
+                                                        <th style="width:30%"><h6 class="text-white">Budget</h6></th>
+                                                        <th style="width:10%"><h6 class="text-white">%</h6></th>
+                                                        <th style="width:20%"><h6 class="text-white">CI</h6></th>
+                                                        <th style="width:5%"
+                                                            class="align-content-center">
+                                                            <button class="btn btn-dark-info font-10"
+                                                                    type="button"
+                                                                    onclick="partenaire_fields();">
+                                                                <i class="fa fa-plus"></i>
+                                                            </button>
+                                                        </th>
                                                     </tr>
 
                                                     </thead>
-                                                    <tbody>
-
-                                                    <tr data-expanded="true">
-                                                        <td>Fournisseur1</td>
-                                                        <td>Axe2</td>
-                                                        <td>Projet1</td>
-                                                        <td>Volet1</td>
-                                                        <td align="right"><input type="number"
-                                                                                 class="form-control font-12">
-                                                        </td>
-                                                        <td align="right"><input type="number"
-                                                                                 class="form-control font-12">
-                                                        </td>
-                                                    </tr>
-                                                    <tr data-expanded="true">
-                                                        <td>Fournisseur2</td>
-                                                        <td>Axe1</td>
-                                                        <td>Projet1</td>
-                                                        <td>Volet1</td>
-                                                        <td align="right"><input type="number"
-                                                                                 class="form-control font-12">
-                                                        </td>
-                                                        <td align="right"><input type="number"
-                                                                                 class="form-control font-12">
-                                                        </td>
-                                                    </tr>
+                                                    <tbody id="partenaire_fields">
                                                     </tbody>
                                                 </table>
                                             </div>
                                         </section>
+                                        <h6>MO/MOD</h6>
+                                        <section>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="row" id="draggable-area">
+                                                        <div class="col-md-6 col-sm-6">
+                                                            <table id="idMO"
+                                                                   class="table table-bordered m-t-30 contact-list no-wrap table-striped table-hover"
+                                                                   data-paging="true"
+                                                                   data-paging-size="7">
+                                                                <thead class="bg-dark-success text-white">
+                                                                <tr>
+                                                                    <th><h6 class="text-white">Maitre d'oeuvre</h6>
+                                                                    </th>
+                                                                    <th style="width:5%"
+                                                                        class="align-content-center">
+                                                                        <button class="btn btn-dark-info font-10"
+                                                                                type="button"
+                                                                                onclick="mo_fields();">
+                                                                            <i class="fa fa-plus"></i>
+                                                                        </button>
+                                                                    </th>
+                                                                </tr>
+
+                                                                </thead>
+                                                                <tbody id="mo_fields">
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="col-md-6 col-sm-6">
+                                                            <table id="idMOD"
+                                                                   class="table table-bordered m-t-30 contact-list no-wrap table-striped table-hover"
+                                                                   data-paging="true"
+                                                                   data-paging-size="7">
+                                                                <thead class="bg-dark-success text-white">
+                                                                <tr>
+                                                                    <th><h6 class="text-white">Maitre d'oeuvre
+                                                                        Délégué</h6>
+                                                                    </th>
+                                                                    <th style="width:5%"
+                                                                        class="align-content-center">
+                                                                        <button class="btn btn-dark-info font-10"
+                                                                                type="button"
+                                                                                onclick="mod_fields();">
+                                                                            <i class="fa fa-plus"></i>
+                                                                        </button>
+                                                                    </th>
+                                                                </tr>
+
+                                                                </thead>
+                                                                <tbody id="mod_fields">
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
                                         <!-- Step 3 -->
-                                        <h6>Facture</h6>
+                                        <h6>Imputations</h6>
+                                        <section>
+                                            <div class="table-responsive">
+                                                <table id="imputationprevisionnelle"
+                                                       class="table table-bordered m-t-30 contact-list no-wrap table-striped table-hover"
+                                                       data-paging="true"
+                                                       data-paging-size="7">
+                                                    <thead class="bg-dark-success text-white">
+                                                    <tr>
+                                                        <th style="width:17%"><h6 class="text-white">Axe</h6>
+                                                        </th>
+                                                        <th style="width:15%"><h6 class="text-white">Projet</h6></th>
+                                                        <th style="width:15%"><h6 class="text-white">Volet</h6></th>
+                                                        <th style="width:10%"><h6 class="text-white">Date Démarage</h6>
+                                                        </th>
+                                                        <th style="width:15%"><h6 class="text-white">Délai</h6></th>
+                                                        <th style="width:23%"><h6 class="text-white">Date fin</h6></th>
+                                                        <th style="width:5%"
+                                                            class="align-content-center">
+                                                            <button class="btn btn-dark-info font-10"
+                                                                    type="button"
+                                                                    onclick="imputationprevisionnelle_fields();">
+                                                                <i class="fa fa-plus"></i>
+                                                            </button>
+                                                        </th>
+                                                    </tr>
+
+                                                    </thead>
+                                                    <tbody id="imputationprevisionnelle_fields">
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </section>
+                                        <!-- Step 4 -->
+                                        <h6>Versements</h6>
                                         <section>
                                             <div class="table-responsive">
                                                 <table
@@ -665,80 +747,101 @@
                                                     <tbody class="table-borderless">
                                                     <tr></tr>
                                                     <tr>
-                                                        <td align="left">Numéro :</td>
-                                                        <td align="right "><input type="number"
-                                                                                  class="form-control font-12">
+                                                        <td style="width:5%">Axe</td>
+                                                        <td style="width:20%" colspan="1">
+                                                            <select class="form-control font-12">\n' +
+                                                                <option>A001
+                                                                </option>
+                                                                <option>A002</option>
+                                                                <option>A003</option>
+                                                            </select>
                                                         </td>
-                                                        <td align="left">Date :</td>
-                                                        <td align="left"><input type="date"
-                                                                                class="form-control font-12">
+                                                        <td style="width:5%">Projet</td>
+                                                        <td style="width:20%" colspan="1">
+                                                            <select class="form-control font-12">\n' +
+                                                                <option>P001
+                                                                </option>
+                                                                <option>P002</option>
+                                                                <option>P003</option>
+                                                            </select>
                                                         </td>
-
-                                                        <td></td>
-
+                                                        <td style="width:5%">Volet</td>
+                                                        <td style="width:20%" colspan="1">
+                                                            <select class="form-control font-12">\n' +
+                                                                <option>V001
+                                                                </option>
+                                                                <option>V002</option>
+                                                                <option>V003</option>
+                                                            </select>
+                                                        </td>
                                                     </tr>
-                                                    <tr></tr>
                                                     <tr>
-                                                        <td align="left">Montant TTC :</td>
-                                                        <td align="left"><input type="number"
-                                                                                class="form-control font-12">
-                                                        </td>
-                                                        <td align="left">Date de la récéption :</td>
-                                                        <td align="left"><input type="date"
-                                                                                class="form-control font-12">
-                                                        </td>
-                                                        <td></td>
-
                                                     </tr>
-                                                    <tr></tr>
                                                     <tr>
-                                                        <td align="left">Pièce jointe :</td>
-                                                        <td align="right" rowspan="5" style="width:30%"></td>
+                                                        <td colspan="1" style="width:5%">Date</td>
+                                                        <td style="width:20%" colspan="1"><input type="date"
+                                                                                                 class="form-control font-12 col-xs-1"
+                                                                                                 placeholder="">
+                                                        </td>
+                                                        <td colspan="1" style="width:5%">Montant</td>
+                                                        <td style="width:20%" colspan="1"><input type="number"
+                                                                                                 class="form-control font-12 col-xs-1"
+                                                                                                 placeholder=""></td>
+                                                        <td colspan="1" style="width:5%">Partenaire</td>
+                                                        <td style="width:20%" colspan="1"><select
+                                                                class="form-control font-12">\n' +
+                                                            <option>Partenaire 1
+                                                            </option>
+                                                            <option>Partenaire 2</option>
+                                                            <option>Partenaire 3</option>
+                                                        </select></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width:5%">MOD</td>
+                                                        <td style="width:20%" colspan="3">
+                                                            <textarea
+                                                                    class="form-control font-12 col-xs-1" rows="1"
+                                                                    cols="5"
+                                                            > </textarea>
+                                                        </td>
+                                                        <td colspan="2"></td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                                <table id="versementperv"
+                                                       class="table table-bordered m-t-30 contact-list no-wrap table-striped table-hover"
+                                                       data-paging="true"
+                                                       data-paging-size="7">
+                                                    <thead class="bg-dark-success text-white">
+                                                    <tr>
+                                                        <th style="width:17%"><h6 class="text-white">Axe</h6>
+                                                        </th>
+                                                        <th style="width:15%"><h6 class="text-white">Projet</h6></th>
+                                                        <th style="width:15%"><h6 class="text-white">Volet</h6></th>
+                                                        <th style="width:5%"><h6 class="text-white">Date</h6></th>
+                                                        <th style="width:15%"><h6 class="text-white">Montant</h6></th>
+                                                        <th style="width:25%"><h6 class="text-white">Partenaire</h6>
+                                                        </th>
+                                                        <th style="width:25%"><h6 class="text-white">MOD</h6></th>
+                                                        <th style="width:5%"
+                                                            class="align-content-center">
+                                                            <button class="btn btn-dark-info font-10"
+                                                                    type="button"
+                                                                    onclick="versementperv_fields();">
+                                                                <i class="fa fa-plus"></i>
+                                                            </button>
+                                                        </th>
                                                     </tr>
 
-
+                                                    </thead>
+                                                    <tbody id="versementperv_fields">
                                                     </tbody>
                                                 </table>
                                             </div>
                                         </section>
-                                        <!-- Step 4 -->
-                                        <h6>Caution Bancaire</h6>
-                                        <section>
-                                            <div class="table-responsive">
-                                                <table
-                                                        class="table table-bordered m-t-30 contact-list no-wrap table-striped "
-                                                        data-paging="true"
-                                                        data-paging-size="7">
-                                                    <thead>
-                                                    <tbody class="table-borderless">
-                                                    <tr></tr>
-                                                    <tr data-expanded="true">
-                                                        <td align="left" style="width:5%">Date :</td>
-                                                        <td align="left"><input type="date"
-                                                                                class="form-control font-12">
-                                                        </td>
-                                                        <td align="left" style="width:5%">Montant :
-                                                        </td>
-                                                        <td align="left"><input type="number"
-                                                                                class="form-control font-12">
-                                                        </td>
-
-                                                    </tr>
-                                                    <tr></tr>
-                                                    <tr data-expanded="true">
-                                                        <td align="right">Pièce jointe :</td>
-                                                        <td align="right" rowspan="3" style="width:30%">
-                                                        </td>
-
-                                                    </tr>
-                                                    <tr></tr>
-
-
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </section>
-
                                     </form>
 
                                 </div>
@@ -802,6 +905,10 @@
 <script src="../../dist/js/pages/dashboards/dashboard2.js"></script>
 <script src="../assets/libs/footable/js/footable.min.js"></script>
 <script src="../../dist/js/pages/tables/footable-init.js"></script>
+<script src="../assets/libs/jquery-steps/build/jquery.steps.min.js"></script>
+<script src="../assets/libs/jquery-validation/dist/jquery.validate.min.js"></script>
+
+<!--This page steeper -->
 <script src="../assets/libs/jquery-steps/build/jquery.steps.min.js"></script>
 <script src="../assets/libs/jquery-validation/dist/jquery.validate.min.js"></script>
 <script>
