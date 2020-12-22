@@ -34,6 +34,40 @@ function education_fields() {
     objTo.appendChild(divtest)
 }
 
+function imputationprevisionnelle_fields() {
+
+    room++;
+    var objTo = document.getElementById('imputationprevisionnelle_fields')
+    var divtest = document.createElement("tr");
+    divtest.setAttribute("class", "form-group removeclass" + room);
+    var rdiv = 'removeclass' + room;
+    divtest.innerHTML =
+        '                                                                                    <td><select class="form-control font-12">\n' +
+        '                                                                                        <option>A001\n' +
+        '                                                                                        </option>\n' +
+        '                                                                                        <option>A002</option>\n' +
+        '                                                                                        <option>A003</option>\n' +
+        '                                                                                    </select></td>\n' +
+        '                                                                                    <td><select class="form-control font-12">\n' +
+        '                                                                                        <option>P001\n' +
+        '                                                                                        </option>\n' +
+        '                                                                                        <option>P002</option>\n' +
+        '                                                                                        <option>P003</option>\n' +
+        '                                                                                    </select>\n' +
+        '                                                                                    <td><select class="form-control font-12">\n' +
+        '                                                                                        <option>V001\n' +
+        '                                                                                        </option>\n' +
+        '                                                                                        <option>V002</option>\n' +
+        '                                                                                    </select></td>\n' +
+        '                                                                                    <td><input type="date" class="form-control font-12"></td>\n' +
+        '                                                                                   <td><input type="text" class="form-control font-12"></td>\n' +
+        '                                                                                   <td><input type="text" class="form-control font-12" placeholder="12/12/2025" disabled></td>\n' +
+
+        '<td>  <button class="btn btn-danger font-10" type="button" onclick="remove_education_fields(' + room + ');"> <i class="fa fa-minus"></i> </button> </td></tr>';
+    objTo.appendChild(divtest)
+}
+
+
 function partenaire_fields() {
 
     room++;
@@ -63,6 +97,7 @@ function partenaire_fields() {
         '<td>  <button class="btn btn-danger font-10" type="button" onclick="remove_education_fields(' + room + ');"> <i class="fa fa-minus"></i> </button> </td></tr>';
     objTo.appendChild(divtest)
 }
+
 function mo_fields() {
 
     room++;
@@ -84,6 +119,7 @@ function mo_fields() {
         '<td>  <button class="btn btn-danger font-10" type="button" onclick="remove_education_fields(' + room + ');"> <i class="fa fa-minus"></i> </button> </td></tr>';
     objTo.appendChild(divtest)
 }
+
 function mod_fields() {
 
     room++;
@@ -105,6 +141,7 @@ function mod_fields() {
         '<td>  <button class="btn btn-danger font-10" type="button" onclick="remove_education_fields(' + room + ');"> <i class="fa fa-minus"></i> </button> </td></tr>';
     objTo.appendChild(divtest)
 }
+
 function partenaire_fields() {
 
     room++;
