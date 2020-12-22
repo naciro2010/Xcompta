@@ -67,6 +67,39 @@ function imputationprevisionnelle_fields() {
     objTo.appendChild(divtest)
 }
 
+function imputationprevisionnelle_avenant() {
+
+    room++;
+    var objTo = document.getElementById('imputationprevisionnelle_avenant')
+    var divtest = document.createElement("tr");
+    divtest.setAttribute("class", "form-group removeclass" + room);
+    var rdiv = 'removeclass' + room;
+    divtest.innerHTML =
+        '                                                                                    <tr><td><select class="form-control font-12">\n' +
+        '                                                                                        <option>A001\n' +
+        '                                                                                        </option>\n' +
+        '                                                                                        <option>A002</option>\n' +
+        '                                                                                        <option>A003</option>\n' +
+        '                                                                                    </select></td>\n' +
+        '                                                                                    <td><select class="form-control font-12">\n' +
+        '                                                                                        <option>P001\n' +
+        '                                                                                        </option>\n' +
+        '                                                                                        <option>P002</option>\n' +
+        '                                                                                        <option>P003</option>\n' +
+        '                                                                                    </select>\n' +
+        '                                                                                    <td><select class="form-control font-12">\n' +
+        '                                                                                        <option>V001\n' +
+        '                                                                                        </option>\n' +
+        '                                                                                        <option>V002</option>\n' +
+        '                                                                                    </select></td>\n' +
+        '                                                                                    <td><input type="date" class="form-control font-12"></td>\n' +
+        '                                                                                   <td><input type="text" class="form-control font-12"></td>\n' +
+        '                                                                                   <td><input type="text" class="form-control font-12" placeholder="12/12/2025" disabled></td>\n' +
+
+        '<td>  <button class="btn btn-danger font-10" type="button" onclick="remove_education_fields(' + room + ');"> <i class="fa fa-minus"></i> </button> </td></tr>';
+    objTo.appendChild(divtest)
+}
+
 function versementperv_fields() {
     room++;
     var objTo = document.getElementById('versementperv_fields')
@@ -75,6 +108,25 @@ function versementperv_fields() {
     var rdiv = 'removeclass' + room;
     divtest.innerHTML =
         '                                                                                    <td>A003</td>\n' +
+        '                                                                                    <td>P001</td>\n' +
+        '                                                                                    <td>V003</td>\n' +
+        '                                                                                    <td>12/03/2021</td>\n' +
+        '                                                                                   <td>203.093,99</td>\n' +
+        '                                                                                    <td>Partenaire 1</td>\n' +
+        '                                                                                    <td>MOD </td>\n' +
+
+        '<td>  <button class="btn btn-danger font-10" type="button" onclick="remove_education_fields(' + room + ');"> <i class="fa fa-minus"></i> </button> </td></tr>';
+    objTo.appendChild(divtest)
+}
+
+function versementperv_avenant() {
+    room++;
+    var objTo = document.getElementById('versementperv_avenant')
+    var divtest = document.createElement("tr");
+    divtest.setAttribute("class", "form-group removeclass" + room);
+    var rdiv = 'removeclass' + room;
+    divtest.innerHTML =
+        '                                                                                    <tr><td>A003</td>\n' +
         '                                                                                    <td>P001</td>\n' +
         '                                                                                    <td>V003</td>\n' +
         '                                                                                    <td>12/03/2021</td>\n' +
@@ -160,10 +212,54 @@ function mod_fields() {
     objTo.appendChild(divtest)
 }
 
-function partenaire_fields() {
+function mo_fields_avenant() {
 
     room++;
-    var objTo = document.getElementById('partenaire_fields')
+    var objTo = document.getElementById('mo_fields_avenant')
+    var divtest = document.createElement("tr");
+    divtest.setAttribute("class", "form-group removeclass" + room);
+    var rdiv = 'removeclass' + room;
+    divtest.innerHTML = '     <tr data-expanded="true">\n' +
+        '                                                        <td colspan="1"><select\n' +
+        '                                                                class="form-control font-12">\n' +
+        '                                                            <option>' +
+        '                                                            </option>\n' +
+        '                                                            <option selected>MO 1</option>\n' +
+        '                                                            <option>MO 2</option>\n' +
+        '                                                            <option>MO 3</option>\n' +
+        '                                                            <option>MO 4</option>\n' +
+        '                                                        </select></td>\n' +
+
+        '<td>  <button class="btn btn-danger font-10" type="button" onclick="remove_education_fields(' + room + ');"> <i class="fa fa-minus"></i> </button> </td></tr>';
+    objTo.appendChild(divtest)
+}
+
+function mod_fields_avenant() {
+
+    room++;
+    var objTo = document.getElementById('mod_fields_avenant')
+    var divtest = document.createElement("tr");
+    divtest.setAttribute("class", "form-group removeclass" + room);
+    var rdiv = 'removeclass' + room;
+    divtest.innerHTML = '     <tr data-expanded="true">\n' +
+        '                                                        <td  colspan="1"><select\n' +
+        '                                                                class="form-control font-12">\n' +
+        '                                                            <option>' +
+        '                                                            </option>\n' +
+        '                                                            <option selected>MOD 1</option>\n' +
+        '                                                            <option>MOD 2</option>\n' +
+        '                                                            <option>MOD 3</option>\n' +
+        '                                                            <option>MOD 4</option>\n' +
+        '                                                        </select></td>\n' +
+
+        '<td>  <button class="btn btn-danger font-10" type="button" onclick="remove_education_fields(' + room + ');"> <i class="fa fa-minus"></i> </button> </td></tr>';
+    objTo.appendChild(divtest)
+}
+
+function partenaire_fields_avenant() {
+
+    room++;
+    var objTo = document.getElementById('partenaire_fields_body')
     var divtest = document.createElement("tr");
     divtest.setAttribute("class", "form-group removeclass" + room);
     var rdiv = 'removeclass' + room;
