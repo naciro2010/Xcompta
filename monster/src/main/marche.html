@@ -21,9 +21,6 @@
     <link href="../../dist/css/style.min.css" rel="stylesheet">
     <script src="common/includeHtml.js"></script>
 
-    <!-- This Page CSS -->
-    <link rel="stylesheet" type="text/css" href="../assets/libs/dropzone/dist/min/dropzone.min.css">
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -84,420 +81,421 @@
                 </div>
             </div>
         </div>
-        <!-- ============================================================== -->
-        <!-- End Bread crumb and right sidebar toggle -->
-        <!-- ============================================================== -->
-
-        <!-- ============================================================== -->
-        <div class="container-fluid">
-            <!-- ============================================================== -->
-            <!-- Start Page Content -->
-            <!-- ============================================================== -->
-            <div class="row">
-                <div class="col-12">
-
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="card-title">Liste des Marchés</h4>
-                            <div id="full-width-modal" class="modal fade" tabindex="-1" role="dialog"
-                                 aria-labelledby="fullWidthModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-full-width">
-                                    <div class="modal-content">
-                                        <div class="modal-header bg-success d-flex align-items-center">
-                                            <h4 class="modal-title text-white" id="fullWidthModalLabel">Création du
-                                                Marché</h4>
-                                            <button type="button" class="close ml-auto text-white" data-dismiss="modal"
-                                                    aria-hidden="true">×
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="row">
-                                                <div class="col-lg-12">
-                                                    <h5 class="text-info">Marché :</h5>
-                                                    <div class="card-body">
-                                                        <div class="table-responsive">
-                                                            <dl class="row">
-                                                                <dl class="col-sm-1"><h6> N°</h6></dl>
-                                                                <dl class="col-sm-2"><input type="number "
-                                                                                            class="form-control font-12">
-                                                                </dl>
-                                                                <dl class="col-sm-2"><h6> N° consultation</h6></dl>
-                                                                <dl class="col-sm-2"><input type="number "
-                                                                                            class="form-control font-12">
-                                                                </dl>
-                                                                <dl class="col-sm-2"><h6> Date d'abrobation</h6></dl>
-                                                                <dl class="col-sm-3"><input type="date"
-                                                                                            class="form-control font-12">
-                                                                </dl>
 
 
-                                                                <dl class="col-sm-2"><h6> Fournisseur</h6></dl>
-                                                                <dl class="col-sm-4"><select
-                                                                        class="form-control font-12">
-                                                                    <option>Fournisseur 1
-                                                                    </option>
-                                                                    <option>Fournisseur 1</option>
-                                                                    <option>Fournisseur 1</option>
-                                                                    <option>Fournisseur 1</option>
-                                                                </select></dl>
-                                                                <dl class="col-sm-2"><h6> Type de préstation</h6></dl>
-                                                                <dl class="col-sm-3"><input type="text "
-                                                                                            class="form-control font-12">
-                                                                </dl>
-                                                                <dl class="col-sm-2"><h6> Montant TTC</h6></dl>
-                                                                <dl class="col-sm-2"><input type="number "
-                                                                                            class="form-control font-12">
-                                                                </dl>
-                                                                <dl class="col-sm-2"><h6> Montant TVA</h6>
-                                                                </dl>
-                                                                <dl class="col-sm-2"><input type="number "
-                                                                                            class="form-control font-12">
-                                                                </dl>
-                                                                <dl class="col-sm-2"><h6> Montant HT</h6>
-                                                                </dl>
-                                                                <dl class="col-sm-2"><input type="number "
-                                                                                            class="form-control font-12"
-                                                                                            placeholder="213.213,30"
-                                                                                            disabled>
-                                                                </dl>
-                                                                <dl class="col-sm-2"><h6> Objet :</h6></dl>
-                                                                <dl class="col-sm-10"><textarea
-                                                                        class="form-control font-12" rows="4"
-                                                                        placeholder=""></textarea></dl>
-                                                                <dl class="col-sm-1"><h6> Taux RG</h6></dl>
-                                                                <dl class="col-sm-3"><input type="number "
-                                                                                            class="form-control font-12">
-                                                                </dl>
-                                                                <dl class="col-sm-1"><h6> Taux limite </h6>
-                                                                </dl>
-                                                                <dl class="col-sm-3"><input type="number "
-                                                                                            class="form-control font-12">
-                                                                </dl>
-                                                                <dl class="col-sm-1"><h6> RG</h6>
-                                                                </dl>
-                                                                <dl class="col-sm-3"><input type="number "
-                                                                                            class="form-control font-12"
-                                                                                            placeholder="213.213,30"
-                                                                                            disabled>
-                                                                </dl>
-                                                                <dl class="col-sm-3"><h6>Caution Bancaire</h6>
-                                                                </dl>
-                                                                <dl class="col-sm-3"><input type="number "
-                                                                                            class="form-control font-12">
-                                                                </dl>
+        <!-- Column -->
+        <div class="card">
+            <div class="card-body">
+                <div class="accordion" id="accordionTable">
+                    <div class="card m-b-5">
+                        <div id="col1" class="collapse show" aria-labelledby="heading1"
+                             data-parent="#accordionTable">
+                            <div class="card-body">
+                                <div class="table-responsive-lg">
+                                    <table
+                                            class="table table-bordered m-t-30 contact-list no-wrap  table-hover"
+                                            data-paging="true"
+                                            data-paging-size="7">
+                                        <thead class="bg-dark-success text-white font-12">
+                                        <tr>
+                                            <th style="width:5%">Num <br/>Marché</th>
+                                            <th style="width:5%">Num AO</th>
+                                            <th style="width:20%">Fournisseur</th>
+                                            <th>Objet</th>
+                                            <th style="width:10%">Montant TTC</th>
+                                            <th style="width:10%">Cumul des <br/> décomptes</th>
+                                            <th style="width:5%">CI</th>
+                                            <th style="width:5%">Date</th>
 
-                                                            </dl>
-                                                        </div>
-                                                    </div>
-                                                    <hr/>
-                                                    <h5 class="text-info">Détail des prix :</h5>
-                                                    <div class="card-body">
-                                                        <div class="table-responsive">
-                                                            <form class="row">
-                                                                <div class="col-sm-12">
-                                                                    <table id="pricedetails"
-                                                                           class=" table editable-table table-bordered table-striped m-b-0 no-wrap">
-                                                                        <thead>
-                                                                        <tr class="footable-filtering  bg-success ">
-                                                                            <th style="width:25%"><h6
-                                                                                    class="align-content-center text-white">
-                                                                                N°Prix</h6></th>
-                                                                            <th style="width:25%"
-                                                                                class="align-content-center "><h6
-                                                                                    class="align-content-center text-white">
-                                                                                Quantité</h6>
-                                                                            </th>
-                                                                            <th style="width:25%"
-                                                                                class="align-content-center"><h6
-                                                                                    class="align-content-center text-white">
-                                                                                PU HT</h6></th>
-                                                                            <th style="width:20%"
-                                                                                class="align-content-center"><h6
-                                                                                    class="align-content-center text-white">
-                                                                                Total</h6>
-                                                                            </th>
-                                                                            <th style="width:5%"
-                                                                                class="align-content-center">
-                                                                                <button class="btn btn-dark-info font-10"
-                                                                                        type="button"
-                                                                                        onclick="price_fields();">
-                                                                                    <i class="fa fa-plus"></i>
-                                                                                </button>
-                                                                            </th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr data-expanded="true">
+                                            <td><a href="marchedetail.html">02/S2A/2020</a></td>
+                                            <td>01/2020/S2A</td>
+                                            <td>Fournisseur 1</a></td>
+                                            <td>Objet1</td>
+                                            <td> 10,000.00</td>
+                                            <td><a href="decomptes.html">15,000.00</a></td>
+                                            <td> 5,000.00</td>
+                                            <td>19/09/2015</td>
+                                        </tr>
+                                        <tr data-expanded="true">
+                                            <td><a href="marchedetail.html">02/S2A/2020</a></td>
+                                            <td>01/2020/S2A</td>
+                                            <td>Fournisseur 2</a></td>
+                                            <td>Objet1</td>
+                                            <td> 10,000.00</td>
+                                            <td><a href="decomptes.html">15,000.00</a></td>
+                                            <td> 5,000.00</td>
+                                            <td>19/09/2015</td>
+                                        </tr>
+                                        <tr data-expanded="true">
+                                            <td><a href="marchedetail.html">02/S2A/2020</a></td>
+                                            <td>01/2020/S2A</td>
+                                            <td>Fournisseur 3</a></td>
+                                            <td>Objet1</td>
+                                            <td> 10,000.00</td>
+                                            <td><a href="decomptes.html">15,000.00</a></td>
+                                            <td> 5,000.00</td>
+                                            <td>19/09/2015</td>
+                                        </tr>
+                                        <tr data-expanded="true">
+                                            <td><a href="marchedetail.html">02/S2A/2020</a></td>
+                                            <td>01/2020/S2A</td>
+                                            <td>Fournisseur 4</a></td>
+                                            <td>Objet1</td>
+                                            <td> 10,000.00</td>
+                                            <td><a href="decomptes.html">15,000.00</a></td>
+                                            <td> 5,000.00</td>
+                                            <td>19/09/2015</td>
+                                        </tr>
+                                        <tr data-expanded="true">
+                                            <td><a href="marchedetail.html">02/S2A/2020</a></td>
+                                            <td>01/2020/S2A</td>
+                                            <td>Fournisseur 5</a></td>
+                                            <td>Objet1</td>
+                                            <td> 10,000.00</td>
+                                            <td><a href="decomptes.html">15,000.00</a></td>
+                                            <td> 5,000.00</td>
+                                            <td>19/09/2015</td>
+                                        </tr>
+                                        <tr data-expanded="true">
+                                            <td><a href="marchedetail.html">02/S2A/2020</a></td>
+                                            <td>01/2020/S2A</td>
+                                            <td>Fournisseur 6</a></td>
+                                            <td>Objet1</td>
+                                            <td> 10,000.00</td>
+                                            <td><a href="decomptes.html">15,000.00</a></td>
+                                            <td> 5,000.00</td>
+                                            <td>19/09/2015</td>
+                                        </tr>
+                                        <tr data-expanded="true">
+                                            <td><a href="marchedetail.html">02/S2A/2020</a></td>
+                                            <td>01/2020/S2A</td>
+                                            <td>Fournisseur 7</a></td>
+                                            <td>Objet1</td>
+                                            <td> 10,000.00</td>
+                                            <td><a href="decomptes.html">15,000.00</a></td>
+                                            <td> 5,000.00</td>
+                                            <td>19/09/2015</td>
+                                        </tr>
+                                        <tr data-expanded="true">
+                                            <td><a href="marchedetail.html">02/S2A/2020</a></td>
+                                            <td>01/2020/S2A</td>
+                                            <td>Fournisseur 8</a></td>
+                                            <td>Objet1</td>
+                                            <td> 10,000.00</td>
+                                            <td><a href="decomptes.html">15,000.00</a></td>
+                                            <td> 5,000.00</td>
+                                            <td>19/09/2015</td>
+                                        </tr>
+                                        <tr data-expanded="true">
+                                            <td><a href="marchedetail.html">02/S2A/2020</a></td>
+                                            <td>01/2020/S2A</td>
+                                            <td>Fournisseur 9</a></td>
+                                            <td>Objet1</td>
+                                            <td> 10,000.00</td>
+                                            <td><a href="decomptes.html">15,000.00</a></td>
+                                            <td> 5,000.00</td>
+                                            <td>19/09/2015</td>
+                                        </tr>
+                                        <tr data-expanded="true">
+                                            <td><a href="marchedetail.html">02/S2A/2020</a></td>
+                                            <td>01/2020/S2A</td>
+                                            <td>Fournisseur 10</a></td>
+                                            <td>Objet1</td>
+                                            <td> 10,000.00</td>
+                                            <td><a href="decomptes.html">15,000.00</a></td>
+                                            <td> 5,000.00</td>
+                                            <td>19/09/2015</td>
+                                        </tr>
+                                        <tr data-expanded="true">
+                                            <td><a href="marchedetail.html">02/S2A/2020</a></td>
+                                            <td>01/2020/S2A</td>
+                                            <td>Fournisseur 11</a></td>
+                                            <td>Objet1</td>
+                                            <td> 10,000.00</td>
+                                            <td><a href="decomptes.html">15,000.00</a></td>
+                                            <td> 5,000.00</td>
+                                            <td>19/09/2015</td>
+                                        </tr>
+                                        <tr data-expanded="true">
+                                            <td><a href="decomptes.html">02/S2A/2020</a></td>
+                                            <td>01/2020/S2A</td>
+                                            <td>Fournisseur 12</a></td>
+                                            <td>Objet1</td>
+                                            <td> 10,000.00</td>
+                                            <td><a href="decomptes.html">15,000.00</a></td>
+                                            <td> 5,000.00</td>
+                                            <td>19/09/2015</td>
+                                        </tr>
+                                        <tr data-expanded="true">
+                                            <td><a href="marchedetail.html">02/S2A/2020</a></td>
+                                            <td>01/2020/S2A</td>
+                                            <td>Fournisseur 13</a></td>
+                                            <td>Objet1</td>
+                                            <td> 10,000.00</td>
+                                            <td><a href="decomptes.html">15,000.00</a></td>
+                                            <td> 5,000.00</td>
+                                            <td>19/09/2015</td>
+                                        </tr>
+                                        <tr data-expanded="true">
+                                            <td><a href="marchedetail.html">02/S2A/2020</a></td>
+                                            <td>01/2020/S2A</td>
+                                            <td>Fournisseur 14</a></td>
+                                            <td>Objet1</td>
+                                            <td> 10,000.00</td>
+                                            <td><a href="decomptes.html">15,000.00</a></td>
+                                            <td> 5,000.00</td>
+                                            <td>19/09/2015</td>
+                                        </tr>
 
-                                                                        </tr>
-                                                                        </thead>
-                                                                        <tbody id="price_fields">
-
-
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
-                                                            </form>
-                                                        </div>
-                                                    </div>
-                                                    <hr/>
-                                                    <h5 class="text-info">Imputation :</h5>
-                                                    <div class="card-body">
-                                                        <div class="table-responsive">
-                                                            <form class="row">
-                                                                <div class="col-sm-12">
-                                                                    <table id="empTable"
-                                                                           class=" table editable-table table-bordered table-striped m-b-0 no-wrap">
-                                                                        <thead>
-                                                                        <tr class="footable-filtering  bg-success ">
-                                                                            <th style="width:25%"><h6
-                                                                                    class="align-content-center text-white">
-                                                                                Convention</h6></th>
-                                                                            <th style="width:25%"
-                                                                                class="align-content-center "><h6
-                                                                                    class="align-content-center text-white">
-                                                                                Axe</h6>
-                                                                            </th>
-                                                                            <th style="width:25%"
-                                                                                class="align-content-center"><h6
-                                                                                    class="align-content-center text-white">
-                                                                                Projet</h6></th>
-                                                                            <th style="width:20%"
-                                                                                class="align-content-center"><h6
-                                                                                    class="align-content-center text-white">
-                                                                                Volet</h6>
-                                                                            </th>
-                                                                            <th style="width:5%"
-                                                                                class="align-content-center">
-                                                                                <button class="btn btn-dark-info font-10"
-                                                                                        type="button"
-                                                                                        onclick="education_fields();">
-                                                                                    <i class="fa fa-plus"></i>
-                                                                                </button>
-                                                                            </th>
-
-                                                                        </tr>
-                                                                        </thead>
-                                                                        <tbody id="education_fields">
-
-
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
-                                                            </form>
-                                                        </div>
-                                                    </div>
-                                                    <hr/>
-                                                    <h5 class="text-info">Pièces jointes :</h5>
-                                                    <div class="card-body">
-                                                        <div class="card">
-                                                            <form action="#" class="dropzone">
-                                                                <div class="fallback">
-                                                                    <input name="file" type="file"
-                                                                           multiple/>
-                                                                </div>
-                                                            </form>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-
-                                            </div> <!-- end col -->
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-light"
-                                                    data-dismiss="modal">Close
-                                            </button>
-                                            <button type="button" class="btn btn-primary">Save changes</button>
-                                        </div>
-                                    </div>
-
-                                </div><!-- /.modal-content -->
-                            </div><!-- /.modal-dialog -->
-                        </div>
-
-                        <div class="table-responsive-lg">
-                            <table
-                                    class="table table-bordered m-t-30 contact-list no-wrap  table-hover"
-                                    data-paging="true"
-                                    data-paging-size="7">
-                                <thead class="bg-dark-success text-white font-12">
-                                <tr>
-                                    <th style="width:5%">Num <br/>Marché</th>
-                                    <th style="width:5%">Num AO</th>
-                                    <th style="width:20%">Fournisseur</th>
-                                    <th>Objet</th>
-                                    <th style="width:10%">Montant TTC</th>
-                                    <th style="width:10%">Cumul des <br/> décomptes</th>
-                                    <th style="width:5%">CI</th>
-                                    <th style="width:5%">Date</th>
-
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr data-expanded="true">
-                                    <td><a href="marchedetail.html">02/S2A/2020</a></td>
-                                    <td>01/2020/S2A</td>
-                                    <td>Fournisseur 1</a></td>
-                                    <td>Objet1</td>
-                                    <td> 10,000.00</td>
-                                    <td><a href="decomptes.html">15,000.00</a></td>
-                                    <td> 5,000.00</td>
-                                    <td>19/09/2015</td>
-                                </tr>
-                                <tr data-expanded="true">
-                                    <td><a href="marchedetail.html">02/S2A/2020</a></td>
-                                    <td>01/2020/S2A</td>
-                                    <td>Fournisseur 2</a></td>
-                                    <td>Objet1</td>
-                                    <td> 10,000.00</td>
-                                    <td><a href="decomptes.html">15,000.00</a></td>
-                                    <td> 5,000.00</td>
-                                    <td>19/09/2015</td>
-                                </tr>
-                                <tr data-expanded="true">
-                                    <td><a href="marchedetail.html">02/S2A/2020</a></td>
-                                    <td>01/2020/S2A</td>
-                                    <td>Fournisseur 3</a></td>
-                                    <td>Objet1</td>
-                                    <td> 10,000.00</td>
-                                    <td><a href="decomptes.html">15,000.00</a></td>
-                                    <td> 5,000.00</td>
-                                    <td>19/09/2015</td>
-                                </tr>
-                                <tr data-expanded="true">
-                                    <td><a href="marchedetail.html">02/S2A/2020</a></td>
-                                    <td>01/2020/S2A</td>
-                                    <td>Fournisseur 4</a></td>
-                                    <td>Objet1</td>
-                                    <td> 10,000.00</td>
-                                    <td><a href="decomptes.html">15,000.00</a></td>
-                                    <td> 5,000.00</td>
-                                    <td>19/09/2015</td>
-                                </tr>
-                                <tr data-expanded="true">
-                                    <td><a href="marchedetail.html">02/S2A/2020</a></td>
-                                    <td>01/2020/S2A</td>
-                                    <td>Fournisseur 5</a></td>
-                                    <td>Objet1</td>
-                                    <td> 10,000.00</td>
-                                    <td><a href="decomptes.html">15,000.00</a></td>
-                                    <td> 5,000.00</td>
-                                    <td>19/09/2015</td>
-                                </tr>
-                                <tr data-expanded="true">
-                                    <td><a href="marchedetail.html">02/S2A/2020</a></td>
-                                    <td>01/2020/S2A</td>
-                                    <td>Fournisseur 6</a></td>
-                                    <td>Objet1</td>
-                                    <td> 10,000.00</td>
-                                    <td><a href="decomptes.html">15,000.00</a></td>
-                                    <td> 5,000.00</td>
-                                    <td>19/09/2015</td>
-                                </tr>
-                                <tr data-expanded="true">
-                                    <td><a href="marchedetail.html">02/S2A/2020</a></td>
-                                    <td>01/2020/S2A</td>
-                                    <td>Fournisseur 7</a></td>
-                                    <td>Objet1</td>
-                                    <td> 10,000.00</td>
-                                    <td><a href="decomptes.html">15,000.00</a></td>
-                                    <td> 5,000.00</td>
-                                    <td>19/09/2015</td>
-                                </tr>
-                                <tr data-expanded="true">
-                                    <td><a href="marchedetail.html">02/S2A/2020</a></td>
-                                    <td>01/2020/S2A</td>
-                                    <td>Fournisseur 8</a></td>
-                                    <td>Objet1</td>
-                                    <td> 10,000.00</td>
-                                    <td><a href="decomptes.html">15,000.00</a></td>
-                                    <td> 5,000.00</td>
-                                    <td>19/09/2015</td>
-                                </tr>
-                                <tr data-expanded="true">
-                                    <td><a href="marchedetail.html">02/S2A/2020</a></td>
-                                    <td>01/2020/S2A</td>
-                                    <td>Fournisseur 9</a></td>
-                                    <td>Objet1</td>
-                                    <td> 10,000.00</td>
-                                    <td><a href="decomptes.html">15,000.00</a></td>
-                                    <td> 5,000.00</td>
-                                    <td>19/09/2015</td>
-                                </tr>
-                                <tr data-expanded="true">
-                                    <td><a href="marchedetail.html">02/S2A/2020</a></td>
-                                    <td>01/2020/S2A</td>
-                                    <td>Fournisseur 10</a></td>
-                                    <td>Objet1</td>
-                                    <td> 10,000.00</td>
-                                    <td><a href="decomptes.html">15,000.00</a></td>
-                                    <td> 5,000.00</td>
-                                    <td>19/09/2015</td>
-                                </tr>
-                                <tr data-expanded="true">
-                                    <td><a href="marchedetail.html">02/S2A/2020</a></td>
-                                    <td>01/2020/S2A</td>
-                                    <td>Fournisseur 11</a></td>
-                                    <td>Objet1</td>
-                                    <td> 10,000.00</td>
-                                    <td><a href="decomptes.html">15,000.00</a></td>
-                                    <td> 5,000.00</td>
-                                    <td>19/09/2015</td>
-                                </tr>
-                                <tr data-expanded="true">
-                                    <td><a href="decomptes.html">02/S2A/2020</a></td>
-                                    <td>01/2020/S2A</td>
-                                    <td>Fournisseur 12</a></td>
-                                    <td>Objet1</td>
-                                    <td> 10,000.00</td>
-                                    <td><a href="decomptes.html">15,000.00</a></td>
-                                    <td> 5,000.00</td>
-                                    <td>19/09/2015</td>
-                                </tr>
-                                <tr data-expanded="true">
-                                    <td><a href="marchedetail.html">02/S2A/2020</a></td>
-                                    <td>01/2020/S2A</td>
-                                    <td>Fournisseur 13</a></td>
-                                    <td>Objet1</td>
-                                    <td> 10,000.00</td>
-                                    <td><a href="decomptes.html">15,000.00</a></td>
-                                    <td> 5,000.00</td>
-                                    <td>19/09/2015</td>
-                                </tr>
-                                <tr data-expanded="true">
-                                    <td><a href="marchedetail.html">02/S2A/2020</a></td>
-                                    <td>01/2020/S2A</td>
-                                    <td>Fournisseur 14</a></td>
-                                    <td>Objet1</td>
-                                    <td> 10,000.00</td>
-                                    <td><a href="decomptes.html">15,000.00</a></td>
-                                    <td> 5,000.00</td>
-                                    <td>19/09/2015</td>
-                                </tr>
-
-                                </tbody>
-                            </table>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
+
+
+        <!-- Steeper -->
+        <div class="col-12">
+            <div id="full-width-modal" class="modal fade" tabindex="-1" role="dialog"
+                 aria-labelledby="fullWidthModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-full-width">
+                    <div class="modal-content">
+                        <div class="modal-header d-flex align-items-center bg-success">
+                            <h4 class="modal-title text-white" id="fullWidthModalLabel">Création du marché :</h4>
+                            <button type="button" class="close ml-auto" data-dismiss="modal"
+                                    aria-hidden="true">×
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="card">
+                                <div class="card-body wizard-content">
+                                    <h6 class="card-subtitle"></h6>
+                                    <form action="#" class="tab-wizard wizard-circle">
+                                        <!-- Step 1 -->
+                                        <h6>Marché</h6>
+                                        <section>
+                                            <div class="table-responsive">
+                                                <table  class="table table-bordered m-t-30 contact-list no-wrap table-striped"
+                                                        data-paging="true"
+                                                        data-paging-size="7">
+                                                    <thead>
+                                                    <tbody class="table-borderless">
+                                                    <tr>
+                                                        <td style="width:5%">N° </td>
+                                                        <td style="width:20%" colspan="1">
+
+                                                            <input type="number"
+                                                                   class="form-control font-12 col-xs-1"
+                                                                   placeholder="">
+                                                        </td>
+                                                        <td style="width:10%">N°Consultation</td>
+                                                        <td style="width:20%" colspan="1"><input type="number"
+                                                                                                class="form-control font-12">
+                                                        <td colspan="1" style="width:10%">Date  d'abrobation</td>
+                                                        <td style="width:20%" colspan="1"><input type="date"
+                                                                                                 class="form-control font-12"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width:5%">Montant TTC </td>
+                                                        <td style="width:20%" colspan="1">
+                                                            <input type="number"
+                                                                   class="form-control font-12 col-xs-1"
+                                                                   placeholder="">
+                                                        </td>
+                                                        <td style="width:10%">Montant TVA</td>
+                                                        <td style="width:20%" colspan="1"><input type="number"
+                                                                                                class="form-control font-12">
+                                                        <td colspan="1" style="width:10%">Montant HT</td>
+                                                        <td style="width:20%" colspan="1"><input type="number"
+                                                                                                 class="form-control font-12" disabled></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width:5%">Fournisseur </td>
+                                                        <td style="width:20%" colspan="2"><select
+                                                                class="form-control font-12">
+                                                            <option>Fournisseur 1
+                                                            </option>
+                                                            <option selected>Fournisseur 2</option>
+                                                            <option>Fournisseur 3</option>
+                                                        </select>
+                                                        </td>
+                                                        <td style="width:10%">Type de préstation</td>
+                                                        <td style="width:20%" colspan="2"><input type="text"
+                                                                                                 class="form-control font-12">
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width:5%">Taux RG </td>
+                                                        <td style="width:20%" colspan="1">
+                                                            <input type="number"
+                                                                   class="form-control font-12 col-xs-1"
+                                                                   placeholder="">
+                                                        </td>
+                                                        <td style="width:10%">Taux limite</td>
+                                                        <td style="width:20%" colspan="1"><input type="number"
+                                                                                                 class="form-control font-12">
+                                                        <td colspan="1" style="width:10%">RG</td>
+                                                        <td style="width:20%" colspan="1"><input type="number"
+                                                                                                 class="form-control font-12" disabled></td>
+                                                    </tr>
+
+                                                    <td colspan="1" style="width:10%">Caution Bancaire</td>
+                                                    <td style="width:20%" colspan="2"><input type="number"
+                                                                                             class="form-control font-12 col-xs-1"
+                                                                                             placeholder="">
+                                                    </td>
+                                                    <td style="width:20%" colspan="3">
+                                                    </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width:10%">Objet</td>
+                                                        <td style="width:20%" colspan="5">
+
+                                                            <textarea
+                                                                    class="form-control font-12 col-xs-1" rows="3"
+                                                                    cols="5"
+                                                            > </textarea>
+                                                        </td>
+
+                                                    </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </section>
+                                        <!-- Step 2 -->
+                                        <h6>Détail prix</h6>
+                                        <section>
+                                            <div class="table-responsive">
+                                                <table id="pricedetails"
+                                                       class=" table editable-table table-bordered table-striped m-b-0 no-wrap">
+                                                    <thead>
+                                                    <tr class="footable-filtering  bg-success ">
+                                                        <th style="width:25%"><h6
+                                                                class="align-content-center text-white">
+                                                            N°Prix</h6></th>
+                                                        <th style="width:25%"
+                                                            class="align-content-center "><h6
+                                                                class="align-content-center text-white">
+                                                            Quantité</h6>
+                                                        </th>
+                                                        <th style="width:25%"
+                                                            class="align-content-center"><h6
+                                                                class="align-content-center text-white">
+                                                            PU HT</h6></th>
+                                                        <th style="width:20%"
+                                                            class="align-content-center"><h6
+                                                                class="align-content-center text-white">
+                                                            Total</h6>
+                                                        </th>
+                                                        <th style="width:5%"
+                                                            class="align-content-center">
+                                                            <button class="btn btn-dark-info font-10"
+                                                                    type="button"
+                                                                    onclick="price_fields();">
+                                                                <i class="fa fa-plus"></i>
+                                                            </button>
+                                                        </th>
+
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody id="price_fields">
+
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </section>
+                                        <!-- Step 3 -->
+                                        <h6>Imputations</h6>
+                                        <section>
+                                            <div class="table-responsive">
+                                                <table id="empTable"
+                                                       class=" table editable-table table-bordered table-striped m-b-0 no-wrap">
+                                                    <thead>
+                                                    <tr class="footable-filtering  bg-success ">
+                                                        <th style="width:25%"><h6
+                                                                class="align-content-center text-white">
+                                                            Convention</h6></th>
+                                                        <th style="width:25%"
+                                                            class="align-content-center "><h6
+                                                                class="align-content-center text-white">
+                                                            Axe</h6>
+                                                        </th>
+                                                        <th style="width:25%"
+                                                            class="align-content-center"><h6
+                                                                class="align-content-center text-white">
+                                                            Projet</h6></th>
+                                                        <th style="width:20%"
+                                                            class="align-content-center"><h6
+                                                                class="align-content-center text-white">
+                                                            Volet</h6>
+                                                        </th>
+                                                        <th style="width:5%"
+                                                            class="align-content-center">
+                                                            <button class="btn btn-dark-info font-10"
+                                                                    type="button"
+                                                                    onclick="education_fields();">
+                                                                <i class="fa fa-plus"></i>
+                                                            </button>
+                                                        </th>
+
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody id="education_fields">
+
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="card">
+                                                    <form action="#" class="dropzone">
+                                                        <div class="fallback">
+                                                            <input name="file" type="file"
+                                                                   multiple/>
+                                                        </div>
+                                                    </form>
+
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div>
+        </div>
+
+        <!-- Column -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- footer -->
+        <!-- ============================================================== -->
+        <footer class="footer">
+            © 2020 Xcompta Admin by Mohamed Samir
+        </footer>
     </div>
+    <!-- ============================================================== -->
+    <!-- End Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
 
     <!-- ============================================================== -->
-    <!-- ============================================================== -->
-    <!-- footer -->
-    <!-- ============================================================== -->
-    <footer class="footer">
-        © 2020 Xcompta Admin by Mohamed Samir
-    </footer>
-    <!-- ============================================================== -->
-    <!-- End footer -->
-    <!-- ============================================================== -->
+
 </div>
-<!-- ============================================================== -->
-<!-- End Page wrapper  -->
-<!-- ============================================================== -->
-</div>
-</div>
+
 
 <!-- ============================================================== -->
 <!-- End Wrapper -->
@@ -530,18 +528,185 @@
 <!--Custom JavaScript -->
 <script src="../../dist/js/feather.min.js"></script>
 <script src="../../dist/js/custom.min.js"></script>
+<!-- This page CSS -->
+<link href="../assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet">
+<link href="../assets/extra-libs/jquery-steps/jquery.steps.css" rel="stylesheet">
+<link href="../assets/extra-libs/jquery-steps/steps.css" rel="stylesheet">
 <!--This page JavaScript -->
 <script src="../assets/libs/chartist/dist/chartist.min.js"></script>
 <script src="../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
 <script src="../../dist/js/pages/dashboards/dashboard2.js"></script>
 <script src="../assets/libs/footable/js/footable.min.js"></script>
 <script src="../../dist/js/pages/tables/footable-init.js"></script>
-<script src="../assets/libs/dropzone/dist/min/dropzone.min.js"></script>
-<!--This page JavaScript -->
-<script src="../assets/libs/jquery.repeater/jquery.repeater.min.js"></script>
-<script src="../assets/extra-libs/jquery.repeater/repeater-init.js"></script>
+<!--add info table -->
 <script src="../assets/extra-libs/jquery.repeater/dff.js"></script>
+<!--This page steeper -->
+<script src="../assets/libs/jquery-steps/build/jquery.steps.min.js"></script>
+<script src="../assets/libs/jquery-validation/dist/jquery.validate.min.js"></script>
+<script>
+    //Basic Example
+    $("#example-basic").steps({
+        headerTag: "h3",
+        bodyTag: "section",
+        transitionEffect: "slideLeft",
+        autoFocus: true
+    });
 
+    // Basic Example with form
+    var form = $("#example-form");
+    form.validate({
+        errorPlacement: function errorPlacement(error, element) {
+            element.before(error);
+        },
+        rules: {
+            confirm: {
+                equalTo: "#password"
+            }
+        }
+    });
+    form.children("div").steps({
+        headerTag: "h3",
+        bodyTag: "section",
+        transitionEffect: "slideLeft",
+        onStepChanging: function (event, currentIndex, newIndex) {
+            form.validate().settings.ignore = ":disabled,:hidden";
+            return form.valid();
+        },
+        onFinishing: function (event, currentIndex) {
+            form.validate().settings.ignore = ":disabled";
+            return form.valid();
+        },
+        onFinished: function (event, currentIndex) {
+            alert("Submitted!");
+        }
+    });
+
+    // Advance Example
+
+    var form = $("#example-advanced-form").show();
+
+    form.steps({
+        headerTag: "h3",
+        bodyTag: "fieldset",
+        transitionEffect: "slideLeft",
+        onStepChanging: function (event, currentIndex, newIndex) {
+            // Allways allow previous action even if the current form is not valid!
+            if (currentIndex > newIndex) {
+                return true;
+            }
+            // Forbid next action on "Warning" step if the user is to young
+            if (newIndex === 3 && Number($("#age-2").val()) < 18) {
+                return false;
+            }
+            // Needed in some cases if the user went back (clean up)
+            if (currentIndex < newIndex) {
+                // To remove error styles
+                form.find(".body:eq(" + newIndex + ") label.error").remove();
+                form.find(".body:eq(" + newIndex + ") .error").removeClass("error");
+            }
+            form.validate().settings.ignore = ":disabled,:hidden";
+            return form.valid();
+        },
+        onStepChanged: function (event, currentIndex, priorIndex) {
+            // Used to skip the "Warning" step if the user is old enough.
+            if (currentIndex === 2 && Number($("#age-2").val()) >= 18) {
+                form.steps("Suivant");
+            }
+            // Used to skip the "Warning" step if the user is old enough and wants to the previous step.
+            if (currentIndex === 2 && priorIndex === 3) {
+                form.steps("Précédent");
+            }
+        },
+        onFinishing: function (event, currentIndex) {
+            form.validate().settings.ignore = ":disabled";
+            return form.valid();
+        },
+        onFinished: function (event, currentIndex) {
+            alert("Submitted!");
+        }
+    }).validate({
+        errorPlacement: function errorPlacement(error, element) {
+            element.before(error);
+        },
+        rules: {
+            confirm: {
+                equalTo: "#password-2"
+            }
+        }
+    });
+
+    // Dynamic Manipulation
+    $("#example-manipulation").steps({
+        headerTag: "h3",
+        bodyTag: "section",
+        enableAllSteps: true,
+        enablePagination: false
+    });
+
+    //Vertical Steps
+
+    $("#example-vertical").steps({
+        headerTag: "h3",
+        bodyTag: "section",
+        transitionEffect: "slideLeft",
+        stepsOrientation: "vertical"
+    });
+
+    //Custom design form example
+    $(".tab-wizard").steps({
+        headerTag: "h6",
+        bodyTag: "section",
+        transitionEffect: "fade",
+        titleTemplate: '<span class="step">#index#</span> #title#',
+        labels: {
+            finish: "Submit"
+        },
+        onFinished: function (event, currentIndex) {
+            swal("Form Submitted!", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem erat eleifend ex semper, lobortis purus sed.");
+
+        }
+    });
+
+
+    var form = $(".validation-wizard").show();
+
+    $(".validation-wizard").steps({
+        headerTag: "h6",
+        bodyTag: "section",
+        transitionEffect: "fade",
+        titleTemplate: '<span class="step">#index#</span> #title#',
+        labels: {
+            finish: "Submit"
+        },
+        onStepChanging: function (event, currentIndex, newIndex) {
+            return currentIndex > newIndex || !(3 === newIndex && Number($("#age-2").val()) < 18) && (currentIndex < newIndex && (form.find(".body:eq(" + newIndex + ") label.error").remove(), form.find(".body:eq(" + newIndex + ") .error").removeClass("error")), form.validate().settings.ignore = ":disabled,:hidden", form.valid())
+        },
+        onFinishing: function (event, currentIndex) {
+            return form.validate().settings.ignore = ":disabled", form.valid()
+        },
+        onFinished: function (event, currentIndex) {
+            swal("Form Submitted!", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem erat eleifend ex semper, lobortis purus sed.");
+        }
+    }), $(".validation-wizard").validate({
+        ignore: "input[type=hidden]",
+        errorClass: "text-danger",
+        successClass: "text-success",
+        highlight: function (element, errorClass) {
+            $(element).removeClass(errorClass)
+        },
+        unhighlight: function (element, errorClass) {
+            $(element).removeClass(errorClass)
+        },
+        errorPlacement: function (error, element) {
+            error.insertAfter(element)
+        },
+        rules: {
+            email: {
+                email: !0
+            }
+        }
+    })
+</script>
 </body>
 
 </html>
