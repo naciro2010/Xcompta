@@ -87,18 +87,48 @@
         <!-- ============================================================== -->
         <!-- ============================================================== -->
         <!-- Column -->
+        <!-- Column -->
+        <div class="card">
+            <div class="card-body">
+                <div class="card-body">
+                    <!-- Accordian -->
+
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="card border-bottom shadow border-info">
+                                <div class="card-body">
+                                    <div class="d-flex no-block align-items-center">
+                                        <div>
+                                            <h5 class="text-info">Libellé de la convention :</h5>
+                                            <h6 class="text-wrap"> Convention Cadre de la Creation d'une nouvelle ville
+                                                au maroc</h6>
+                                            <h5 class="text-info">Objet de la convention :</h5>
+                                            <h6 class="text-wrap">C'est la description de cette convention Cadre </h6>
+                                            <h5 class="text-info">Taux de la commission de l'intervention :</h5>
+                                            <h6 class="text-wrap"> 7 % TTC sur les décaissements TTC </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="row">
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
-
                         <div class="table-responsive">
+                            <h5 class="text-info">Détail de versement par convention</h5>
                             <table id="demo-foo-row-toggler" class="table table-bordered no-wrap"
                                    data-toggle-column="first">
                                 <thead class="bg-success text-white">
                                 <tr>
-                                    <th style="width:1%"></th>
+
                                     <th data-breakpoints="xs" data-title="Libellé axe" style="width:5%">Axe</th>
                                     <th data-breakpoints="xs" data-title="Libellé Projet" style="width:5%">Projet</th>
                                     <th data-breakpoints="xs" data-title="Libellé Volet" style="width:5%">Volet</th>
@@ -110,21 +140,18 @@
                                     <th align="right" style="width:5%">Montant prévu</th>
                                     <th align="right" style="width:5%">Montant versé</th>
                                     <th align="right" style="width:5%">Reste à verser</th>
-                                    <th data-breakpoints="all" data-title="Convention" style="width:5%">
-                                        Convention
-                                    </th>
 
 
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td></td>
+
                                     <td>AXE 1</td>
-                                    <td>Projet 1</td>
-                                    <td>Volet 1</td>
+                                    <td>Projet 2</td>
+                                    <td>Volet 3</td>
                                     <td>Partenaire 1</td>
-                                    <td>Libellé 1</td>
+                                    <td>MOD 1</td>
                                     <td align="center">
                                         12/02/2021
                                     </td>
@@ -132,15 +159,15 @@
                                         120 430 134,99
                                     </td>
                                     <td align="right">
-                                        100 000 000,99
+                                        <a href="#detail_versement">50 000 938,99</a>
                                     </td>
                                     <td align="right">
-                                        20 430 134,99
+                                        20 500 939,00
                                     </td>
-                                    <td style="width:90%">Convention</td>
+
                                 </tr>
                                 <tr>
-                                    <td></td>
+
                                     <td>AXE 1</td>
                                     <td>Projet 1</td>
                                     <td>Volet 1</td>
@@ -153,22 +180,80 @@
                                         120 430 134,99
                                     </td>
                                     <td align="right">
-                                        100 000 000,99
+                                        <a href="#detail_versement"> 100 000 000,99</a>
                                     </td>
                                     <td align="right">
                                         20 430 134,99
                                     </td>
-                                    <td style="width:90%">Convention</td>
+
                                 </tr>
                                 <tr>
-                                    <td></td>
+
+                                    <td>AXE 3</td>
+                                    <td>Projet 13</td>
+                                    <td>Volet DF</td>
+                                    <td>Partenaire F</td>
+                                    <td>MOD 1</td>
+                                    <td align="center">
+                                        12/02/2022
+                                    </td>
+                                    <td align="right">
+                                        150 430 134,99
+                                    </td>
+                                    <td align="right">
+                                        <a href="#detail_versement"> 40 000 000,99</a>
+                                    </td>
+                                    <td align="right">
+                                        60 430 134,99
+                                    </td>
+                                </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <h5 class="text-info">Détail de versement</h5>
+                            <table id="detail_versement" class="table table-bordered no-wrap"
+                                   data-toggle-column="first">
+                                <thead class="bg-success text-white">
+                                <tr>
+
+                                    <th data-breakpoints="xs" data-title="Libellé axe" style="width:5%">Axe</th>
+                                    <th data-breakpoints="xs" data-title="Libellé Projet" style="width:5%">Projet</th>
+                                    <th data-breakpoints="xs" data-title="Libellé Volet" style="width:5%">Volet</th>
+                                    <th data-breakpoints="xs" data-title="Libellé Partenaire" style="width:5%">
+                                        Partenaire
+                                    </th>
+                                    <th data-breakpoints="xs" data-title="Libellé MOD" style="width:5%">MOD</th>
+                                    <th align="right" style="width:5%">Banque</th>
+                                    <th align="center" style="width:5%">Date<br/> Opération</th>
+                                    <th align="center" style="width:5%">Date <br/> valeur</th>
+                                    <th align="right" style="width:5%">Montant</th>
+
+
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+
                                     <td>AXE 1</td>
                                     <td>Projet 1</td>
                                     <td>Volet 1</td>
                                     <td>Partenaire 1</td>
-                                    <td>Libellé 1</td>
+                                    <td>MOD 1</td>
                                     <td align="center">
-                                        12/02/2021
+                                        Societé générale
                                     </td>
                                     <td align="right">
                                         120 430 134,99
@@ -179,71 +264,30 @@
                                     <td align="right">
                                         20 430 134,99
                                     </td>
-                                    <td style="width:90%">Convention</td>
+
                                 </tr>
                                 <tr>
-                                    <td></td>
-                                    <td>AXE 1</td>
-                                    <td>Projet 1</td>
-                                    <td>Volet 1</td>
+
+                                    <td>AXE 2</td>
+                                    <td>Projet 4</td>
+                                    <td>Volet D</td>
                                     <td>Partenaire 1</td>
-                                    <td>Libellé 1</td>
+                                    <td>MOD 1</td>
                                     <td align="center">
-                                        12/02/2021
+                                        Banque populaire
                                     </td>
                                     <td align="right">
-                                        120 430 134,99
+                                        213 430 134,99
                                     </td>
                                     <td align="right">
-                                        100 000 000,99
+                                        150 000 000,99
                                     </td>
                                     <td align="right">
-                                        20 430 134,99
+                                        49 430 134,99
                                     </td>
-                                    <td style="width:90%">Convention</td>
+
                                 </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>AXE 1</td>
-                                    <td>Projet 1</td>
-                                    <td>Volet 1</td>
-                                    <td>Partenaire 1</td>
-                                    <td>Libellé 1</td>
-                                    <td align="center">
-                                        12/02/2021
-                                    </td>
-                                    <td align="right">
-                                        120 430 134,99
-                                    </td>
-                                    <td align="right">
-                                        100 000 000,99
-                                    </td>
-                                    <td align="right">
-                                        20 430 134,99
-                                    </td>
-                                    <td style="width:90%">Convention</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>AXE 1</td>
-                                    <td>Projet 1</td>
-                                    <td>Volet 1</td>
-                                    <td>Partenaire 1</td>
-                                    <td>Libellé 1</td>
-                                    <td align="center">
-                                        12/02/2021
-                                    </td>
-                                    <td align="right">
-                                        120 430 134,99
-                                    </td>
-                                    <td align="right">
-                                        100 000 000,99
-                                    </td>
-                                    <td align="right">
-                                        20 430 134,99
-                                    </td>
-                                    <td style="width:90%">Convention</td>
-                                </tr>
+
 
                                 </tbody>
                             </table>
