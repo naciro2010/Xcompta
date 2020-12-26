@@ -159,7 +159,7 @@
                                         120 430 134,99
                                     </td>
                                     <td align="right">
-                                        <a href="#detail_versement">50 000 938,99</a>
+                                        <a href="#detail_versement_div" data-toggle="collapse">50 000 938,99</a>
                                     </td>
                                     <td align="right">
                                         20 500 939,00
@@ -170,20 +170,20 @@
 
                                     <td>AXE 1</td>
                                     <td>Projet 1</td>
-                                    <td>Volet 1</td>
-                                    <td>Partenaire 1</td>
-                                    <td>Libellé 1</td>
+                                    <td>Volet 0021</td>
+                                    <td>Partenaire 0021</td>
+                                    <td>MOD 001</td>
                                     <td align="center">
                                         12/02/2021
                                     </td>
                                     <td align="right">
-                                        120 430 134,99
+                                        12 450 000,99
                                     </td>
                                     <td align="right">
-                                        <a href="#detail_versement"> 100 000 000,99</a>
+                                        <a href="#detail_versement_div2" data-toggle="collapse"> 100 000 000,99</a>
                                     </td>
                                     <td align="right">
-                                        20 430 134,99
+                                        200 430 134,99
                                     </td>
 
                                 </tr>
@@ -201,7 +201,7 @@
                                         150 430 134,99
                                     </td>
                                     <td align="right">
-                                        <a href="#detail_versement"> 40 000 000,99</a>
+                                        <a href="#detail_versement_div3" data-toggle="collapse"> 40 000 000,99</a>
                                     </td>
                                     <td align="right">
                                         60 430 134,99
@@ -220,77 +220,233 @@
 
         <div class="row">
             <div class="col-12">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="table-responsive">
-                            <h5 class="text-info">Détail de versement</h5>
-                            <table id="detail_versement" class="table table-bordered no-wrap"
-                                   data-toggle-column="first">
-                                <thead class="bg-success text-white">
-                                <tr>
+                <div id="detail_versement_div" class="collapse">
+                    <div class="card">
+                        <div class="card-body ">
+                            <div class="table-responsive">
+                                <h5 class="text-info">Détail de versement : <label class="text-success">50 000 938,99</label></h5>
+                                <table id="detail_versement" class="table table-bordered no-wrap"
+                                       data-toggle-column="first">
+                                    <thead class="bg-success text-white">
+                                    <tr>
 
-                                    <th data-breakpoints="xs" data-title="Libellé axe" style="width:5%">Axe</th>
-                                    <th data-breakpoints="xs" data-title="Libellé Projet" style="width:5%">Projet</th>
-                                    <th data-breakpoints="xs" data-title="Libellé Volet" style="width:5%">Volet</th>
-                                    <th data-breakpoints="xs" data-title="Libellé Partenaire" style="width:5%">
-                                        Partenaire
-                                    </th>
-                                    <th data-breakpoints="xs" data-title="Libellé MOD" style="width:5%">MOD</th>
-                                    <th align="right" style="width:5%">Banque</th>
-                                    <th align="center" style="width:5%">Date<br/> Opération</th>
-                                    <th align="center" style="width:5%">Date <br/> valeur</th>
-                                    <th align="right" style="width:5%">Montant</th>
-
-
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-
-                                    <td>AXE 1</td>
-                                    <td>Projet 1</td>
-                                    <td>Volet 1</td>
-                                    <td>Partenaire 1</td>
-                                    <td>MOD 1</td>
-                                    <td align="center">
-                                        Societé générale
-                                    </td>
-                                    <td align="right">
-                                        120 430 134,99
-                                    </td>
-                                    <td align="right">
-                                        100 000 000,99
-                                    </td>
-                                    <td align="right">
-                                        20 430 134,99
-                                    </td>
-
-                                </tr>
-                                <tr>
-
-                                    <td>AXE 2</td>
-                                    <td>Projet 4</td>
-                                    <td>Volet D</td>
-                                    <td>Partenaire 1</td>
-                                    <td>MOD 1</td>
-                                    <td align="center">
-                                        Banque populaire
-                                    </td>
-                                    <td align="right">
-                                        213 430 134,99
-                                    </td>
-                                    <td align="right">
-                                        150 000 000,99
-                                    </td>
-                                    <td align="right">
-                                        49 430 134,99
-                                    </td>
-
-                                </tr>
+                                        <th data-breakpoints="xs" data-title="Libellé axe" style="width:5%">Axe</th>
+                                        <th data-breakpoints="xs" data-title="Libellé Projet" style="width:5%">Projet
+                                        </th>
+                                        <th data-breakpoints="xs" data-title="Libellé Volet" style="width:5%">Volet</th>
+                                        <th data-breakpoints="xs" data-title="Libellé Partenaire" style="width:5%">
+                                            Partenaire
+                                        </th>
+                                        <th data-breakpoints="xs" data-title="Libellé MOD" style="width:5%">MOD</th>
+                                        <th align="right" style="width:5%">Banque</th>
+                                        <th align="center" style="width:5%">Date<br/> Opération</th>
+                                        <th align="center" style="width:5%">Date <br/> valeur</th>
+                                        <th align="right" style="width:5%">Montant</th>
 
 
-                                </tbody>
-                            </table>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+
+                                        <td>AXE 1</td>
+                                        <td>Projet 1</td>
+                                        <td>Volet 1</td>
+                                        <td>Partenaire 1</td>
+                                        <td>MOD 1</td>
+                                        <td align="center">
+                                            Societé générale
+                                        </td>
+                                        <td align="right">
+                                            120 430 134,99
+                                        </td>
+                                        <td align="right">
+                                            100 000 000,99
+                                        </td>
+                                        <td align="right">
+                                            20 430 134,99
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+
+                                        <td>AXE 2</td>
+                                        <td>Projet 4</td>
+                                        <td>Volet D</td>
+                                        <td>Partenaire 1</td>
+                                        <td>MOD 1</td>
+                                        <td align="center">
+                                            Banque populaire
+                                        </td>
+                                        <td align="right">
+                                            213 430 134,99
+                                        </td>
+                                        <td align="right">
+                                            150 000 000,99
+                                        </td>
+                                        <td align="right">
+                                            49 430 134,99
+                                        </td>
+
+                                    </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="detail_versement_div2" class="collapse">
+                    <div class="card">
+                        <div class="card-body ">
+                            <div class="table-responsive">
+                                <h5 class="text-info">Détail de versement: <label class="text-success">100 000 000,99</label></h5>
+                                <table id="detail_versement2" class="table table-bordered no-wrap"
+                                       data-toggle-column="first">
+                                    <thead class="bg-success text-white">
+                                    <tr>
+
+                                        <th data-breakpoints="xs" data-title="Libellé axe" style="width:5%">Axe</th>
+                                        <th data-breakpoints="xs" data-title="Libellé Projet" style="width:5%">Projet
+                                        </th>
+                                        <th data-breakpoints="xs" data-title="Libellé Volet" style="width:5%">Volet</th>
+                                        <th data-breakpoints="xs" data-title="Libellé Partenaire" style="width:5%">
+                                            Partenaire
+                                        </th>
+                                        <th data-breakpoints="xs" data-title="Libellé MOD" style="width:5%">MOD</th>
+                                        <th align="right" style="width:5%">Banque</th>
+                                        <th align="center" style="width:5%">Date<br/> Opération</th>
+                                        <th align="center" style="width:5%">Date <br/> valeur</th>
+                                        <th align="right" style="width:5%">Montant</th>
+
+
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+
+                                        <td>AXE 3</td>
+                                        <td>Projet 5</td>
+                                        <td>Volet 1</td>
+                                        <td>Partenaire 1</td>
+                                        <td>MOD 1</td>
+                                        <td align="center">
+                                            Societé générale
+                                        </td>
+                                        <td align="right">
+                                           134 523 312,99
+                                        </td>
+                                        <td align="right">
+                                            124 000 000,99
+                                        </td>
+                                        <td align="right">
+                                            10 430 134,99
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+
+                                        <td>AXE 001</td>
+                                        <td>Projet 003</td>
+                                        <td>Volet 001</td>
+                                        <td>Partenaire 0001</td>
+                                        <td>MOD 1</td>
+                                        <td align="center">
+                                            Societé générale
+                                        </td>
+                                        <td align="right">
+                                            120 340 134,99
+                                        </td>
+                                        <td align="right">
+                                            100 150 000,99
+                                        </td>
+                                        <td align="right">
+                                            140 000,99
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+
+                                        <td>AXE 2</td>
+                                        <td>Projet 4</td>
+                                        <td>Volet D</td>
+                                        <td>Partenaire 1</td>
+                                        <td>MOD 1</td>
+                                        <td align="center">
+                                            Banque populaire
+                                        </td>
+                                        <td align="right">
+                                            213 430 134,99
+                                        </td>
+                                        <td align="right">
+                                            150 000 000,99
+                                        </td>
+                                        <td align="right">
+                                            49 430 134,99
+                                        </td>
+
+                                    </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="detail_versement_div3" class="collapse">
+                    <div class="card">
+                        <div class="card-body ">
+                            <div class="table-responsive">
+                                <h5 class="text-info">Détail de versement : <label class="text-success">40 000 000,99</label></h5>
+                                <table id="detail_versement3" class="table table-bordered no-wrap"
+                                       data-toggle-column="first">
+                                    <thead class="bg-success text-white">
+                                    <tr>
+
+                                        <th data-breakpoints="xs" data-title="Libellé axe" style="width:5%">Axe</th>
+                                        <th data-breakpoints="xs" data-title="Libellé Projet" style="width:5%">Projet
+                                        </th>
+                                        <th data-breakpoints="xs" data-title="Libellé Volet" style="width:5%">Volet</th>
+                                        <th data-breakpoints="xs" data-title="Libellé Partenaire" style="width:5%">
+                                            Partenaire
+                                        </th>
+                                        <th data-breakpoints="xs" data-title="Libellé MOD" style="width:5%">MOD</th>
+                                        <th align="right" style="width:5%">Banque</th>
+                                        <th align="center" style="width:5%">Date<br/> Opération</th>
+                                        <th align="center" style="width:5%">Date <br/> valeur</th>
+                                        <th align="right" style="width:5%">Montant</th>
+
+
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+
+                                        <td>AXE 23</td>
+                                        <td>Projet 43</td>
+                                        <td>Volet 1</td>
+                                        <td>Partenaire 214</td>
+                                        <td>MOD 1</td>
+                                        <td align="center">
+                                            Societé générale
+                                        </td>
+                                        <td align="right">
+                                            120 430 134,99
+                                        </td>
+                                        <td align="right">
+                                            100 000 000,99
+                                        </td>
+                                        <td align="right">
+                                            20 430 134,99
+                                        </td>
+
+                                    </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -333,12 +489,13 @@
                                                                 class="col-form-label font-12">N° Conv</label></td>
                                                         <td style="width:20%" colspan="1"><input type="text"
                                                                                                  class="form-control font-12 col-xs-1"
-                                                                                                 placeholder="12/DZS1/2039" disabled></td>
+                                                                                                 placeholder="12/DZS1/2039"
+                                                                                                 disabled></td>
                                                         <td colspan="3"></td>
                                                     </tr>
                                                     <tr></tr>
                                                     <tr>
-                                                        <td style="width:5%" ><label
+                                                        <td style="width:5%"><label
                                                                 class="col-form-label font-12">Axe</label></td>
                                                         <td style="width:20%" colspan="1">
                                                             <select class="form-control font-12">\n' +
@@ -348,7 +505,8 @@
                                                                 <option>A003</option>
                                                             </select>
                                                         </td>
-                                                        <td data-breakpoints="xs" style="width:5%"><label class="col-form-label font-12">Projet</label>
+                                                        <td data-breakpoints="xs" style="width:5%"><label
+                                                                class="col-form-label font-12">Projet</label>
                                                         </td>
                                                         <td style="width:20%" data-breakpoints="xs" colspan="1">
                                                             <select class="form-control font-12">\n' +
@@ -357,8 +515,9 @@
                                                                 <option>P002</option>
                                                                 <option>P003</option>
                                                             </select>
-                                                        </td >
-                                                        <td style="width:5%"  data-breakpoints="xs"><label class="col-form-label font-12">Volet</label>
+                                                        </td>
+                                                        <td style="width:5%" data-breakpoints="xs"><label
+                                                                class="col-form-label font-12">Volet</label>
                                                         </td>
                                                         <td style="width:20%" colspan="1" data-breakpoints="xs">
                                                             <select class="form-control font-12">\n' +
@@ -404,15 +563,18 @@
                                                         </td>
                                                         <td colspan="1" style="width:5%" data-breakpoints="xs"><label
                                                                 class="col-form-label font-12">Date Valeur.</label></td>
-                                                        <td style="width:20%" colspan="1" data-breakpoints="xs"><input type="date"
-                                                                                                                       class="form-control font-12 col-xs-1"
-                                                                                                                       placeholder="">
+                                                        <td style="width:20%" colspan="1" data-breakpoints="xs"><input
+                                                                type="date"
+                                                                class="form-control font-12 col-xs-1"
+                                                                placeholder="">
                                                         </td>
                                                         <td colspan="1" style="width:5%"><label
-                                                                class="col-form-label font-12" data-breakpoints="xs" >Banque</label></td>
-                                                        <td style="width:20%" colspan="1" data-breakpoints="xs"><input type="text"
-                                                                                                                       class="form-control font-12 col-xs-1"
-                                                                                                                       placeholder=""></td>
+                                                                class="col-form-label font-12" data-breakpoints="xs">Banque</label>
+                                                        </td>
+                                                        <td style="width:20%" colspan="1" data-breakpoints="xs"><input
+                                                                type="text"
+                                                                class="form-control font-12 col-xs-1"
+                                                                placeholder=""></td>
 
                                                     </tr>
                                                     <tr>
@@ -425,15 +587,19 @@
                                                                                                  placeholder="">
                                                         </td>
                                                         <td colspan="1" style="width:5%" data-breakpoints="xs"><label
-                                                                class="col-form-label font-12"> Montant Prévu</label></td>
-                                                        <td style="width:20%" colspan="1" data-breakpoints="xs"><input type="number"
-                                                                                                                       class="form-control font-12 col-xs-1"
-                                                                                                                       placeholder="120 232 242,12" disabled></td>
+                                                                class="col-form-label font-12"> Montant Prévu</label>
+                                                        </td>
+                                                        <td style="width:20%" colspan="1" data-breakpoints="xs"><input
+                                                                type="number"
+                                                                class="form-control font-12 col-xs-1"
+                                                                placeholder="120 232 242,12" disabled></td>
                                                         <td colspan="1" style="width:5%" data-breakpoints="xs"><label
-                                                                class="col-form-label font-12"> Reste à verser</label></td>
-                                                        <td style="width:20%" colspan="1" data-breakpoints="xs"><input type="number"
-                                                                                                                       class="form-control font-12 col-xs-1"
-                                                                                                                       placeholder="120 232 242,12" disabled></td>
+                                                                class="col-form-label font-12"> Reste à verser</label>
+                                                        </td>
+                                                        <td style="width:20%" colspan="1" data-breakpoints="xs"><input
+                                                                type="number"
+                                                                class="form-control font-12 col-xs-1"
+                                                                placeholder="120 232 242,12" disabled></td>
 
                                                     </tr>
                                                     <tr>
