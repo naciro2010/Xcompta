@@ -158,14 +158,81 @@ function initTable() {
                 align: 'center',
                 valign: 'middle'
             }, {
-                title: 'Item ID',
-                field: 'id',
-                rowspan: 2,
-                align: 'center',
+                title: 'N° Marché',
+                field: 'numMarche',
+                rowspan: 1,
+                align: 'left',
                 valign: 'middle',
                 sortable: true,
-                footerFormatter: totalTextFormatter
+
             }, {
+                title: 'N° AO',
+                field: 'numAO',
+                rowspan: 1,
+                align: 'left',
+                valign: 'middle',
+                sortable: true,
+            },
+                {
+                    title: 'Fournisseur',
+                    field: 'fournisseur',
+                    rowspan: 1,
+                    align: 'left',
+                    valign: 'middle',
+                    sortable: true,
+                },
+                {
+                    title: 'Objet',
+                    field: 'objet',
+                    rowspan: 1,
+                    align: 'left',
+                    valign: 'middle',
+                    sortable: true,
+                },
+                {
+                    title: 'Montant TTC',
+                    field: 'mntTTC',
+                    rowspan: 1,
+                    align: 'right',
+                    valign: 'middle',
+                    sortable: true,
+                    footerFormatter: totalTextFormatter
+                },
+                {
+                    title: 'Cumul décomptes',
+                    field: 'cumulDecopte',
+                    rowspan: 1,
+                    align: 'right',
+                    valign: 'middle',
+                    sortable: true,
+                    footerFormatter: totalTextFormatter
+                },
+                {
+                    title: 'CI',
+                    field: 'ci',
+                    rowspan: 1,
+                    align: 'left',
+                    valign: 'middle',
+                    sortable: true,
+                },
+                {
+                    title: 'Date',
+                    field: 'dateM',
+                    rowspan: 1,
+                    align: 'left',
+                    valign: 'middle',
+                    sortable: true,
+                },
+                {
+                    title: 'Item ID',
+                    field: 'id',
+                    rowspan: 2,
+                    align: 'center',
+                    valign: 'middle',
+                    sortable: true,
+                    footerFormatter: totalTextFormatter
+                },
+                {
                 title: 'Item Detail',
                 colspan: 3,
                 align: 'center'
@@ -237,7 +304,9 @@ $(function () {
 var $table2 = $('#subtable')
 
 function buildTable($el, cells, rows) {
-    var i; var j; var row
+    var i;
+    var j;
+    var row
     var columns = []
     var data = []
 
