@@ -89,26 +89,28 @@
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-body">
-                            <div class="toolbar">
+                            <div class="table-responsive">
+                                <div class="toolbar">
+                                </div>
+                                <table id="localetable" data-locale="fr-FR" data-toolbar=".toolbar"
+                                       data-search="true" data-show-refresh="true" data-show-toggle="true"
+                                       data-show-columns="true" data-show-export="true"
+                                       data-url="https://5fe96e422e12ee0017ab500b.mockapi.io/marche/marche"
+                                       class="table table-bordered m-b-0 table-hover table-striped contact-list no-wrap">
+                                    <thead class="bg-dark-success text-white font-12">
+                                    <tr>
+                                        <th style="width:5%" data-field="numMarche">Num <br/>Marché</th>
+                                        <th style="width:5%" data-breakpoints="xs" data-field="numAO">Num AO</th>
+                                        <th style="width:20%" data-field="fournisseur">Fournisseur</th>
+                                        <th style="width:50%" data-breakpoints="xs" data-field="objet">Objet</th>
+                                        <th style="width:5%" data-field="mntTTC">Montant TTC</th>
+                                        <th style="width:5%" data-field="cumulDecopte">Cumul des <br/> décomptes</th>
+                                        <th style="width:5%" data-field="ci">CI</th>
+                                        <th style="width:5%" data-breakpoints="xs" data-field="dateM">Date</th>
+                                    </tr>
+                                    </thead>
+                                </table>
                             </div>
-                            <table id="localetable" data-locale="fr-FR" data-toolbar=".toolbar"
-                                   data-search="true" data-show-refresh="true" data-show-toggle="true"
-                                   data-show-columns="true" data-show-export="true"
-                                   data-url="https://5fe96e422e12ee0017ab500b.mockapi.io/marche/marche"
-                                   class="table table-bordered m-b-0 table-hover table-striped contact-list no-wrap">
-                                <thead class="bg-dark-success text-white font-12">
-                                <tr>
-                                    <th style="width:5%" data-field="numMarche">Num <br/>Marché</th>
-                                    <th style="width:5%" data-field="numAO">Num AO</th>
-                                    <th style="width:20%" data-field="fournisseur">Fournisseur</th>
-                                    <th style="width:50%" data-field="objet">Objet</th>
-                                    <th style="width:5%" data-field="mntTTC">Montant TTC</th>
-                                    <th style="width:5%" data-field="cumulDecopte">Cumul des <br/> décomptes</th>
-                                    <th style="width:5%" data-field="ci">CI</th>
-                                    <th style="width:5%" data-field="dateM">Date</th>
-                                </tr>
-                                </thead>
-                            </table>
                         </div>
                     </div>
                 </div>
