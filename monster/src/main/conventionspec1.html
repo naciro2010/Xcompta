@@ -72,7 +72,8 @@
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="conventions.html">Convention</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Convention Cadre</li>
+                                <li class="breadcrumb-item"><a href="conventionCadre.html">Convention Cadre</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Convention Spécifique</li>
                             </ol>
                         </nav>
                     </div>
@@ -87,9 +88,6 @@
                             </button>
                         </div>
 
-                        <button class="btn btn-outline-success" data-toggle="modal" data-target="#full-width-modal"><i
-                                class="mdi mdi-plus-circle"></i> Ajout Conv Spécifique
-                        </button>
                     </div>
                 </div>
             </div>
@@ -102,9 +100,7 @@
         <!-- Column -->
         <div class="card">
             <div class="card-body">
-                <div class="card-body">
                     <!-- Accordian -->
-
                     <div class="row">
                         <div class="col-md-6">
                             <div class="card border-bottom shadow border-info">
@@ -112,9 +108,11 @@
                                     <div class="d-flex no-block align-items-center">
                                         <div>
                                             <h5 class="text-info">Libellé de la convention :</h5>
-                                            <h6 class="text-wrap"> Plan de développement urbain</h6>
+                                            <h6 class="text-wrap"> Convention spécifique relative à la construction et l
+                                                extension de certains établissements scolaires de la ville d Agadir</h6>
                                             <h5 class="text-info">Objet de la convention :</h5>
-                                            <h6 class="text-wrap">Plan de développement urbain</h6>
+                                            <h6 class="text-wrap">Convention spécifique relative à la construction et l
+                                                extension de certains établissements scolaires de la ville d Agadir</h6>
                                         </div>
                                     </div>
                                 </div>
@@ -141,34 +139,19 @@
                                                     <td><span class="badge py-1 badge-secondary mr-2"> I </span>
                                                         <a href="conventionCadre1.html"> 0001</a></span>
                                                     </td>
-                                                    <td align="center">01/01/2020</td>
-                                                    <td align="center">5 991</td>
+                                                    <td align="center">01/04/2020</td>
+                                                    <td align="center">2 760</td>
                                                     <td><i class="fa fa-paperclip"></i></td>
                                                 </tr>
                                                 <tr data-expanded="true">
                                                     <td><span class="badge py-1 badge-success mr-2"> A </span>
                                                         <a href="conventionCadre2.html">0002</a>
                                                     </td>
-                                                    <td align="center">02/01/2020</td>
-                                                    <td align="center">5 991</td>
+                                                    <td align="center">02/04/2020</td>
+                                                    <td align="center">2 760</td>
                                                     <td><i class="fa fa-paperclip"></i></td>
                                                 </tr>
-                                                <tr data-expanded="true">
-                                                    <td><span class="badge py-1 badge-secondary mr-2"> A </span> <a
-                                                            href="conventionCadre3.html">0003</a>
-                                                    </td>
-                                                    <td align="center">03/01/2020</td>
-                                                    <td align="center">5 991</td>
-                                                    <td><i class="fa fa-paperclip"></i></td>
-                                                </tr>
-                                                <tr data-expanded="true">
-                                                    <td><span class="badge py-1 badge-secondary mr-2"> A </span>
-                                                        <a href="conventionCadre.html">0004</a>
-                                                    </td>
-                                                    <td align="center">04/02/2020</td>
-                                                    <td align="center">5 991</td>
-                                                    <td><i class="fa fa-paperclip"></i></td>
-                                                </tr>
+
                                                 </tbody>
                                             </table>
                                         </div>
@@ -178,330 +161,219 @@
                         </div>
 
                     </div>
-                </div>
             </div>
         </div>
 
 
         <div class="card">
-            <br>
-            <ul class="nav nav-tabs nav-justified nav-bordered mb-3">
-                <li class="nav-item">
-                    <a href="#home-b2" data-toggle="tab" aria-expanded="true" class="nav-link active">
-                        <i class="mdi mdi-home-variant d-lg-none d-block mr-1"></i>
-                        <span class="d-none d-lg-block">Détail de la convention</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#profile-b3" data-toggle="tab" aria-expanded="false"
-                       class="nav-link">
-                        <i class="mdi mdi-account-circle d-lg-none d-block mr-1"></i>
 
-                        <span class="d-none d-lg-block">Conventions spécifiques <span
-                                class="badge py-1 badge-info"> 8 </span> </span>
-                    </a>
-                </li>
-            </ul>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row draggable-cards" id="draggable-area">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="card  card-hover">
+                                    <div class="card-header bg-light-info">
+                                        <h4 class="mb-0 text-dark">Partenaire</h4></div>
+                                    <div class="card-body">
 
-            <div class="tab-content">
-                <div class="tab-pane show active" id="home-b2">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="row draggable-cards" id="draggable-area">
-                                    <div class="col-md-6 col-sm-6">
-                                        <div class="card  card-hover">
-                                            <div class="card-header bg-light-info">
-                                                <h4 class="mb-0 text-dark">Partenaire</h4></div>
-                                            <div class="card-body">
+                                        <table id="partenaire"
+                                               class="table table-bordered m-b-0 toggle-arrow-tiny text-wrap">
+                                            <thead>
+                                            <tr class="footable-filtering">
+                                                <th>Partenaire</th>
+                                                <th>Budget (M)</th>
+                                                <th>%</th>
+                                                <th>Tx CI</th>
+                                                <th>CI (M)</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>
+                                                    <a href="conventionCadreAvenant.html">Commune d'Agadir</a>
+                                                </td>
+                                                <td align="right">1 880</td>
+                                                <td align="center">31</td>
+                                                <td align="center">0 %</td>
+                                                <td align="center">0,00</td>
 
-                                                <table id="partenaire"
-                                                       class="table table-bordered m-b-0 toggle-arrow-tiny text-wrap">
-                                                    <thead>
-                                                    <tr class="footable-filtering">
-                                                        <th>Partenaire</th>
-                                                        <th>Budget (M)</th>
-                                                        <th>%</th>
-                                                        <th>Tx CI</th>
-                                                        <th>CI (M)</th>
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <a href="conventionCadreAvenant.html">Commune d'Agadir</a>
-                                                        </td>
-                                                        <td align="right">1 880</td>
-                                                        <td align="center">31</td>
-                                                        <td align="center">0 %</td>
-                                                        <td align="center">0,00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="conventionCadreAvenant.html">Région Souss Massa</a>
+                                                </td>
+                                                <td align="right">880</td>
+                                                <td align="center">15</td>
+                                                <td align="center">5 %</td>
+                                                <td align="center">44,00</td>
 
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <a href="conventionCadreAvenant.html">Holding Al Omrane</a>
-                                                        </td>
-                                                        <td align="right">100</td>
-                                                        <td align="center">2</td>
-                                                        <td align="center">4 %</td>
-                                                        <td align="center">5,00</td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <a href="conventionCadreAvenant.html">INDH</a>
-                                                        </td>
-                                                        <td align="right">32</td>
-                                                        <td align="center">1</td>
-                                                        <td align="center">5 %</td>
-                                                        <td align="center">1,60</td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <a href="conventionCadreAvenant.html">Région Souss Massa</a>
-                                                        </td>
-                                                        <td align="right">880</td>
-                                                        <td align="center">15</td>
-                                                        <td align="center">5 %</td>
-                                                        <td align="center">44,00</td>
-
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
+                                            </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
-                                    <div class="col-md-3 col-sm-6">
-                                        <div class="card  card-hover">
-                                            <div class="card-header bg-light-success">
-                                                <h4 class="mb-0 text-dark">Maitre d'oeuvre:</h4></div>
-                                            <div class="card-body">
-                                                <ul>
-                                                    <li>
-                                                        <h6>Bank Al Maghrib</h6>
-                                                    </li>
-                                                    <li>
-                                                        <h6>Commune d'Agadir</h6>
-                                                    </li>
-                                                    <li>
-                                                        <h6>ECI Grand Agadir</h6>
-                                                    </li>
-                                                    <li>
-                                                        <h6>M. Culture</h6>
-                                                    </li>
-                                                    <li>
-                                                        <h6>M. Education Nationale</h6>
-                                                    </li>
-                                                </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="card  card-hover">
+                                    <div class="card-header bg-light-success">
+                                        <h4 class="mb-0 text-dark">Maitre d'oeuvre:</h4></div>
+                                    <div class="card-body">
+                                        <ul>
+                                            <li>
+                                                <h6>Bank Al Maghrib</h6>
+                                            </li>
+                                            <li>
+                                                <h6>Commune d'Agadir</h6>
+                                            </li>
+                                            <li>
+                                                <h6>M. Education Nationale</h6>
+                                            </li>
+                                        </ul>
 
-                                            </div>
-                                        </div>
                                     </div>
-                                    <div class="col-md-3 col-sm-6">
-                                        <div class="card  card-hover">
-                                            <div class="card-header bg-light-success">
-                                                <h4 class="mb-0 text-dark">Maitre d'oeuvre délégué:</h4></div>
-                                            <div class="card-body">
-                                                <ul>
-                                                    <li>
-                                                        <h6>Agadir Mobilité</h6>
-                                                    </li>
-                                                    <li>
-                                                        <h6>M. Habous</h6>
-                                                    </li>
-                                                    <li>
-                                                        <h6>M. Santé</h6>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-sm-5">
-                                        <div class="card  card-hover">
-                                            <div class="card-header bg-light-megna">
-                                                <h4 class="mb-0 text-dark">Imputations prévisionnelles</h4></div>
-                                            <div class="card-body">
-                                                <div class="table-responsive">
-                                                    <table id="axes"
-                                                           class="table table-bordered m-b-0 toggle-arrow-tiny no-wrap"
-                                                           data-filtering="true" data-paging="true" data-sorting="true"
-                                                           data-paging-size="10">
-                                                        <thead>
-                                                        <tr class="footable-filtering">
-                                                            <th>Axe</th>
-                                                            <th>Projet</th>
-                                                            <th>Volet</th>
-                                                            <th>Date <br/> démarage</th>
-                                                            <th>Délai</th>
-                                                            <th>Date <br/> fin prévue</th>
-                                                        </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                        <tr>
-                                                            <td>A004</td>
-                                                            <td>
-                                                                P0076
-                                                            </td>
-                                                            <td>V003</td>
-                                                            <td align="center">01/03/2020</td>
-                                                            <td align="center">12 mois</td>
-                                                            <td align="center">01/03/2021</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>A005</td>
-                                                            <td>
-                                                                P0080
-                                                            </td>
-                                                            <td>V003</td>
-                                                            <td align="center">01/03/2020</td>
-                                                            <td align="center">24 mois</td>
-                                                            <td align="center">01/03/2022</td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 col-sm-7">
-                                        <div class="card  card-hover">
-                                            <div class="card-header bg-light-info">
-                                                <h4 class="mb-0 text-dark">Versements prévisionels</h4></div>
-                                            <div class="card-body">
-                                                <div class="table-responsive">
-                                                    <table id="versement"
-                                                           class="table table-bordered m-b-0 toggle-arrow-tiny no-wrap table-hover"
-                                                           data-filtering="true" data-paging="true"
-                                                           data-sorting="true"
-                                                           data-paging-size="10">
-                                                        <thead>
-                                                        <tr class="footable-filtering">
-                                                            <th>Axe</th>
-                                                            <th>Projet</th>
-                                                            <th>Volet</th>
-                                                            <th align="left" style="width:5%">Date <br/> versement</th>
-                                                            <th style="width:5%">Montant (M)</th>
-                                                            <th>Partenaire</th>
-                                                            <th>MOD</th>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="card  card-hover">
+                                    <div class="card-header bg-light-success">
+                                        <h4 class="mb-0 text-dark">Maitre d'oeuvre délégué:</h4></div>
+                                    <div class="card-body">
+                                        <ul>
+                                            <li>
+                                                <h6>Agadir Mobilité</h6>
+                                            </li>
+                                            <li>
+                                                <h6>Agadir Souss Massa Aménagement</h6>
+                                            </li>
 
-                                                        </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                        <tr>
-                                                            <td>A004</td>
-                                                            <td>P076</td>
-                                                            <td>
-                                                                V003
-                                                            </td>
-                                                            <td>
-                                                                31/12/2020
-                                                            </td>
-                                                            <td align="right">30</td>
-                                                            <td><a href="">Commune d'Agadir</a></td>
-                                                            <td><a href="">Agadir Souss Massa Aménagement</a></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>A004</td>
-                                                            <td>P078</td>
-                                                            <td>
-                                                                V003
-                                                            </td>
-                                                            <td>
-                                                                31/12/2022
-                                                            </td>
-                                                            <td align="right">30</td>
-                                                            <td><a href="">Région Souss Massa</a></td>
-                                                            <td><a href="">Agadir Souss Massa Aménagement</a></td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-5">
+                                <div class="card  card-hover">
+                                    <div class="card-header bg-light-megna">
+                                        <h4 class="mb-0 text-dark">Imputations prévisionnelles</h4></div>
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table id="axes"
+                                                   class="table table-bordered m-b-0 toggle-arrow-tiny no-wrap"
+                                                   data-filtering="true" data-paging="true" data-sorting="true"
+                                                   data-paging-size="10">
+                                                <thead>
+                                                <tr class="footable-filtering">
+                                                    <th>Axe</th>
+                                                    <th>Projet</th>
+                                                    <th>Volet</th>
+                                                    <th>Date <br/> démarage</th>
+                                                    <th>Délai</th>
+                                                    <th>Date <br/> fin prévue</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>A004</td>
+                                                    <td>
+                                                        P0076
+                                                    </td>
+                                                    <td>V003</td>
+                                                    <td align="center">01/03/2020</td>
+                                                    <td align="center">12 mois</td>
+                                                    <td align="center">01/03/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>A005</td>
+                                                    <td>
+                                                        P0077
+                                                    </td>
+                                                    <td>V003</td>
+                                                    <td align="center">01/03/2020</td>
+                                                    <td align="center">12 mois</td>
+                                                    <td align="center">01/03/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>A005</td>
+                                                    <td>
+                                                        P0080
+                                                    </td>
+                                                    <td>V003</td>
+                                                    <td align="center">01/03/2020</td>
+                                                    <td align="center">24 mois</td>
+                                                    <td align="center">01/03/2022</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tab-pane " id="profile-b3">
-                    <div class="card-body">
-
-                        <div class="row">
-                            <div class="col-md-11">
-                                <div class="card border-bottom shadow border-cyan">
+                            <div class="col-md-12 col-sm-7">
+                                <div class="card  card-hover">
+                                    <div class="card-header bg-light-info">
+                                        <h4 class="mb-0 text-dark">Versements prévisionels</h4></div>
                                     <div class="card-body">
-                                        <div class="d-flex no-block align-items-center">
-                                            <div class="table-responsive">
-                                                <table id="conventioSep"
-                                                       class="table table-bordered m-b-0 toggle-arrow-tiny no-wrap"
-                                                       data-filtering="true" data-paging="true" data-sorting="true"
-                                                       data-paging-size="10">
-                                                    <thead>
-                                                    <tr class="footable-filtering bg-dark-success text-white ">
-                                                        <th data-breakpoints="xs" style="width:5%">Num </th>
-                                                        <th>Libellé </th>
-                                                        <th style="width:10%">Date</th>
-                                                        <th style="width:10%">Budget</th>
-                                                        <th style="width:10%">Statut</th>
+                                        <div class="table-responsive">
+                                            <table id="versement"
+                                                   class="table table-bordered m-b-0 toggle-arrow-tiny no-wrap table-hover"
+                                                   data-filtering="true" data-paging="true"
+                                                   data-sorting="true"
+                                                   data-paging-size="10">
+                                                <thead>
+                                                <tr class="footable-filtering">
+                                                    <th>Axe</th>
+                                                    <th>Projet</th>
+                                                    <th>Volet</th>
+                                                    <th align="left" style="width:5%">Date <br/> versement</th>
+                                                    <th style="width:5%">Montant (M)</th>
+                                                    <th>Partenaire</th>
+                                                    <th>MOD</th>
 
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                    <tr>
-                                                        <td>ASMA02</td>
-                                                        <td>
-                                                            <a href="conventionSpec.html"> Convention spécifique BHNS</a>
-                                                        </td>
-                                                        <td>20/03/2020</td>
-                                                        <td align="right" >10</td>
-                                                        <td><span class="badge py-1 badge-danger">En retard</span></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>ASMA05</td>
-                                                        <td>
-                                                            <a href="conventionSpec.html"> Convention spécifique relative à l exécution des projets du développement urbain de la ville d Agadir ...</a>
-                                                        </td>
-                                                        <td>13/05/2024</td>
-                                                        <td align="right">50</td>
-                                                        <td><span class="badge py-1 badge-success">Validée</span></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>ASMA06</td>
-                                                        <td><a href="conventionNonCadre.html"> Convention spécifique SDRT</a>
-                                                        </td>
-                                                        <td>20/09/2020</td>
-                                                        <td align="right">100</td>
-                                                        <td><span class="badge py-1 badge-success">Achevé</span></td>
-                                                    </tr>
-
-                                                    <tr data-expanded="true">
-                                                        <td>ASMA08</td>
-                                                        <td>
-                                                            <a href="conventionAvenant.html"> Convention spécifique Contournement et voie expresse</a>
-                                                        </td>
-                                                        <td>19/09/2020</td>
-                                                        <td align="right" >45</td>
-                                                        <td><span class="badge py-1 badge-orange">En cours</span></td>
-                                                    </tr>
-                                                    <tr data-expanded="true">
-                                                        <td>ASMA09</td>
-                                                        <td>
-                                                            <a href="javascript:void(0)"> Convention spécifique relative à l’amélioration des services de la Santé de la Ville d’Agadir.</a>
-                                                        </td>
-                                                        <td>19/09/2020</td>
-                                                        <td align="right">30</td>
-                                                        <td><span class="badge py-1 badge-orange">En cours</span></td>
-                                                    </tr>
-                                                    <tr data-expanded="true">
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>A004</td>
+                                                    <td>P076</td>
+                                                    <td>
+                                                        V003
+                                                    </td>
+                                                    <td>
+                                                        31/12/2020
+                                                    </td>
+                                                    <td align="right">30</td>
+                                                    <td><a href="">Commune d'Agadir</a></td>
+                                                    <td><a href="">Agadir Souss Massa Aménagement</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>A004</td>
+                                                    <td>P076</td>
+                                                    <td>
+                                                        V003
+                                                    </td>
+                                                    <td>
+                                                        31/12/2021
+                                                    </td>
+                                                    <td align="right">60</td>
+                                                    <td><a href="">Commune d'Agadir</a></td>
+                                                    <td><a href="">Agadir Souss Massa Aménagement</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>A004</td>
+                                                    <td>P076</td>
+                                                    <td>
+                                                        V003
+                                                    </td>
+                                                    <td>
+                                                        31/12/2022
+                                                    </td>
+                                                    <td align="right">13</td>
+                                                    <td><a href="">Commune d'Agadir</a></td>
+                                                    <td><a href="">Agadir Souss Massa Aménagement</a></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -509,6 +381,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
 
 
