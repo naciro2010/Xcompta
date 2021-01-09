@@ -1,5 +1,46 @@
 var room = 1;
 
+
+function add_versement() {
+
+    room++;
+    var objTo = document.getElementById('add_versement')
+    var divtest = document.createElement("tr");
+    divtest.setAttribute("class", "form-group removeclass" + room);
+    var rdiv = 'removeclass' + room;
+    divtest.innerHTML = '  <td><select class="form-control font-12">\n' +
+        '                                                                                        <option>Axe 1\n' +
+        '                                                                                        </option>\n' +
+        '                                                                                        <option>Axe 2</option>\n' +
+        '                                                                                        <option>Axe 3</option>\n' +
+        '                                                                                    </select></td>\n' +
+        '                                                                                    <td><select class="form-control font-12">\n' +
+        '                                                                                        <option>Projet 1\n' +
+        '                                                                                        </option>\n' +
+        '                                                                                        <option>Projet 2</option>\n' +
+        '                                                                                        <option>Projet 3</option>\n' +
+        '                                                                                    </select>\n' +
+        '                                                                                    <td><select class="form-control font-12">\n' +
+        '                                                                                        <option>Volet 1\n' +
+        '                                                                                        </option>\n' +
+        '                                                                                        <option>Volet 2</option>\n' +
+        '                                                                                    </select></td>' +
+        '                                                                                       <td><select class="form-control font-12">\n' +
+        '                                                                                        <option>MOD 1\n' +
+        '                                                                                        </option>\n' +
+        '                                                                                        <option>MOD 2</option>\n' +
+        '                                                                                    </select></td>\n' +
+        '                                                                                       <td><select class="form-control font-12">\\n\' +\n' +
+        '                                                                                        <option>PART 1\n' +
+        '                                                                                        </option>\n' +
+        '                                                                                        <option>PART 2</option>\\n\' +\n' +
+        '                                                                                    </select></td>\n' +
+        '                                                                                    </select></td>\n' +
+        '                                                                                       <td><input type="number" class=" form-control font-12 col-xs-1"> </td>\n'+
+        '<td>  <button class="btn btn-danger font-10" type="button" onclick="remove_education_fields(' + room + ');"> <i class="fa fa-minus"></i> </button> </td></tr>';
+    objTo.appendChild(divtest)
+}
+
 function education_fields() {
 
     room++;
